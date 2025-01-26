@@ -1,0 +1,108 @@
+@use "./reset" as *;
+@use "./variable" as *;
+
+.hero{
+    &_section{
+        background: $card;
+        padding: 50px;
+        border-radius: 20px;
+        width: 100%;
+        min-height: calc(100vh - 261px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        h4{
+            font-size: 20px;
+        }
+
+        h2{
+            font-size: 36px;
+        }
+
+        h1{
+            font-size: 54px;
+        }
+    
+        &::before{
+            content: '';
+            height: 250px;
+            width: 250px;
+            background: $highlight;
+            border-radius: 20px;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            z-index: -1;
+        }
+    
+        &::after{
+            content: '';
+            height: 250px;
+            width: 250px;
+            border: 2px s;
+            background: $highlight;
+            border-radius: 20px;
+            position: absolute;
+            right: -10px;
+            bottom: -10px;
+            z-index: -1;
+        }
+    
+        h1, h2, h4{
+            color: $text;
+        }
+    
+        .social{
+            padding: 0;
+            margin-top: 50px;
+            li{
+                list-style: none;
+    
+                a{
+                    display: flex;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 10px;
+                    background: $highlight;
+                    color: $text;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                    transition: 0.4s all ease-in-out;
+    
+                    &:hover{
+                        background: $hover;
+                    }
+                }
+            }
+        }
+        .links{
+            padding: 0;
+            margin-top: 40px;
+            li{
+                list-style: none;
+
+                a{
+                    display: block;
+                    background: $highlight;
+                    color: $text;
+                    text-decoration: none;
+                    padding: 10px 40px;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background: $hover;
+                    }
+                }
+            }
+        }
+    }
+    &_img{
+        width: 75%;
+        margin: 0 auto;
+        border-radius: 20px;
+        display: block;
+    }
+}

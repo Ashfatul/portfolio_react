@@ -1,0 +1,45 @@
+{
+    "experience": [
+      {
+        "id": 1,
+        "organization": "Spondon It",
+        "position": "Frontend Developer",
+        "duration": "Jul 2023 - Present",
+        "brief": "As a Frontend Developer at Spondon It, I am responsible for building and maintaining responsive, user-friendly web applications using modern JavaScript frameworks, HTML, and CSS. I collaborate closely with designers and backend developers to ensure seamless integration and functionality of web applications."
+      },
+      {
+        "id": 2,
+        "organization": "MightyTech",
+        "position": "Quality Assurance Tester",
+        "duration": "Dec 2020 - Mar 2022",
+        "brief": "During my tenure as a Quality Assurance Tester at MightyTech, I was responsible for ensuring the quality and functionality of software products. I collaborated with developers to identify and resolve bugs, conducted manual and automated testing, and contributed to creating efficient testing strategies and documentation."
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "institution": "Bangladesh University",
+        "degree": "B.Sc In CSE",
+        "duration": "2022 - Present",
+        "brief": "Currently pursuing a Bachelor of Science in Computer Science and Engineering, focusing on software development and data science.",
+        "result": "-"
+      },
+      {
+        "id": 2,
+        "institution": "Bogura Polytechnic Institute",
+        "degree": "Diploma in Civil Engineering",
+        "duration": "2020 - 2022",
+        "brief": "Completed a diploma program in Civil Engineering with practical experience in construction and project management.",
+        "result": "Result: 1st Class"
+      },
+      {
+        "id": 3,
+        "institution": "Bogura Pouro High School",
+        "degree": "Secondary School Certificate (Science)",
+        "duration": "2018 - 2020",
+        "brief": "Achieved a strong foundation in science subjects, excelling in mathematics and physics.",
+        "result": "Result: A Grade"
+      }
+    ]
+  }
+  

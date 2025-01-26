@@ -1,0 +1,33 @@
+@use "./reset" as *;
+@use "./variable" as *;
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.row-gap-24{
+    row-gap: 24px;
+}
+
+.main{
+    flex-grow: 1;
+    padding: 50px 0;
+}
+
+.highlight{
+    color: $highlight;
+}
+
+.page-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.page-sub-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}

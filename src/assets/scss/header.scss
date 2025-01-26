@@ -1,0 +1,47 @@
+@use "./reset" as *;
+@use "./variable" as *;
+
+header {
+   .container {
+      background: $card;
+      padding: 19px 40px;
+      border-radius: 50px;
+      margin-top: 20px;
+   }
+   ul {
+      padding: 0;
+      margin-bottom: 0;
+   }
+   li {
+      list-style: none;
+      a {
+         color: $highlight;
+         text-decoration: none;
+         position: relative;
+
+         &::after{
+            content: '';
+            height: 1px;
+            width: 0;
+            background: $highlight;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -4px;
+            transition: 0.4s all ease-in-out;
+         }
+
+         &:hover,
+         &.active{
+
+            &::after{
+                width: 100%;
+            }
+         }
+      }
+   }
+   .logo {
+      font-size: 26px;
+      font-weight: 700;
+   }
+}

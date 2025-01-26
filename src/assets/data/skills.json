@@ -1,0 +1,69 @@
+{
+    "frontendTechnology": [
+      {
+        "id": 1,
+        "name": "HTML",
+        "icon": "https://img.icons8.com/ios/452/html-5.png"
+      },
+      {
+        "id": 2,
+        "name": "CSS",
+        "icon": "https://img.icons8.com/ios/452/css3.png"
+      },
+      {
+        "id": 3,
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/ios/452/javascript.png"
+      },
+      {
+        "id": 4,
+        "name": "React",
+        "icon": "https://img.icons8.com/ios/452/react.png"
+      },
+      {
+        "id": 5,
+        "name": "jQuery",
+        "icon": "https://img.icons8.com/ios/452/jquery.png"
+      }
+    ],
+    "backendTechnology": [
+      {
+        "id": 1,
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/ios/452/nodejs.png"
+      },
+      {
+        "id": 2,
+        "name": "Express",
+        "icon": "https://img.icons8.com/ios/452/express.png"
+      },
+      {
+        "id": 3,
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/ios/452/mongodb.png"
+      }
+    ],
+    "familiarTools": [
+      {
+        "id": 1,
+        "name": "Git",
+        "icon": "https://img.icons8.com/ios/452/git.png"
+      },
+      {
+        "id": 2,
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/ios/452/github.png"
+      },
+      {
+        "id": 3,
+        "name": "Webpack",
+        "icon": "https://img.icons8.com/ios/452/webpack.png"
+      },
+      {
+        "id": 4,
+        "name": "npm",
+        "icon": "https://img.icons8.com/ios/452/npm.png"
+      }
+    ]
+  }
+  
