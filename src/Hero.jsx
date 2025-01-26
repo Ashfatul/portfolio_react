@@ -3,7 +3,7 @@ import "./assets/scss/hero.scss"
 import {FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import { SiFiverr } from "react-icons/si"
-
+import user from "../src/assets/img/user.png"
 function Hero() {
 
     return (
@@ -31,7 +31,7 @@ function Hero() {
                 </div>
 
                 <div className="col-lg-5">
-                    <img src="../src/assets/img/user.png" className="hero_img" alt="ashfatul" />
+                    <img src={user} className="hero_img" alt="ashfatul" />
                 </div>
             </div>
         </div>

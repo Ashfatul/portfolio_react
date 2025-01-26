@@ -6,6 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { SiFiverr } from "react-icons/si";
 import "./assets/scss/about.scss"
 import ExpEdu from "./ExpEdu";
+import user from "../src/assets/img/user.png"
 
 
 const About = () => {
@@ -36,7 +37,7 @@ const About = () => {
             <div className="row">
                 <div className="col-lg-4">
                     <div className="about_sidebar">
-                        <img src="../src/assets/img/user.png" className="about_img" alt="ashfatul" />
+                        <img src={user} className="about_img" alt="ashfatul" />
                         <small>@ashfatul</small>
                         <h4 className="about_name">Ashfatul Islam</h4>
                         <p className="mb-4 designation">Frontend Developer</p>
