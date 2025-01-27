@@ -9,7 +9,7 @@ const Projects = () => {
 
     useEffect(() => {
         const fetchSkills = async () => {
-            const res = await fetch('../src/assets/data/projects.json');
+            const res = await fetch('/data/projects.json');
             const data = await res.json();
             setProjects(data);
         }

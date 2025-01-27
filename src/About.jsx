@@ -15,7 +15,7 @@ const About = () => {
 
     useEffect(() => {
         const fetchSkills = async () => {
-            const res = await fetch('../src/assets/data/skills.json');
+            const res = await fetch('/data/skills.json');
             const data = await res.json();
             setSkills(data);
         }
@@ -24,7 +24,7 @@ const About = () => {
 
     useEffect(() => {
         const fetchEduExp = async () => {
-            const res = await fetch('../src/assets/data/exp_edu.json');
+            const res = await fetch('/data/exp_edu.json');
             const data = await res.json();
             setEduexp(data);
         }
