@@ -1,0 +1,96 @@
+{
+   "meta": {
+      "name": "A. A. M. Ashfatul Islam",
+      "position": "Frontend Developer | Specialized in HTML, CSS, JavaScript & React",
+      "email": "ashfatul.islam@gmail.com",
+      "phone": "+8801719337222",
+      "address": "Mohammadpur, Dhaka, Bangladesh",
+      "profilePic": "/user.png",
+      "github": "https://github.com/ashfatul",
+      "linkedin": "https://linkedin.com/in/ashfatul",
+      "about": "I am a skilled frontend developer with over two years of experience, specializing in responsive and pixel-perfect design conversion. I am proficient in HTML, CSS, JavaScript, jQuery, and React, ensuring seamless and user-friendly interfaces. I value honesty, punctuality, and clear communication. Currently, I am expanding my expertise in React, Next.js, and MERN stack development while exploring opportunities on Upwork. Passionate about continuous learning, I am improving my knowledge of algorithms, Java, and discrete mathematics. I use Ubuntu as my primary OS and have an interest in mounting and managing external drives efficiently."
+   },
+   "experience": [
+      {
+         "company": "SpondonIT",
+         "duration": "2023 - Present",
+         "position": "Frontend Web Developer",
+         "projects": [
+            {
+               "name": "Aorabooks",
+               "teamSize": 5,
+               "responsibilities": [
+                  "Design fixing and responsive update",
+                  "Optimized website performance.",
+                  "Collaborated with backend developers."
+               ],
+               "technologies": ["HTML", "CSS", "JavaScript", "jQuery", "Laravel", "PHP"],
+               "tools": ["VS Code", "Git", "Figma"]
+            }
+         ]
+      },
+      {
+         "company": "MightyTech",
+         "duration": "2020 - 2022",
+         "position": "Quality Assurance Tester & Frontend Developer",
+         "projects": [
+            {
+               "name": "WorkSafety",
+               "teamSize": 4,
+               "responsibilities": [
+                  "Test Website for bug and make bug report",
+                  "Test Responsive of website",
+                  "Test Performance of website"
+               ],
+               "technologies": ["HTML", "CSS", "jQuery", "JavaScript"],
+               "tools": ["Asana", "Google Docs", "Postman", "VS Code"]
+            }
+         ]
+      }
+   ],
+   "education": [
+      {
+         "degree": "Bachelor of Science",
+         "institution": "Bangladesh University, Mohammadpur, Dhaka",
+         "duration": "2024 - Present",
+         "group": "Computer Science and Engineering",
+         "result": "-/4"
+      },
+      {
+         "degree": "Diploma Engineering",
+         "institution": "Bogura Polytechnic Institute, Bogura",
+         "duration": "2018 - 2023",
+         "group": "Civil Engineering",
+         "result": "3.60/4"
+      },
+      {
+         "degree": "Secondary School Certificate",
+         "institution": "Bogura Pouro High School, Bogura",
+         "duration": "2015 - 2018",
+         "group": "Science",
+         "result": "4.33/5"
+      }
+   ],
+   "skills": [
+      "JavaScript",
+      "TypeScript",
+      "C++",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "React",
+      "Next.js",
+      "jQuery",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Git",
+      "VS Code",
+      "Figma",
+      "Postman",
+      "Problem-solving",
+      "Teamwork",
+      "Time Management",
+      "Communication"
+   ]
+}

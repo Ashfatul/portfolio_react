@@ -1,33 +1,50 @@
-$white: #ffffff;
-$black: #000000;
-$background: #1c1c1e;
-$text: #e4e4e4;
-$text2: #a3a3a3;
-$highlight: #4caf50;
-$border: #2b2b2d;
-$card: #252526;
-$hover: #66bb6a;
-$active: #388e3c;
-$error: #D64545;
-$success: #52B788;
-$shadow: rgba(0, 0, 0, 0.5);
-$shadow2: rgba(255, 255, 255, 0.1);
-$disabled: #6d6d6d;
+:root {
+    --system-white: #ffffff;
+    --system-black: #000000;
+    --system-background: #1c1c1e;
+    --system-text: #e4e4e4;
+    --system-text2: #808080;
+    --system-highlight: #4caf50;
+    --system-border: #2b2b2d;
+    --system-card: #252526;
+    --system-hover: #66bb6a;
+    --system-error: #D64545;
+    --system-success: #52B788;
+    --system-shadow: rgba(0, 0, 0, 0.5);
+    --system-shadow2: rgba(255, 255, 255, 0.1);
+    --system-disabled: #6d6d6d;
+}
 
+.light {
+    --system-white: #ffffff;
+    --system-black: #000000;
+    --system-background: #f5f5f5;
+    --system-text: #333333;
+    --system-text2: #4d4d4d;
+    --system-highlight: #ff9800;
+    --system-border: #bdbdbd;
+    --system-card: #e0e0e0;
+    --system-hover: #ffa726;
+    --system-error: #e57373;
+    --system-success: #81c784;
+    --system-shadow: rgba(0, 0, 0, 0.2);
+    --system-shadow2: rgba(0, 0, 0, 0.1);
+    --system-disabled: #9e9e9e;
+}
 
+// Color variable with default dark theme color and dynamic css variable
 
-   // $white: #ffffff;
-   // $black: #000000;
-   // $background: #f9f9f9;
-   // $text: #1c1c1e;
-   // $text2: #555555;
-   // $highlight: #007acc;
-   // $border: #e0e0e0;
-   // $card: #ffffff;
-   // $hover: #005fa8;
-   // $active: #00497c;
-   // $error: #d64545;
-   // $success: #3faf6c;
-   // $shadow: rgba(0, 0, 0, 0.1);
-   // $shadow2: rgba(0, 0, 0, 0.05);
-   // $disabled: #b0b0b0;
+$white: var(--system-white, #ffffff);
+$black: var(--system-black, #000000);
+$background: var(--system-background, #1c1c1e);
+$text: var(--system-text, #e4e4e4);
+$text2: var(--system-text2, #808080);
+$highlight: var(--system-highlight, #4caf50);
+$border: var(--system-border, #2b2b2d);
+$card: var(--system-card, #252526);
+$hover: var(--system-hover, #66bb6a);
+$error: var(--system-error, #D64545);
+$success: var(--system-success, #52B788);
+$shadow: var(--system-shadow, rgba(0, 0, 0, 0.5));
+$shadow2: var(--system-shadow2, rgba(255, 255, 255, 0.1));
+$disabled: var(--system-disabled, #6d6d6d);

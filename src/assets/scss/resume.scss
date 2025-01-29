@@ -1,0 +1,206 @@
+$white: #ffffff;
+$black: rgb(17, 24, 39);
+
+// body{
+//     background: $white!important;
+// }
+
+.resume{
+    &_container{
+
+        h1, h2, h3, h4, h5, h6{
+            color: rgb(17, 24, 39)!important;
+        }
+        
+        p{
+            margin-bottom: 0!important;
+        }
+
+
+
+        margin: 0 auto;
+        width: 210mm;
+        background: $white;
+        padding: 30px;
+        color: rgb(107, 114, 128)!important;
+        font-size: 12px;
+        border: 1px solid $black;
+        border-top: 0;
+        border-bottom: 0;
+        min-width: 210mm;
+        overflow: auto;
+    }
+
+    &_inner{
+        margin-top: 30px;
+    }
+    &_duration{
+        padding: 2px 10px;
+        font-size: 12px;
+        background: rgb(240 240 240);
+        color: $black !important;
+        border-radius: 6px;
+        border: 1px solid #d4d4d4;
+    }
+    &_tools_technology{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    &_header{
+        &_img{
+            height: 120px;
+            width: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top center;
+        }
+        &_position{
+            max-width: 80%;
+        }
+
+        &_name{
+            margin-bottom: 0;
+        }
+
+        &_social{
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            li{
+                list-style: none;
+
+                a{
+                    height: 24px;
+                    width: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    color: $black;
+                    font-size: 14px;
+                    transition: 0.4s all ease-in-out;
+                    border: 1px solid rgb(107, 114, 128);
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+
+                    svg{
+                        width: 10px;
+                    }
+                }
+            }
+        }
+        &_location{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            svg{
+                width: 12px;
+                line-height: 1;
+            }
+        }
+    }
+
+    &_inner{
+        &_title{
+            font-size: 20px;
+            margin-bottom: 10px;
+
+            &:not(:first-child){
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &_skills,
+    &_tools,
+    &_technologies{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 0;
+        li{
+            list-style: none;
+            background: rgb(240 240 240);
+            color: $black !important;
+            padding: 3px 12px;
+            border-radius: 6px;
+            border: 1px solid #d4d4d4;
+        }
+    }
+
+    &_subtitle{
+        margin-top: 10px;
+        
+        h5{
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+    &_education_experience{
+        &_item{
+            padding-left: 10px;
+        }
+        &_responsibilities{
+            background: #e4e2e26b;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        &_position{
+            p{
+                font-size: 15px;
+                font-weight: 500;
+                color: $black!important;
+            }
+        }
+    }
+
+    &_print{
+        position: fixed;
+        right: 50px;
+        top: 50px;
+
+        button{
+            background: green;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 0;
+            outline: 0;
+            
+            svg{
+                color: $white!important;
+                width: 25px;
+                height: auto;
+
+            }
+        }
+    }
+}
+
+@page{
+    size: 'A4';
+    margin: 0px;
+}
+
+@media print{
+    body{
+        background: #ffffff!important;
+    }
+    .resume_container{
+        border: 0;
+    }
+    .resume_print{
+        display: none;
+    }
+}

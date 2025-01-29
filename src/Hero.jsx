@@ -4,6 +4,7 @@ import {FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import { SiFiverr } from "react-icons/si"
 import user from "../src/assets/img/user.png"
+import { Link } from "react-router-dom"
 function Hero() {
 
     return (
@@ -25,8 +26,8 @@ function Hero() {
                     </ul>
 
                     <ul className="links d-flex align-items-center gap-4 flex-wrap">
-                        <li><a href="">Resume</a></li>
-                        <li><a href="">Curriculum vitae</a></li>
+                        <li><Link to="/resume">Resume</Link></li>
+                        <li><Link to="/contact">Contact Me</Link></li>
                     </ul>                    
                 </div>
 
