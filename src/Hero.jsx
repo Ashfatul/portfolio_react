@@ -9,7 +9,7 @@ function Hero() {
     return (
         <div className="hero_section">
             <div className="row">
-                <div className="col-lg-7">
+                <div className="col-lg-7 order-2 order-lg-1">
                     <h4>Hello there!</h4>
                     <h2>I&apos;m <span className="highlight">Ashfatul Islam,</span></h2>
                     <h1>Frontend Developer</h1>
@@ -29,7 +29,7 @@ function Hero() {
                     </ul>                    
                 </div>
 
-                <div className="col-lg-5">
+                <div className="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0">
                     <img src={user} className="hero_img" alt="ashfatul" />
                 </div>
             </div>

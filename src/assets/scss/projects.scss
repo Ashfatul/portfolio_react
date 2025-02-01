@@ -6,6 +6,11 @@
       background: $card;
       border-radius: 10px;
       overflow: hidden;
+      background-image: url('public/hero_bg.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
 
       &_content{
         padding: 30px;

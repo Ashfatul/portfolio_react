@@ -33,8 +33,8 @@ const About = () => {
 
     return (
         <div className="about_section">
-            <div className="row justify-content-center">
-                <div className="col-lg-3">
+            <div className="row justify-content-center row-gap-24">
+                <div className="col-lg-5 col-xx-3">
                     <div className="about_sidebar">
                         <img src={user} className="about_img" alt="ashfatul" />
                         <small>@ashfatul</small>
@@ -53,7 +53,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-8">
+                <div className="col-lg-7 col-xl-8">
                     <div className="about_content">
                         <h4 className="about_title">About Me</h4>
                         <div>

@@ -49,13 +49,13 @@ const Contact = () => {
                     <p className="text-center page-sub-title">Feel free to reach out to me.</p>
 
 
-                    <div className="row mt-5 align-items-center">
+                    <div className="row mt-5 align-items-start row-gap-24">
                         <div className="col-lg-6">
                             <div className="contact_info_container">
                                 <p className="contact_text text-center">If you have any project or idea you'd like to discuss, or just want to say hi, please don't hesitate to send me a message. I'll get back to you as soon as possible.</p>
 
                                 <ul className="contact_info">
-                                    <li className="d-flex gap-3 align-items-center">
+                                    <li className="d-flex gap-3 align-items-center flex-wrap">
                                         <div className="icon">
                                             <FaLocationArrow />
                                         </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                                         </div>
                                     </li>
 
-                                    <li className="d-flex gap-3 align-items-center">
+                                    <li className="d-flex gap-3 align-items-center flex-wrap">
                                         <div className="icon">
                                             <MdOutlineEmail />
                                         </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                                         </div>
                                     </li>
 
-                                    <li className="d-flex gap-3 align-items-center">
+                                    <li className="d-flex gap-3 align-items-center flex-wrap">
                                         <div className="icon">
                                             <IoLogoGithub />
                                         </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                                         </div>
                                     </li>
 
-                                    <li className="d-flex gap-3 align-items-center">
+                                    <li className="d-flex gap-3 align-items-center flex-wrap">
                                         <div className="icon">
                                             <FaLinkedinIn />
                                         </div>

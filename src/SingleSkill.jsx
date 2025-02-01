@@ -12,7 +12,7 @@ const SingleSkill = ({ name = 'Skill Name', icon = 'FaHtml5' }) => {
     const IconComponent = iconMapping[icon];
 
     return (
-        <div className="col-lg-4 col-sm-6 single_skill_wrapper">
+        <div className="col-sm-6 col-xxl-4 single_skill_wrapper">
             <div className="single_skill">
                 {IconComponent ? <IconComponent size={24} color="currentColor" /> : <span>❓</span>}
                 <p className="single_skill_name">{name}</p>

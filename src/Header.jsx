@@ -4,6 +4,7 @@ import { IoMdMoon } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useEffect, useState } from "react";
 import ThemeChange from "./ThemeChange";
+import { FaCode, FaHome, FaRegCommentAlt, FaRegUserCircle } from "react-icons/fa";
 
 function Header() {
   const location = useLocation();
@@ -27,21 +28,20 @@ function Header() {
 
     setTimeout(() => {
       setChangingTheme(false);
-    }, 1000); // Reset `changingTheme` after 3 seconds
+    }, 1000);
   };
-
   return (
     <header>
-      <div className="d-flex align-items-center justify-content-between container">
+      <div className="d-flex align-items-center justify-content-between container flex-column flex-xs-row gap-3">
         <div className="logo"><Link to="/">Ashfatul</Link></div>
-        <nav>
-          <ul className="d-flex align-items-center gap-4">
+        <nav className="d-flex align-items-center gap-2 gap-lg-4">
+          <ul className="d-flex align-items-center gap-2 gap-lg-4 nav_menu">
             <li>
               <Link
                 to="/"
                 className={`${location.pathname === "/" ? "active" : ""}`}
               >
-                Intro
+                <span className="icon"><FaHome /></span> <span className="text">Intro</span>
               </Link>
             </li>
             <li>
@@ -49,7 +49,7 @@ function Header() {
                 to="/about"
                 className={`${location.pathname === "/about" ? "active" : ""}`}
               >
-                About
+                <span className="icon"><FaRegUserCircle /></span> <span className="text">About</span>
               </Link>
             </li>
             <li>
@@ -59,7 +59,7 @@ function Header() {
                   location.pathname === "/projects" ? "active" : ""
                 }`}
               >
-                Projects
+                <span className="icon"><FaCode /></span> <span className="text">Projects</span>
               </Link>
             </li>
             <li>
@@ -69,17 +69,17 @@ function Header() {
                   location.pathname === "/contact" ? "active" : ""
                 }`}
               >
-                Contact
+                <span className="icon"><FaRegCommentAlt /></span> <span className="text">Contact</span>
               </Link>
             </li>
-            <button
+          </ul>
+          <button
               className="theme_toggle"
               onClick={handleThemeChange}
               aria-label="Toggle Theme"
             >
               {darkTheme ? <MdOutlineWbSunny /> : <IoMdMoon />}
             </button>
-          </ul>
         </nav>
       </div>
 

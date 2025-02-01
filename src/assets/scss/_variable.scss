@@ -48,3 +48,30 @@ $success: var(--system-success, #52B788);
 $shadow: var(--system-shadow, rgba(0, 0, 0, 0.5));
 $shadow2: var(--system-shadow2, rgba(255, 255, 255, 0.1));
 $disabled: var(--system-disabled, #6d6d6d);
+
+
+// Mixins
+
+@mixin xl{
+    @media screen and (max-width: 1400px){
+        @content;
+    }
+}
+
+@mixin mmd{
+    @media screen and (max-width: 991px){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media screen and (max-width: 576px){
+        @content;
+    }
+}
+
+@mixin xs{
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}

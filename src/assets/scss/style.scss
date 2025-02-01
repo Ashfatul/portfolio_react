@@ -14,6 +14,19 @@
 .main{
     flex-grow: 1;
     padding: 50px 0;
+
+    &.home{
+        @include sm{
+            padding-left: 30px!important;
+            padding-right: 30px!important;
+        }
+    }
+
+    .container{
+        @include sm{
+            padding: 0 50px;
+        }
+    }
 }
 
 .highlight{
@@ -24,6 +37,22 @@
     font-size: 60px;
     text-transform: uppercase;
     margin-bottom: 0px;
+
+    @include xl{
+        font-size: 50px;
+    }
+
+    @include mmd{
+        font-size: 40px;
+    }
+
+    @include sm{
+        font-size: 30px;
+    }
+
+    @include xs{
+        font-size: 24px;
+    }
 }
 
 .page-sub-title{
@@ -61,5 +90,12 @@
 
     .light &{
         background: $background;
+    }
+}
+
+
+@media (min-width: 400px){
+    .flex-xs-row{
+        flex-direction: row!important;
     }
 }

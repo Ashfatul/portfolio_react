@@ -4,10 +4,24 @@
 .contact{
     &_info{
         margin-top: 50px;
+        padding-left: 0;
         &_container{
             background: $card;
             padding: 50px;
             border-radius: 20px;
+            background-image: url('public/hero_bg.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            @include xl{
+                padding: 30px;
+            }
+
+            @include sm{
+                padding: 20px;
+            }   
         }
         li{
             .icon{
@@ -40,6 +54,19 @@
         background: $card;
         padding: 50px;
         border-radius: 20px;
+        background-image: url('public/hero_bg.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        @include xl{
+            padding: 30px;
+        }
+
+        @include sm{
+            padding: 20px;
+        }
 
         label, input, textarea, button{
             display: block;
