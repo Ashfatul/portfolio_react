@@ -62,7 +62,7 @@
 }
 
 .theme_toggle{
-    background: $text;
+    background: $white;
     color: orange;
     height: 34px;
     width: 34px;
@@ -74,22 +74,7 @@
     font-size: 20px;
     .light &{
         background: $black;
-        color: $text;
-    }
-}
-
-.theme_change{
-    position: fixed;
-    inset: 0;
-    background: $text;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-    transition: 0.4s all ease-in-out;
-
-    .light &{
-        background: $background;
+        color: $white;
     }
 }
 

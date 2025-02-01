@@ -3,7 +3,6 @@ import "./assets/scss/header.scss";
 import { IoMdMoon } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useEffect, useState } from "react";
-import ThemeChange from "./ThemeChange";
 import { FaCode, FaHome, FaRegCommentAlt, FaRegUserCircle } from "react-icons/fa";
 
 function Header() {
@@ -11,7 +10,6 @@ function Header() {
   const [darkTheme, setDarkTheme] = useState(
     JSON.parse(localStorage.getItem("darkTheme")) ?? true
   );
-  const [changingTheme, setChangingTheme] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("darkTheme", JSON.stringify(darkTheme));
@@ -24,11 +22,6 @@ function Header() {
 
   const handleThemeChange = () => {
     setDarkTheme(!darkTheme);
-    setChangingTheme(true);
-
-    setTimeout(() => {
-      setChangingTheme(false);
-    }, 1000);
   };
   return (
     <header>
@@ -82,9 +75,6 @@ function Header() {
             </button>
         </nav>
       </div>
-
-      {/* Render ThemeChange component if changingTheme is true */}
-      {changingTheme && <ThemeChange />}
     </header>
   );
 }
