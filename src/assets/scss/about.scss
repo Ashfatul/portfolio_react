@@ -5,6 +5,12 @@
 .about{
     &_section{
         position: relative;
+
+        p{
+            @include sm{
+                font-size: 14px;
+            }
+        }
     }
     &_sidebar{
         background: $card;
