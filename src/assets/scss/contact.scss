@@ -4,6 +4,11 @@
 .contact{
     &_info{
         margin-top: 50px;
+        &_container{
+            background: $card;
+            padding: 50px;
+            border-radius: 20px;
+        }
         li{
             .icon{
                 background: $highlight;

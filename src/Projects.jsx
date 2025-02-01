@@ -14,17 +14,21 @@ const Projects = () => {
             setProjects(data);
         }
         fetchSkills();
-    },[])
-    return(
-        <div className="projects_container">
-            <h2 className="text-center page-title">Projects</h2>
-            <p className="text-center page-sub-title">Some of my recent projects</p>
+    }, [])
+    return (
+        <div className="row justify-content-center">
+            <div className="col-lg-11">
+                <div className="projects_container">
+                    <h2 className="text-center page-title">Projects</h2>
+                    <p className="text-center page-sub-title">Some of my recent projects</p>
 
-            <div className="project_item_container mt-5">
-                <div className="row row-gap-24">
-                    {projects?.map((item) => (
-                        <SingleProject key={item.id} item={item} />
-                    ))}
+                    <div className="project_item_container mt-5">
+                        <div className="row row-gap-24">
+                            {projects?.map((item) => (
+                                <SingleProject key={item.id} item={item} />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

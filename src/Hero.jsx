@@ -2,7 +2,6 @@ import { IoLogoGithub } from "react-icons/io"
 import "./assets/scss/hero.scss"
 import {FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
-import { SiFiverr } from "react-icons/si"
 import user from "../src/assets/img/user.png"
 import { Link } from "react-router-dom"
 function Hero() {
@@ -22,7 +21,6 @@ function Hero() {
                         <li><a href=""><IoLogoGithub /></a></li>
                         <li><a href=""><FaLinkedinIn /></a></li>
                         <li><a href=""><MdOutlineEmail /></a></li>
-                        <li><a href=""><SiFiverr /></a></li>
                     </ul>
 
                     <ul className="links d-flex align-items-center gap-4 flex-wrap">

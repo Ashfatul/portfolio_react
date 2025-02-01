@@ -3,7 +3,6 @@ import SingleSkill from "./SingleSkill"
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { SiFiverr } from "react-icons/si";
 import "./assets/scss/about.scss"
 import ExpEdu from "./ExpEdu";
 import user from "../src/assets/img/user.png"
@@ -34,23 +33,22 @@ const About = () => {
 
     return (
         <div className="about_section">
-            <div className="row">
-                <div className="col-lg-4">
+            <div className="row justify-content-center">
+                <div className="col-lg-3">
                     <div className="about_sidebar">
                         <img src={user} className="about_img" alt="ashfatul" />
                         <small>@ashfatul</small>
                         <h4 className="about_name">Ashfatul Islam</h4>
-                        <p className="mb-4 designation">Frontend Developer</p>
-                        <p>Experience: 2 years</p>
-                        <p>Located: Dhaka, Bangladesh</p>
-                        <p>Status: Open for opportunities</p>
-                        <p>Speaks: Bangle, English, Hindi</p>
-                        <p>Email: ashfatul.islam@gmail.com</p>
+                        <p className="mb-3 designation">Frontend Developer</p>
+                        <p>Experience: <span className="highlight">2 years</span></p>
+                        <p>Located: <span className="highlight">Dhaka, Bangladesh</span></p>
+                        <p>Status: <span className="highlight">Open for opportunities</span></p>
+                        <p>Speaks: <span className="highlight">Bangle, English, Hindi</span></p>
+                        <p>Email: <span className="highlight">ashfatul.islam@gmail.com</span></p>
                         <ul className="d-flex gap-4 social">
                             <li><a href=""><IoLogoGithub /></a></li>
                             <li><a href=""><FaLinkedinIn /></a></li>
                             <li><a href=""><MdOutlineEmail /></a></li>
-                            <li><a href=""><SiFiverr /></a></li>
                         </ul>
                     </div>
                 </div>

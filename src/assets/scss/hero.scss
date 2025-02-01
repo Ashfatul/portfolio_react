@@ -3,7 +3,7 @@
 
 .hero{
     &_section{
-        background: $card;
+        background-color: $card;
         padding: 50px;
         border-radius: 20px;
         width: 100%;
@@ -12,6 +12,11 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
+        background-image: url('public/hero_bg.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 
         h4{
             font-size: 20px;

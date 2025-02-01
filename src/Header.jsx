@@ -33,7 +33,7 @@ function Header() {
   return (
     <header>
       <div className="d-flex align-items-center justify-content-between container">
-        <div className="logo">Ashfatul</div>
+        <div className="logo"><Link to="/">Ashfatul</Link></div>
         <nav>
           <ul className="d-flex align-items-center gap-4">
             <li>

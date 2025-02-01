@@ -15,7 +15,7 @@
 
         p{
             margin-bottom: 6px;
-            font-size: 18px;
+            font-size: 14px;
 
             &.designation{
                 color: $text2;
@@ -23,7 +23,8 @@
         }
 
         .social{
-            margin-top: 30px;
+            margin-top: 10px;
+            margin-bottom: 0;
             padding: 0;
             li{
                 list-style: none;
@@ -109,9 +110,35 @@
     height: 100%;
     transition: 0.4s all ease-in-out;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    p,svg{
+        z-index: 3;
+    }
+
+    &::before{
+        content: '';
+        height: 150px;
+        width: 150px;
+        background: $highlight;
+        position: absolute;
+        right: -50px;
+        bottom: -100px;
+        border-radius: 50%;
+        transition: 0.4s all ease-in-out;
+        opacity: 0.2;
+    }
 
     &:hover{
-        background: $hover;
+        &::before{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            right: 0;
+            bottom: 0;
+            opacity: 0.6;
+        }
     }
 
     &_name{
@@ -169,7 +196,7 @@
         color: $text2;
     }
     &_brief{
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 20px;
     }
 }
