@@ -1,14 +1,14 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Frontend Developer | Specialized in HTML, CSS, JavaScript & React",
+      "position": "Frontend Developer",
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
       "address": "Mohammadpur, Dhaka, Bangladesh",
       "profilePic": "/user.png",
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
-      "about": "I am a skilled frontend developer with over two years of experience, specializing in responsive and pixel-perfect design conversion. I am proficient in HTML, CSS, JavaScript, jQuery, and React, ensuring seamless and user-friendly interfaces. I value honesty, punctuality, and clear communication. Currently, I am expanding my expertise in React, Next.js, and MERN stack development while exploring opportunities on Upwork. Passionate about continuous learning, I am improving my knowledge of algorithms, Java, and discrete mathematics. I use Ubuntu as my primary OS and have an interest in mounting and managing external drives efficiently."
+      "about": "I am a frontend developer with 2+ years of experience in responsive, pixel-perfect design using HTML, CSS, JavaScript, jQuery, and React. I specialize in creating user-friendly interfaces and am expanding my skills in React, Next.js, and the MERN stack. I value clear communication, punctuality, and continuous learning to deliver high-quality work."
    },
    "experience": [
       {
@@ -17,17 +17,44 @@
          "position": "Frontend Web Developer",
          "projects": [
             {
-               "name": "Aorabooks",
-               "teamSize": 5,
-               "responsibilities": [
-                  "Design fixing and responsive update",
-                  "Optimized website performance.",
-                  "Collaborated with backend developers."
-               ],
-               "technologies": ["HTML", "CSS", "JavaScript", "jQuery", "Laravel", "PHP"],
-               "tools": ["VS Code", "Git", "Figma"]
+               "name": "Aorabooks - Accounting Software"
+            },
+            {
+               "name": "InfixLMS - Learning Management Software"
+            },
+            {
+               "name": "InfixEdu - School Management Software"
+            },
+            {
+               "name": "Amazcart - Ecommerce Software"
+            },
+            {
+               "name": "Lawcham - Law Firm Software"
+            },
+            {
+               "name": "VCard - Business Card Software"
+            },
+            {
+               "name": "Edulia - Theme For InfixEdu"
+            },
+            {
+               "name": "BeBooking - Appointment Booking Software"
+            },
+            {
+               "name": "HelpDesk - Support Ticket Software"
+            },
+            {
+               "name": "Aorasoft - Software Development Company Website"
             }
+         ],
+         "responsibility": [
+            "Develop front-end features based on Figma designs and enhance existing projects with new features",
+            "Fix bugs, optimize code, and ensure responsive, pixel-perfect interfaces across all devices",
+            "Collaborate with designers and backend developers to improve performance and user experience",
+            "Maintain code quality and provide ongoing support for live applications"
          ]
+
+         
       },
       {
          "company": "MightyTech",
@@ -35,16 +62,23 @@
          "position": "Quality Assurance Tester & Frontend Developer",
          "projects": [
             {
-               "name": "WorkSafety",
-               "teamSize": 4,
-               "responsibilities": [
-                  "Test Website for bug and make bug report",
-                  "Test Responsive of website",
-                  "Test Performance of website"
-               ],
-               "technologies": ["HTML", "CSS", "jQuery", "JavaScript"],
-               "tools": ["Asana", "Google Docs", "Postman", "VS Code"]
+               "name": "WorkSafety - ecommarce Website"
+            },
+            {
+               "name": "HolyQuranInt - Islamic School Website"
+            },
+            {
+               "name": "Jumarkhutba - Khutba Listing Website"
+            },
+            {
+               "name": "Dawah - Islamic Website"
             }
+         ],
+         "responsibility": [
+            "Conduct manual testing to identify bugs and usability issues",
+            "Execute test cases, report defects, and collaborate with developers to resolve them",
+            "Test for cross-browser compatibility and responsiveness",
+            "Perform regression testing after bug fixes"
          ]
       }
    ],
@@ -52,32 +86,26 @@
       {
          "degree": "Bachelor of Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
-         "duration": "2024 - Present",
-         "group": "Computer Science and Engineering",
-         "result": "-/4"
+         "duration": "2024 - Present"
       },
       {
          "degree": "Diploma Engineering",
          "institution": "Bogura Polytechnic Institute, Bogura",
-         "duration": "2018 - 2023",
-         "group": "Civil Engineering",
-         "result": "3.60/4"
+         "duration": "2018 - 2023"
       },
       {
          "degree": "Secondary School Certificate",
          "institution": "Bogura Pouro High School, Bogura",
-         "duration": "2015 - 2018",
-         "group": "Science",
-         "result": "4.33/5"
+         "duration": "2015 - 2018"
       }
    ],
    "skills": [
-      "JavaScript",
-      "TypeScript",
-      "C++",
       "HTML",
       "CSS",
       "SCSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
       "React",
       "Next.js",
       "jQuery",
