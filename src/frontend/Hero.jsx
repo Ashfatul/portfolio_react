@@ -1,8 +1,8 @@
 import { IoLogoGithub } from "react-icons/io"
-import "./assets/scss/hero.scss"
+import "../assets/scss/hero.scss"
 import {FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
-import user from "../src/assets/img/user.png"
+import user from "../../src/assets/img/user.png"
 import { Link } from "react-router-dom"
 function Hero() {
 

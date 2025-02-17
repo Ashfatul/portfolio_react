@@ -1,5 +1,5 @@
 import { MdOutlineEmail } from "react-icons/md"
-import "./assets/scss/contact.scss"
+import "../assets/scss/contact.scss"
 import { FaLinkedinIn, FaLocationArrow } from "react-icons/fa"
 import { IoLogoGithub } from "react-icons/io"
 import emailjs from '@emailjs/browser';
@@ -52,7 +52,7 @@ const Contact = () => {
                     <div className="row mt-5 align-items-start row-gap-24">
                         <div className="col-lg-6">
                             <div className="contact_info_container">
-                                <p className="contact_text text-center">If you have any project or idea you'd like to discuss, or just want to say hi, please don't hesitate to send me a message. I'll get back to you as soon as possible.</p>
+                                <p className="contact_text text-center">If you have any project or idea you&#39;d like to discuss, or just want to say hi, please don&#39;t hesitate to send me a message. I&#39;ll get back to you as soon as possible.</p>
 
                                 <ul className="contact_info">
                                     <li className="d-flex gap-3 align-items-center flex-wrap">

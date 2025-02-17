@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import "./assets/scss/header.scss";
+import "../assets/scss/header.scss";
 import { IoMdMoon } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useEffect, useState } from "react";

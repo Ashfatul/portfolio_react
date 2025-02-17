@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react"
 import SingleProject from "./SingleProject";
-import "./assets/scss/projects.scss"
+import "../assets/scss/projects.scss"
 
 const Projects = () => {
 

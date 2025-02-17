@@ -3,9 +3,9 @@ import SingleSkill from "./SingleSkill"
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import "./assets/scss/about.scss"
+import "../assets/scss/about.scss"
 import ExpEdu from "./ExpEdu";
-import user from "../src/assets/img/user.png"
+import user from "../../src/assets/img/user.png"
 
 
 const About = () => {
