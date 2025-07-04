@@ -4,7 +4,7 @@ const SingleProject = ({ item }) => {
         <div className="col-md-6 col-xxl-4">
             <div className="single_project_item">
                 <div className="single_project_img">
-                    <img src={item.image} alt={item.title} />
+                    <img src={item.image ? item.image : '/noimage.png'} alt={item.title} />
 
                     <p className="single_project_time">
                         {item.time}

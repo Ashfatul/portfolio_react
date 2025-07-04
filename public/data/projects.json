@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Aorabooks",
         "time": "2024 - Present",
         "brief": "Worked on new design implementation",
@@ -12,7 +12,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "LevelUpLMS",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -20,7 +20,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "BeeBooking",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -28,7 +28,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "AoraSchool",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -36,7 +36,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "MailSender",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -44,7 +44,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "MailSender",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -52,7 +52,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Baraka",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -60,7 +60,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Kids LMS",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -68,7 +68,7 @@
     },
         {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "WeTech",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -76,7 +76,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "BeeBooking",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -84,7 +84,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "ManPower",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -92,7 +92,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "ALVcard",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -100,7 +100,7 @@
     },
     {
         "id": 1,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "ALVcard",
         "time": "Jan 2025 - Present",
         "brief": "Worked on new design implementation",
@@ -108,7 +108,7 @@
     },
     {
         "id": 2,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Infix LMS",
         "time": "2024-12-15",
         "brief": "Worked on design issue fixing",
@@ -119,7 +119,7 @@
     },
     {
         "id": 3,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "LawCham",
         "time": "Sep 2023",
         "brief": "Worked on html design convertion from figma",
@@ -130,7 +130,7 @@
     },
     {
         "id": 4,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "InfixEdu",
         "time": "2024-10-25",
         "brief": "Worked on design issue fixing",
@@ -141,7 +141,7 @@
     },
     {
         "id": 5,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "AmazCart - Laravel Ecommerce System CMS",
         "time": "Jul 2023 - Present",
         "brief": "Worked on POS Module",
@@ -152,7 +152,7 @@
     },
     {
         "id": 6,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Edulia",
         "time": "Jul 2023",
         "brief": "Worked on new design implementation",
@@ -163,7 +163,7 @@
     },
     {
         "id": 7,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Helpdesk - Online Support System",
         "time": "Jul 2023",
         "brief": "Worked on new design implementation and design issue fixing.",
@@ -174,7 +174,7 @@
     },
     {
         "id": 8,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Aorasoft",
         "time": "Aug 2023",
         "brief": "Convert bootstrap to tailwind css",
@@ -185,7 +185,7 @@
     },
     {
         "id": 9,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "HolyQuranInt",
         "time": "Jan 2022 - Jan 2023",
         "brief": "New design implementation and design issue fixing",
@@ -193,7 +193,7 @@
     },
     {
         "id": 10,
-        "image": "https://placehold.co/1000",
+        "image": "",
         "title": "Jumar Khutba - Online khutba sharing website",
         "time": "Jul 2021 - Mar 2022",
         "brief": "Worked on new design implementation and design issue fixing.",
