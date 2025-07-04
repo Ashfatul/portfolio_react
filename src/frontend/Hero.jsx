@@ -18,9 +18,9 @@ function Hero() {
                     </p>
 
                     <ul className="d-flex gap-4 social">
-                        <li><a href=""><IoLogoGithub /></a></li>
-                        <li><a href=""><FaLinkedinIn /></a></li>
-                        <li><a href=""><MdOutlineEmail /></a></li>
+                        <li><a href="https://github.com/Ashfatul"><IoLogoGithub /></a></li>
+                        <li><a href="https://www.linkedin.com/in/ashfatul/"><FaLinkedinIn /></a></li>
+                        <li><a href="mainto:ashfatul.islam@gmail.com"><MdOutlineEmail /></a></li>
                     </ul>
 
                     <ul className="links d-flex align-items-center gap-4 flex-wrap">

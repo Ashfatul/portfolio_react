@@ -18,7 +18,7 @@ const Projects = () => {
     return (
         <div className="row justify-content-center">
             <div className="col-lg-11">
-                <div className="projects_container">
+                <div className="projects_page_container">
                     <h2 className="text-center page-title">Projects</h2>
                     <p className="text-center page-sub-title">Some of my recent projects</p>
 

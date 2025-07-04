@@ -2,121 +2,204 @@
     {
         "id": 1,
         "image": "https://placehold.co/1000",
-        "title": "Portfolio Website",
-        "time": "2025-01-20",
-        "brief": "A personal portfolio website to showcase my frontend development skills with React and Node.js.",
-        "tags": ["React", "Node.js", "MongoDB"],
+        "title": "Aorabooks",
+        "time": "2024 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
         "links": {
-            "live": "https://example.com/portfolio",
-            "github": "https://github.com/username/portfolio"
+            "live": "https://example.com/portfolio"
         }
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "LevelUpLMS",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "BeeBooking",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "AoraSchool",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "MailSender",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "MailSender",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "Baraka",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "Kids LMS",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+        {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "WeTech",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "BeeBooking",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "ManPower",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "ALVcard",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        "id": 1,
+        "image": "https://placehold.co/1000",
+        "title": "ALVcard",
+        "time": "Jan 2025 - Present",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
     },
     {
         "id": 2,
         "image": "https://placehold.co/1000",
-        "title": "E-Commerce App",
+        "title": "Infix LMS",
         "time": "2024-12-15",
-        "brief": "An e-commerce application built with React and Redux, featuring product listing and cart functionality.",
-        "tags": ["React", "Redux", "Node.js"],
+        "brief": "Worked on design issue fixing",
+        "tags": ["HTML", "Laravel", "CSS", "jQuery"],
         "links": {
-            "live": "https://example.com/e-commerce",
-            "github": "https://github.com/username/e-commerce"
+            "live": "https://example.com/e-commerce"
         }
     },
     {
         "id": 3,
         "image": "https://placehold.co/1000",
-        "title": "Blog Platform",
-        "time": "2024-11-30",
-        "brief": "A simple blog platform where users can write, edit, and share blog posts, using Vue.js and Node.js.",
-        "tags": ["Vue.js", "Node.js"],
+        "title": "LawCham",
+        "time": "Sep 2023",
+        "brief": "Worked on html design convertion from figma",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Figma (Software)"],
         "links": {
-            "live": "https://example.com/blog-platform",
-            "github": "https://github.com/username/blog-platform"
+            "live": "https://example.com/blog-platform"
         }
     },
     {
         "id": 4,
         "image": "https://placehold.co/1000",
-        "title": "Project Management Tool",
+        "title": "InfixEdu",
         "time": "2024-10-25",
-        "brief": "A project management tool designed to help teams collaborate, built using React, Express, and MongoDB.",
-        "tags": ["React", "Express", "MongoDB"],
+        "brief": "Worked on design issue fixing",
+        "tags": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
         "links": {
-            "live": "https://example.com/project-management-tool",
-            "github": "https://github.com/username/project-management-tool"
+            "live": "https://example.com/project-management-tool"
         }
     },
     {
         "id": 5,
         "image": "https://placehold.co/1000",
-        "title": "Weather Dashboard",
-        "time": "2024-09-15",
-        "brief": "A weather dashboard that shows current weather conditions, built using React and the OpenWeather API.",
-        "tags": ["React", "API", "JavaScript"],
+        "title": "AmazCart - Laravel Ecommerce System CMS",
+        "time": "Jul 2023 - Present",
+        "brief": "Worked on POS Module",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Figma (Software)"],
         "links": {
-            "live": "https://example.com/weather-dashboard",
-            "github": "https://github.com/username/weather-dashboard"
+            "live": "https://example.com/weather-dashboard"
         }
     },
     {
         "id": 6,
         "image": "https://placehold.co/1000",
-        "title": "Online Quiz App",
-        "time": "2024-08-10",
-        "brief": "An online quiz application where users can take quizzes on various topics, developed with Vue.js and Node.js.",
-        "tags": ["Vue.js", "Node.js"],
+        "title": "Edulia",
+        "time": "Jul 2023",
+        "brief": "Worked on new design implementation",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
         "links": {
-            "live": "https://example.com/online-quiz",
-            "github": "https://github.com/username/online-quiz"
+            "live": "https://example.com/online-quiz"
         }
     },
     {
         "id": 7,
         "image": "https://placehold.co/1000",
-        "title": "Social Media Dashboard",
-        "time": "2024-07-05",
-        "brief": "A social media dashboard that displays key stats across multiple platforms, built with React and Express.",
-        "tags": ["React", "Express", "JavaScript"],
+        "title": "Helpdesk - Online Support System",
+        "time": "Jul 2023",
+        "brief": "Worked on new design implementation and design issue fixing.",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
         "links": {
-            "live": "https://example.com/social-media-dashboard",
-            "github": "https://github.com/username/social-media-dashboard"
+            "live": "https://example.com/social-media-dashboard"
         }
     },
     {
         "id": 8,
         "image": "https://placehold.co/1000",
-        "title": "Task Tracker",
-        "time": "2024-06-20",
-        "brief": "A task tracker application to help users manage tasks and to-do lists, created with JavaScript and Node.js.",
-        "tags": ["JavaScript", "Node.js", "Express"],
+        "title": "Aorasoft",
+        "time": "Aug 2023",
+        "brief": "Convert bootstrap to tailwind css",
+        "tags": ["HTML", "CSS", "JavaScript", "jQuery", "Tailwind CSS"],
         "links": {
-            "live": "https://example.com/task-tracker",
-            "github": "https://github.com/username/task-tracker"
+            "live": "https://example.com/task-tracker"
         }
     },
     {
         "id": 9,
         "image": "https://placehold.co/1000",
-        "title": "Recipe Finder",
-        "time": "2024-05-15",
-        "brief": "An app that allows users to search and save recipes based on ingredients, built with React and Firebase.",
-        "tags": ["React", "Firebase", "JavaScript"],
-        "links": {
-            "live": "https://example.com/recipe-finder",
-            "github": "https://github.com/username/recipe-finder"
-        }
+        "title": "HolyQuranInt",
+        "time": "Jan 2022 - Jan 2023",
+        "brief": "New design implementation and design issue fixing",
+        "tags": ["HTML", "CSS", "JavaScript", "WordPress"]
     },
     {
         "id": 10,
         "image": "https://placehold.co/1000",
-        "title": "Portfolio Blog",
-        "time": "2024-04-10",
-        "brief": "A personal blog for sharing development tips and tutorials, built with Vue.js and Node.js.",
-        "tags": ["Vue.js", "Node.js", "Express"],
+        "title": "Jumar Khutba - Online khutba sharing website",
+        "time": "Jul 2021 - Mar 2022",
+        "brief": "Worked on new design implementation and design issue fixing.",
+        "tags": ["HTML", "CSS", "JavaScript"],
         "links": {
-            "live": "https://example.com/portfolio-blog",
-            "github": "https://github.com/username/portfolio-blog"
+            "live": "https://jumarkhutba.com.bd/"
         }
     }
 ]

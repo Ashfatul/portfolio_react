@@ -40,15 +40,15 @@ const About = () => {
                         <small>@ashfatul</small>
                         <h4 className="about_name">Ashfatul Islam</h4>
                         <p className="mb-3 designation">Frontend Developer</p>
-                        <p>Experience: <span className="highlight">2 years</span></p>
+                        <p>Experience: <span className="highlight">2 years+</span></p>
                         <p>Located: <span className="highlight">Dhaka, Bangladesh</span></p>
                         <p>Status: <span className="highlight">Open for opportunities</span></p>
                         <p>Speaks: <span className="highlight">Bangle, English, Hindi</span></p>
                         <p>Email: <span className="highlight">ashfatul.islam@gmail.com</span></p>
                         <ul className="d-flex gap-4 social">
-                            <li><a href=""><IoLogoGithub /></a></li>
-                            <li><a href=""><FaLinkedinIn /></a></li>
-                            <li><a href=""><MdOutlineEmail /></a></li>
+                            <li><a href="https://github.com/Ashfatul"><IoLogoGithub /></a></li>
+                            <li><a href="https://www.linkedin.com/in/ashfatul/"><FaLinkedinIn /></a></li>
+                            <li><a href="mailto:ashfatul.islam@gmail.com"><MdOutlineEmail /></a></li>
                         </ul>
                     </div>
                 </div>
