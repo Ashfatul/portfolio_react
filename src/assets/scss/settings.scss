@@ -1,0 +1,25 @@
+.settings{
+    &_container{
+        position: fixed;
+        bottom: 0;
+        height: 40vh;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 9999;
+        color: black;
+        padding: 50px 0;
+    }
+
+    &_item{
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+            width: 100%;
+        }
+    }
+}
