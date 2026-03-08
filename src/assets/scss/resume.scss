@@ -116,7 +116,8 @@ $black: rgb(17, 24, 39);
         &_title{
             font-size: 16px;
             margin-bottom: 4px;
-
+            text-decoration: underline;
+            text-underline-offset: 4px;
             &:not(:first-child){
                 margin-top: 16px;
                 margin-bottom: 7px;

@@ -71,21 +71,18 @@ const Resume = () => {
                         )}
                     </ul>
                 </div>
-                <div className="resume_header_right">
-                    <img src={resumeData?.meta?.profilePic} className="resume_header_img" alt="ashfatul" />
-                </div>
             </div>
             <div className="resume_inner">
-                <h4 className="resume_inner_title"><AiOutlineInfoCircle /> About</h4>
+                <h4 className="resume_inner_title">About</h4>
                 <p className="resume_inner_about">
                     {resumeData?.meta?.about}
                 </p>
 
-                <h4 className="resume_inner_title"><IoBriefcaseOutline /> Work Experience</h4>
+                <h4 className="resume_inner_title">Work Experience</h4>
                 {resumeData.experience?.map((item, index) => (
                     <div className="resume_education_experience_item" key={index}>
                         <div className="d-flex align-items-center justify-content-between resume_subtitle">
-                            <h5><HiOutlineBuildingOffice2 /> {item?.company}</h5>
+                            <h5>{item?.company}</h5>
                             <p className="resume_duration">{item?.duration}</p>
                         </div>
                         <div className="resume_education_experience_position">
@@ -96,7 +93,7 @@ const Resume = () => {
                         {item?.projects?.map((project, idx) => (
                             <div className="project_item_container" key={idx}>
                                 <div className="resume_education_experience_project">
-                                    <p><MdKeyboardDoubleArrowRight /> {project?.name}</p>
+                                    <p>- {project?.name}</p>
                                 </div>
                             </div>
                         ))}
@@ -110,7 +107,7 @@ const Resume = () => {
                     </div>
                 ))}
 
-                <h4 className="resume_inner_title"><PiGraduationCapLight /> Education</h4>
+                <h4 className="resume_inner_title">Education</h4>
                 <div className="education_grid">
                 {resumeData.education?.map((item, index) => (
                     <div className="resume_education_experience_item" key={index}>
@@ -121,7 +118,7 @@ const Resume = () => {
                     </div>
                 ))}
                 </div>
-                <h4 className="resume_inner_title"><MdChecklist /> Skills</h4>
+                <h4 className="resume_inner_title">Skills</h4>
                 <ul className="resume_skills">
                     {resumeData.skills?.map((skill, index) => (
                         <li key={index}>{skill}</li>
