@@ -1,7 +1,7 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Frontend Developer",
+      "position": "JavaScript Engineer",
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
       "address": "Shewrapara, Mirpur, Dhaka, Bangladesh",
@@ -56,33 +56,7 @@
             "Fix bugs, optimize code, and ensure responsive, pixel-perfect interfaces across all devices",
             "Collaborate with designers and backend developers to improve performance and user experience",
             "Maintain code quality and provide ongoing support for live applications"
-         ]
-
-         
-      },
-      {
-         "company": "MightyTech",
-         "duration": "2020 - 2022",
-         "position": "Frontend Developer",
-         "projects": [
-            {
-               "name": "WorkSafety - ecommarce Website"
-            },
-            {
-               "name": "HolyQuranInt - Islamic School Website"
-            },
-            {
-               "name": "Jumarkhutba - Khutba Listing Website"
-            },
-            {
-               "name": "Dawah - Islamic Website"
-            }
-         ],
-         "responsibility": [
-            "Work with team to fix design and responsive issues",
-            "Add new features to existing projects",
-            "Fix bugs, optimize code, and ensure responsive, pixel-perfect interfaces across all devices"
-         ]
+         ]         
       }
    ],
    "education": [
