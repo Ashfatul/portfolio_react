@@ -69,6 +69,13 @@ const Resume = () => {
                                 </a>
                             </li>
                         )}
+                        {resumeData?.meta?.portfolio && (
+                            <li>
+                                <a href={resumeData?.meta?.portfolio} target="_blank">
+                                    <FaGlobeAmericas /> {resumeData?.meta?.portfolio}
+                                </a>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </div>
@@ -114,10 +121,45 @@ const Resume = () => {
                         <div className="resume_education_experience_position">
                             <p >{item?.degree} - <span>({item?.duration})</span></p>
                         </div>
+                        {item?.info && (
+                            <div className="resume_education_experience_info">
+                                <p>{item?.info}</p>
+                            </div>
+                        )}
                         <h5 className="education_institution">{item?.institution}</h5>
                     </div>
                 ))}
+
+
                 </div>
+                {resumeData.certificates?.length > 0 && (
+                    <>
+                        <h4 className="resume_inner_title">Certificates & Achievements</h4>
+                        <div className="certificates_grid">
+                        {resumeData.certificates?.map((cert, index) => (
+                            <div className="resume_certificate_item" key={index}>
+                                <div className="resume_certificate_title">
+                                    {cert?.link ? (
+                                        <a href={cert?.link} target="_blank" rel="noopener noreferrer">
+                                            {cert?.title}
+                                        </a>
+                                    ) : (
+                                        <p>{cert?.title}</p>
+                                    )}
+                                </div>
+                                {cert?.info && (
+                                    <div className="resume_certificate_info">
+                                        <p>{cert?.info}</p>
+                                    </div>
+                                )}
+                                <div className="resume_certificate_issuer">
+                                    <p>{cert?.issuer} - <span>({cert?.date})</span></p>
+                                </div>
+                            </div>
+                        ))}
+                        </div>
+                    </>
+                )}
                 <h4 className="resume_inner_title">Skills</h4>
                 <ul className="resume_skills">
                     {resumeData.skills?.map((skill, index) => (

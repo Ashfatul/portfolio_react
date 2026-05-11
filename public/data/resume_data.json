@@ -8,6 +8,7 @@
       "profilePic": "/user.png",
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
+      "portfolio": "https://ashfatul.netlify.app/",
       "about": "I am a frontend developer with 2+ years of experience in responsive, pixel-perfect design using HTML, CSS, JavaScript, jQuery, and React. I specialize in creating user-friendly interfaces and am expanding my skills in React, Next.js, and the MERN stack. I value clear communication, punctuality, and continuous learning to deliver high-quality work."
    },
    "experience": [
@@ -63,17 +64,29 @@
       {
          "degree": "Bachelor of Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
-         "duration": "2024 - Present"
+         "duration": "2024 - Present",
+         "info": "CGPA: - out of 4.00 (Ongoing)"
       },
       {
-         "degree": "Diploma Engineering",
+         "degree": "Diploma in Civil Engineering",
          "institution": "Bogura Polytechnic Institute, Bogura",
-         "duration": "2018 - 2023"
+         "duration": "2018 - 2023",
+         "info": "CGPA: 3.60 out of 4.00"
       },
       {
          "degree": "Secondary School Certificate",
          "institution": "Bogura Pouro High School, Bogura",
-         "duration": "2015 - 2018"
+         "duration": "2015 - 2018",
+         "info": "GPA: 4.33 out of 5.00 GPA"
+      }
+   ],
+      "certificates": [
+      {
+         "title": "Reactive Accelerator - Batch 4",
+         "issuer": "Learn with Sumit",
+         "date": "April 2026",
+         "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
+         "info": "Achieved 93.56% overall performance."
       }
    ],
    "skills": [
