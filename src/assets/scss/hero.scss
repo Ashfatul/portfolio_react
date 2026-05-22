@@ -166,3 +166,25 @@
         }
     }
 }
+
+.tech_tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech_tag {
+    border: 1px solid $highlight;
+    color: $text;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+
+    &.active {
+        background: $highlight;
+        color: $white;
+    }   
+}

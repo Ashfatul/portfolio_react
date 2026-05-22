@@ -4,7 +4,30 @@ import {FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import user from "../../src/assets/img/user.png"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 function Hero() {
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const techTags = document.querySelectorAll(".tech_tag");
+            if (!techTags.length) return;
+
+            const activeTag = document.querySelector(".tech_tag.active");
+            let nextIndex = 0;
+
+            if (activeTag) {
+                const currentIndex = Array.from(techTags).indexOf(activeTag);
+                activeTag.classList.remove("active");
+                nextIndex = currentIndex + 1;
+            }
+
+            if (nextIndex >= techTags.length) nextIndex = 0;
+
+            techTags[nextIndex].classList.add("active");
+        }, 1000)
+
+        return () => clearInterval(interval)
+    },[])
 
     return (
         <div className="hero_section">
@@ -31,6 +54,18 @@ function Hero() {
 
                 <div className="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0">
                     <img src={user} className="hero_img" alt="ashfatul" />
+
+                    <div className="tech_picks mt-4">
+                        <div className="tech_tags d-flex gap-2 flex-wrap justify-content-center">
+                            <span className="tech_tag active">HTML</span>
+                            <span className="tech_tag">CSS</span>
+                            <span className="tech_tag">JavaScript</span>
+                            <span className="tech_tag">React.js</span>
+                            <span className="tech_tag">Next.js</span>
+                            <span className="tech_tag">Node.js</span>
+                            <span className="tech_tag">MongoDB</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
