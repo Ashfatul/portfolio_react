@@ -37,7 +37,7 @@ function Hero() {
                     <h2>I&apos;m <span className="highlight">Ashfatul Islam,</span></h2>
                     <h1>JavaScript Engineer</h1>
                     <p>
-                        With over 2 years of experience in responsive, pixel-perfect web design, I excel in HTML, CSS, JavaScript, React, and the MERN stack, delivering scalable and high-quality solutions. Recognized for my honesty, punctuality, and clear communication, I am currently pursuing freelancing opportunities while expanding my expertise in Java and algorithms.
+                        With over 2+ years of experience in responsive, pixel-perfect web design, I excel in HTML, CSS, JavaScript, React, and the MERN stack, delivering scalable and high-quality solutions. Recognized for my honesty, punctuality, and clear communication, I am currently pursuing freelancing opportunities while expanding my expertise in Java and algorithms.
                     </p>
 
                     <ul className="d-flex gap-4 social">
