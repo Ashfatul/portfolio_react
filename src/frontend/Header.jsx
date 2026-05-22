@@ -4,6 +4,7 @@ import { IoMdMoon } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { FaCode, FaHome, FaRegCommentAlt, FaRegUserCircle } from "react-icons/fa";
+import { MdWorkspacePremium } from "react-icons/md";
 
 function Header() {
   const location = useLocation();
@@ -40,9 +41,17 @@ function Header() {
             <li>
               <Link
                 to="/about"
-                className={`${location.pathname === "/about" ? "active" : ""}`}
+                className={`${location.pathname === "/about" && location.hash !== "#certificates" ? "active" : ""}`}
               >
                 <span className="icon"><FaRegUserCircle /></span> <span className="text">About</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about#certificates"
+                className={`${location.pathname === "/about" && location.hash === "#certificates" ? "active" : ""}`}
+              >
+                <span className="icon"><MdWorkspacePremium /></span> <span className="text">Certificates</span>
               </Link>
             </li>
             <li>

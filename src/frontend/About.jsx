@@ -11,6 +11,7 @@ import user from "../../src/assets/img/user.png"
 const About = () => {
     const [skills, setSkills] = useState([]);
     const [eduexp, setEduexp] = useState([]);
+    const [certificates, setCertificates] = useState([]);
 
     useEffect(() => {
         const fetchSkills = async () => {
@@ -28,6 +29,16 @@ const About = () => {
             setEduexp(data);
         }
         fetchEduExp();
+    }, [])
+
+    useEffect(() => {
+        const fetchCertificates = async () => {
+            const res = await fetch('/data/resume_data.json');
+            const data = await res.json();
+            setCertificates(data?.certificates ?? []);
+        }
+
+        fetchCertificates();
     }, [])
 
 
@@ -112,6 +123,36 @@ const About = () => {
                                 })}
                             </div>
                         </div>
+
+                        {certificates.length > 0 && (
+                            <>
+                                <h5 className="about_sub_title" id="certificates">Certificates</h5>
+                                <div className="certificate_container">
+                                    <div className="row row-gap-24">
+                                        {certificates.map((certificate, index) => (
+                                            <div className="col-12" key={index}>
+                                                <div className="single_certificate_item">
+                                                    <div className="single_certificate_head">
+                                                        {certificate?.link ? (
+                                                            <a href={certificate.link} target="_blank" rel="noopener noreferrer">
+                                                                {certificate?.title}
+                                                            </a>
+                                                        ) : (
+                                                            <h6>{certificate?.title}</h6>
+                                                        )}
+                                                        <span>{certificate?.date}</span>
+                                                    </div>
+                                                    <p className="single_certificate_issuer">{certificate?.issuer}</p>
+                                                    {certificate?.description && (
+                                                        <p className="single_certificate_brief">{certificate.description}</p>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>

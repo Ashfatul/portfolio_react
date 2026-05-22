@@ -220,3 +220,53 @@
         margin-top: 20px;
     }
 }
+
+.certificate_container{
+    margin-top: 20px;
+}
+
+.single_certificate_item{
+    background: $background;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.single_certificate_head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    a,
+    h6{
+        font-size: 20px;
+        margin-bottom: 0;
+        color: $text;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $highlight;
+    }
+
+    span{
+        font-size: 14px;
+        color: $text2;
+        white-space: nowrap;
+    }
+}
+
+.single_certificate_issuer{
+    margin-top: 8px;
+    color: $highlight;
+    font-size: 16px;
+}
+
+.single_certificate_brief{
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: $text2;
+}

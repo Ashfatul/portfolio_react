@@ -12,7 +12,7 @@ function Hero() {
                 <div className="col-lg-7 order-2 order-lg-1">
                     <h4>Hello there!</h4>
                     <h2>I&apos;m <span className="highlight">Ashfatul Islam,</span></h2>
-                    <h1>Frontend Developer</h1>
+                    <h1>JavaScript Engineer</h1>
                     <p>
                         With over 2 years of experience in responsive, pixel-perfect web design, I excel in HTML, CSS, JavaScript, React, and the MERN stack, delivering scalable and high-quality solutions. Recognized for my honesty, punctuality, and clear communication, I am currently pursuing freelancing opportunities while expanding my expertise in Java and algorithms.
                     </p>
