@@ -18,11 +18,11 @@
          "position": "Frontend Developer",
          "impact": [
             "Built LevelUp LMS frontend from scratch, delivering 50+ screens within a 3-month deadline and reducing client revision cycles by 40%",
-            "Created a shared component library adopted across 6 products, cutting average feature delivery time from 2 weeks to under 5 days",
+            "Created a shared component library reused in 6 products, cutting average feature delivery time from 2 weeks to under 5 days",
             "Delivered 11 SaaS applications serving 10,000+ active users across education, e-commerce, and legal domains"
          ],
          "leadership": [
-            "Introduced component architecture and code review standards for LevelUp LMS, adopted by a 4-person dev team as the project baseline",
+            "Introduced component architecture and code review standards for LevelUp LMS, followed by a 4-person dev team as the project baseline",
             "Managed frontend delivery across 5 concurrent product launches, aligning design and engineering teams across 3 time zones"
          ],
          "projects": [
@@ -72,7 +72,7 @@
                "name": "Edulia",
                "type": "Theme for InfixEdu",
                "techStack": ["HTML", "CSS", "JavaScript"],
-               "description": "Produced a theme with 30+ reusable UI components, adopted as the default skin for InfixEdu"
+               "description": "Produced a theme with 30+ reusable UI components, selected as the default skin for InfixEdu"
             },
             {
                "name": "BeBooking",
@@ -94,7 +94,7 @@
             }
          ],
          "responsibilities": [
-            "Converted 200+ Figma designs into production React components across 11 commercial products",
+            "Converted 200+ Figma designs into production React components spanning multiple SaaS and e-commerce products",
             "Fixed 150+ UI bugs and performance issues, maintaining 99.5% uptime for 5 concurrently live SaaS applications",
             "Integrated 30+ REST API endpoints with frontend state management, ensuring real-time data sync across dashboards",
             "Collaborated with 3 designers and 4 backend engineers to deliver features on 2-week sprint cycles with zero missed deadlines",
