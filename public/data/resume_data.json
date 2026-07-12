@@ -1,15 +1,15 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Javascript Engineer",
-      "yearsOfExperience": 3,
+      "position": "Frontend Engineer (React & JavaScript)",
+      "yearsOfExperience": 2,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
       "address": "Shewrapara, Mirpur, Dhaka, Bangladesh",
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "Frontend developer with 3+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
+      "about": "Frontend developer with 2+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
    },
    "experience": [
       {
