@@ -9,12 +9,12 @@
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "Frontend developer with 2+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
+      "about": "Frontend developer with 2+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 16+ commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
    },
    "experience": [
       {
          "company": "SpondonIT",
-         "duration": "2023 - Present",
+         "duration": "Jun 2023 - May 2026",
          "position": "Frontend Developer",
          "impact": [
             "Built LevelUp LMS frontend from scratch, delivering 50+ screens within a 3-month deadline and reducing client revision cycles by 40%",
