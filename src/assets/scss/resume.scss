@@ -16,9 +16,13 @@ $black: rgb(17, 24, 39);
         ul{
             padding-left: 20px;
         }
-        
+
         p{
-            margin-bottom: 0!important;
+            margin-bottom: 0;
+        }
+
+        address{
+            font-style: normal;
         }
 
         margin: 0 auto;
@@ -26,7 +30,7 @@ $black: rgb(17, 24, 39);
         background: $white;
         padding: 20px;
         color: rgb(17, 24, 39)!important;
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid $black;
         border-top: 0;
         border-bottom: 0;
@@ -35,22 +39,38 @@ $black: rgb(17, 24, 39);
     }
 
     &_inner{
-        margin-top: 12px;
+        margin-top: 10px;
+
+        &_about{
+            margin-bottom: 10px!important;
+        }
+
+        h4{
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
     }
+
     &_duration{
         padding: 2px 6px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.4;
         background: rgb(240 240 240);
         color: $black !important;
         border-radius: 3px;
         border: 1px solid #d4d4d4;
     }
+
     &_tools_technology{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
+
     &_header{
         &_img{
             height: 120px;
@@ -66,7 +86,7 @@ $black: rgb(17, 24, 39);
 
         &_name{
             margin-bottom: 0;
-            font-size: 22px;
+            font-size: 20px;
         }
 
         &_social{
@@ -88,7 +108,7 @@ $black: rgb(17, 24, 39);
                     border-radius: 4px;
                     gap: 4px;
                     color: $black;
-                    font-size: 11px;
+                    font-size: 12px;
                     text-decoration: none;
 
                     svg{
@@ -104,17 +124,21 @@ $black: rgb(17, 24, 39);
             display: flex;
             align-items: center;
             gap: 4px;
+            font-size: 12px;
+            color: $black;
 
             svg{
-                width: 12px;
-                line-height: 1;
+                width: 10px;
+                padding: 2px;
+                border-radius: 4px;
+                box-sizing: content-box;
             }
         }
     }
 
     &_inner{
         &_title{
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 4px;
             text-decoration: underline;
             text-underline-offset: 4px;
@@ -125,27 +149,54 @@ $black: rgb(17, 24, 39);
         }
     }
 
+    &_impact,
+    &_leadership{
+        margin-top: 6px;
+
+        ul{
+            margin-bottom: 4px;
+            li{
+                margin-bottom: 2px;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    &_responsibilities{
+        margin-top: 6px;
+    }
+
     &_skills{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        padding: 0!important;
-        li{
-            list-style: none;
-            background: rgb(240 240 240);
-            color: $black !important;
-            padding: 2px 6px;
-            border-radius: 6px;
-            border: 1px solid #d4d4d4;
-            line-height: 1.4;
-            font-size: 10px;
+        &_list{
+            margin: 0;
+            padding: 0;
+        }
+
+        &_row{
+            display: flex;
+            gap: 6px;
+            margin-bottom: 3px;
+            line-height: 1.5;
+
+            dt{
+                font-weight: 600;
+                font-size: 12px;
+                white-space: nowrap;
+                color: $black;
+            }
+
+            dd{
+                margin: 0;
+                font-size: 12px;
+                color: rgb(50, 50, 50);
+            }
         }
     }
 
     &_subtitle{
         margin-top: 10px;
-        
-        h5{
+
+        h3{
             font-size: 14px;
             line-height: 1;
             margin-bottom: 0;
@@ -159,24 +210,21 @@ $black: rgb(17, 24, 39);
                 }
             }
         }
-        &_responsibilities{
-            background: #e4e2e26b;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 6px;
-        }
         &_position{
             p{
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 500;
                 color: $black!important;
 
                 span{
-                    font-size: 10px;
-                    // color: #e4e2e26b;
+                    font-size: 12px;
                 }
             }
         }
+    }
+
+    &_projects_section{
+        margin-top: 6px;
     }
 
     &_print{
@@ -202,7 +250,7 @@ $black: rgb(17, 24, 39);
             border-radius: 50%;
             border: 0;
             outline: 0;
-            
+
             svg{
                 color: $white!important;
                 width: 25px;
@@ -213,21 +261,67 @@ $black: rgb(17, 24, 39);
     }
 }
 
-h5.education{
+h3.education{
     &_institution{
-        font-size: 10px;
-        color: rgb(150 150 150) !important;
+        font-size: 11px;
+        color: rgb(100 100 100) !important;
+        margin-top: 1px;
     }
 }
 
-.projects_container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background: #ededed;
-    padding: 10px;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+.resume_education_meta{
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+    margin-top: 2px;
+
+    time{
+        font-weight: 500;
+    }
+}
+
+.resume_education_coursework{
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    margin-top: 3px;
+
+    strong{
+        font-size: 10px !important;
+    }
+}
+
+.projects_list{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+
+    .project_item{
+        margin-bottom: 3px;
+        line-height: 1.4;
+
+        .project_header{
+            font-size: 11px;
+            font-weight: 500;
+
+            .project_type{
+                font-weight: 400;
+                color: rgb(100, 100, 100);
+                font-size: 12px;
+            }
+
+            .project_tech{
+                font-weight: 400;
+                color: rgb(80, 80, 80);
+                font-size: 12px;
+            }
+        }
+
+        .project_description{
+            font-size: 11px;
+            color: rgb(50, 50, 50);
+            line-height: 1.35;
+            margin-top: 1px;
+        }
+    }
 }
 
 .education_grid{
@@ -243,7 +337,7 @@ h5.education{
 
 .resume_certificate_info,
 .resume_education_experience_info{
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .resume_certificate_item{
@@ -254,7 +348,7 @@ h5.education{
             color: rgb(17, 24, 39)!important;
             margin-bottom: 4px !important;
             text-decoration: none;
-            
+
             &:hover{
                 text-decoration: underline;
             }
@@ -263,7 +357,7 @@ h5.education{
 
     .resume_certificate_issuer{
         p{
-            font-size: 10px;
+            font-size: 12px;
             color: rgb(100, 100, 100)!important;
             margin-bottom: 4px !important;
 
@@ -284,7 +378,7 @@ h5.education{
 }
 
 @page{
-    size: 'A4';
+    size: A4;
     margin: 0px;
 }
 

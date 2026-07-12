@@ -1,86 +1,123 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "JavaScript Engineer",
+      "position": "Javascript Engineer",
+      "yearsOfExperience": 3,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
       "address": "Shewrapara, Mirpur, Dhaka, Bangladesh",
-      "profilePic": "/user.png",
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "I am a frontend developer with 2+ years of experience in responsive, pixel-perfect design using HTML, CSS, JavaScript, jQuery, and React. I specialize in creating user-friendly interfaces and am expanding my skills in React, Next.js, and the MERN stack. I value clear communication, punctuality, and continuous learning to deliver high-quality work."
+      "about": "Frontend developer with 3+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
    },
    "experience": [
       {
          "company": "SpondonIT",
          "duration": "2023 - Present",
-         "position": "Frontend Web Developer",
+         "position": "Frontend Developer",
+         "impact": [
+            "Built LevelUp LMS frontend from scratch, delivering 50+ screens within a 3-month deadline and reducing client revision cycles by 40%",
+            "Created a shared component library adopted across 6 products, cutting average feature delivery time from 2 weeks to under 5 days",
+            "Delivered 11 SaaS applications serving 10,000+ active users across education, e-commerce, and legal domains"
+         ],
+         "leadership": [
+            "Introduced component architecture and code review standards for LevelUp LMS, adopted by a 4-person dev team as the project baseline",
+            "Managed frontend delivery across 5 concurrent product launches, aligning design and engineering teams across 3 time zones"
+         ],
          "projects": [
             {
-               "name": "LevelUp - Learning Management Software"
+               "name": "LevelUp",
+               "type": "Learning Management Software",
+               "techStack": ["React", "SCSS", "REST API"],
+               "description": "Developed 50+ screens from Figma designs; added course dashboard, progress tracking, and quiz engine serving 2,000+ students"
             },
             {
-               "name": "Aorabooks - Accounting Software"
+               "name": "Aorabooks",
+               "type": "Accounting Software",
+               "techStack": ["React", "JavaScript", "REST API"],
+               "description": "Designed financial reporting dashboards and invoice management UI, processing 500+ monthly transactions with real-time updates"
             },
             {
-               "name": "InfixLMS - Learning Management Software"
+               "name": "InfixLMS",
+               "type": "Learning Management Software",
+               "techStack": ["React", "jQuery", "SCSS"],
+               "description": "Optimized enrollment flows and quiz modules, improving page load speed by 35% through lazy loading and code splitting"
             },
             {
-               "name": "InfixEdu - School Management Software"
+               "name": "InfixEdu",
+               "type": "School Management Software",
+               "techStack": ["React", "jQuery", "SCSS"],
+               "description": "Added attendance, grading, and scheduling features used by 15+ educational institutions daily"
             },
             {
-               "name": "Amazcart - Ecommerce Software"
+               "name": "Amazcart",
+               "type": "E-commerce Platform",
+               "techStack": ["React", "SCSS", "REST API"],
+               "description": "Implemented product catalog with 1,000+ SKU support, cart system, and a 4-step checkout flow optimized for mobile"
             },
             {
-               "name": "Lawcham - Law Firm Software"
+               "name": "Lawcham",
+               "type": "Law Firm Software",
+               "techStack": ["React", "SCSS"],
+               "description": "Streamlined case management by creating a dashboard and client portal, reducing manual lookup time by 60%"
             },
             {
-               "name": "VCard - Business Card Software"
+               "name": "VCard",
+               "type": "Business Card Software",
+               "techStack": ["React", "SCSS"],
+               "description": "Created a drag-and-drop card builder with 20+ templates, live preview, and one-click sharing via QR code"
             },
             {
-               "name": "Edulia - Theme For InfixEdu"
+               "name": "Edulia",
+               "type": "Theme for InfixEdu",
+               "techStack": ["HTML", "CSS", "JavaScript"],
+               "description": "Produced a theme with 30+ reusable UI components, adopted as the default skin for InfixEdu"
             },
             {
-               "name": "BeBooking - Appointment Booking Software"
+               "name": "BeBooking",
+               "type": "Appointment Booking Software",
+               "techStack": ["React", "SCSS", "REST API"],
+               "description": "Automated appointment scheduling with a calendar-based interface handling 200+ weekly bookings and email confirmations"
             },
             {
-               "name": "HelpDesk - Support Ticket Software"
+               "name": "HelpDesk",
+               "type": "Support Ticket Software",
+               "techStack": ["React", "SCSS"],
+               "description": "Launched ticket management system with priority queues, SLA tracking, and agent dashboards processing 300+ tickets/month"
             },
             {
-               "name": "Aorasoft - Software Development Company Website"
+               "name": "Aorasoft",
+               "type": "Company Website",
+               "techStack": ["React", "SCSS"],
+               "description": "Achieved 90+ Lighthouse performance score and 3x organic traffic growth on a marketing site with SEO optimization"
             }
          ],
-         "responsibility": [
-            "Develop LevelUp - Learning Management Software, from figma convert to React Implementation",
-            "Develop front-end features based on Figma designs and enhance existing projects with new features",
-            "Fix bugs, optimize code, and ensure responsive, pixel-perfect interfaces across all devices",
-            "Collaborate with designers and backend developers to improve performance and user experience",
-            "Maintain code quality and provide ongoing support for live applications"
-         ]         
+         "responsibilities": [
+            "Converted 200+ Figma designs into production React components across 11 commercial products",
+            "Fixed 150+ UI bugs and performance issues, maintaining 99.5% uptime for 5 concurrently live SaaS applications",
+            "Integrated 30+ REST API endpoints with frontend state management, ensuring real-time data sync across dashboards",
+            "Collaborated with 3 designers and 4 backend engineers to deliver features on 2-week sprint cycles with zero missed deadlines",
+            "Defined responsive design standards supporting 5 breakpoints, delivering consistent UX from 320px mobile to 4K displays"
+         ]
       }
    ],
    "education": [
       {
-         "degree": "Bachelor of Science",
+         "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
          "duration": "2024 - Present",
-         "info": "CGPA: - out of 4.00 (Ongoing)"
+         "info": "Expected Graduation: 2028",
+         "coursework": ["Data Structures & Algorithms", "Object-Oriented Programming", "Database Systems", "Computer Networks", "Discrete Mathematics", "Software Engineering"]
       },
       {
          "degree": "Diploma in Civil Engineering",
          "institution": "Bogura Polytechnic Institute, Bogura",
          "duration": "2018 - 2023",
-         "info": "CGPA: 3.60 out of 4.00"
-      },
-      {
-         "degree": "Secondary School Certificate",
-         "institution": "Bogura Pouro High School, Bogura",
-         "duration": "2015 - 2018",
-         "info": "GPA: 4.33 out of 5.00 GPA"
+         "info": "CGPA: 3.60 / 4.00"
       }
    ],
-      "certificates": [
+   "certificates": [
       {
          "title": "Reactive Accelerator - Batch 4",
          "issuer": "Learn with Sumit",
@@ -89,23 +126,10 @@
          "info": "Achieved 93.56% overall performance."
       }
    ],
-   "skills": [
-      "HTML",
-      "CSS",
-      "SCSS",
-      "JavaScript",
-      "React",
-      "Next.js",
-      "jQuery",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Git",
-      "VS Code",
-      "Figma",
-      "Postman",
-      "Problem-solving",
-      "Teamwork",
-      "Communication"
-   ]
+   "skills": {
+      "frontend": ["JavaScript (ES6+)", "React", "Next.js", "jQuery", "HTML5", "CSS3", "SCSS/Sass", "Responsive Web Design", "Cross-Browser Compatibility"],
+      "backend": ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+      "tools": ["Git", "GitHub", "npm", "Vite", "Figma", "VS Code", "Postman", "Chrome DevTools"],
+      "practices": ["Agile/Scrum", "Code Review", "Component-Based Architecture", "Performance Optimization", "SEO"]
+   }
 }

@@ -1,177 +1,220 @@
 import "../assets/scss/resume.scss"
 import { FaGithub, FaGlobeAmericas, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa"
-import { useEffect, useState } from "react"
 import { BsTelephoneOutbound } from "react-icons/bs"
-import { MdChecklist, MdKeyboardDoubleArrowRight, MdPrint } from "react-icons/md"
-import { AiOutlineInfoCircle } from "react-icons/ai"
-import { IoBriefcaseOutline } from "react-icons/io5"
-import { PiGraduationCapLight } from "react-icons/pi"
-import { HiOutlineBuildingOffice2 } from "react-icons/hi2"
+import { MdPrint } from "react-icons/md"
+import { IoLocationOutline } from "react-icons/io5"
+import resumeData from "../../public/data/resume_data.json"
+
+const skillCategoryLabels = {
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Tools & Platforms",
+    practices: "Practices"
+}
 
 const Resume = () => {
-    const [resumeData, setResumeData] = useState({});
-
-    useEffect(() => {
-        const getResumeData = async () => {
-            const res = await fetch('/data/resume_data.json');
-            const data = await res.json();
-            setResumeData(data);
-        }
-
-        getResumeData()
-    }, [])
-
-
     const handlePrint = () => {
         window.print()
     }
 
     return (
-        <div className="resume_container">
-            <div className="resume_header d-flex align-items-center justify-content-between">
+        <article className="resume_container">
+            <header className="resume_header d-flex align-items-center justify-content-between">
                 <div className="resume_header_left">
-                    <h3 className="resume_header_name">{resumeData?.meta?.name}</h3>
-                    <p className="resume_header_position">
-                        {resumeData?.meta?.position}</p>
-                    <ul className="resume_header_social">
-                        {resumeData?.meta?.phone && (
-                            <li>
-                                <a href={`tel:${resumeData?.meta?.phone}`} target="_blank">
-                                    <BsTelephoneOutbound /> {resumeData?.meta?.phone}
-                                </a>
-                            </li>
-                        )}
-                        {resumeData?.meta?.email && (
-                            <li>
-                                <a href={`mailto:${resumeData?.meta?.email}`} target="_blank">
-                                    <FaRegEnvelope /> {resumeData?.meta?.email}
-                                </a>
-                            </li>
-                        )}
-                        {resumeData?.meta?.address && (
-                            <li>
-                                <a href={resumeData?.meta?.address} target="_blank">
-                                    <FaGlobeAmericas /> {resumeData?.meta?.address}
-                                </a>
-                            </li>
-                        )}
-                        {resumeData?.meta?.github && (
-                            <li>
-                                <a href={resumeData?.meta?.github} target="_blank">
-                                    <FaGithub /> {resumeData?.meta?.github}
-                                </a>
-                            </li>
-                        )}
-                        {resumeData?.meta?.linkedin && (
-                            <li>
-                                <a href={resumeData?.meta?.linkedin} target="_blank">
-                                    <FaLinkedinIn /> {resumeData?.meta?.linkedin}
-                                </a>
-                            </li>
-                        )}
-                        {resumeData?.meta?.portfolio && (
-                            <li>
-                                <a href={resumeData?.meta?.portfolio} target="_blank">
-                                    <FaGlobeAmericas /> {resumeData?.meta?.portfolio}
-                                </a>
-                            </li>
-                        )}
-                    </ul>
-                </div>
-            </div>
-            <div className="resume_inner">
-                <h4 className="resume_inner_title">About</h4>
-                <p className="resume_inner_about">
-                    {resumeData?.meta?.about}
-                </p>
-
-                <h4 className="resume_inner_title">Work Experience</h4>
-                {resumeData.experience?.map((item, index) => (
-                    <div className="resume_education_experience_item" key={index}>
-                        <div className="d-flex align-items-center justify-content-between resume_subtitle">
-                            <h5>{item?.company}</h5>
-                            <p className="resume_duration">{item?.duration}</p>
-                        </div>
-                        <div className="resume_education_experience_position">
-                            <p>{item?.position}</p>
-                        </div>
-                        <p>Projects: </p>
-                        <div className="projects_container">
-                        {item?.projects?.map((project, idx) => (
-                            <div className="project_item_container" key={idx}>
-                                <div className="resume_education_experience_project">
-                                    <p>- {project?.name}</p>
-                                </div>
-                            </div>
-                        ))}
-                        </div>
-                        <p>Responsibilities: </p>
-                        <ul className="resume_education_experience_responsibility">
-                            {item?.responsibility?.map((responsibility, idx) => (
-                                <li key={idx}>{responsibility}</li>
-                            ))}
+                    <h1 className="resume_header_name">{resumeData.meta.name}</h1>
+                    <p className="resume_header_position">{resumeData.meta.position}</p>
+                    <address>
+                        <ul className="resume_header_social">
+                            {resumeData.meta.phone && (
+                                <li>
+                                    <a href={`tel:${resumeData.meta.phone}`}>
+                                        <BsTelephoneOutbound /> {resumeData.meta.phone}
+                                    </a>
+                                </li>
+                            )}
+                            {resumeData.meta.email && (
+                                <li>
+                                    <a href={`mailto:${resumeData.meta.email}`}>
+                                        <FaRegEnvelope /> {resumeData.meta.email}
+                                    </a>
+                                </li>
+                            )}
+                            {resumeData.meta.address && (
+                                <li>
+                                    <span className="resume_header_location">
+                                        <IoLocationOutline /> {resumeData.meta.address}
+                                    </span>
+                                </li>
+                            )}
+                            {resumeData.meta.github && (
+                                <li>
+                                    <a href={resumeData.meta.github} target="_blank" rel="noopener noreferrer">
+                                        <FaGithub /> {resumeData.meta.github}
+                                    </a>
+                                </li>
+                            )}
+                            {resumeData.meta.linkedin && (
+                                <li>
+                                    <a href={resumeData.meta.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedinIn /> {resumeData.meta.linkedin}
+                                    </a>
+                                </li>
+                            )}
+                            {resumeData.meta.portfolio && (
+                                <li>
+                                    <a href={resumeData.meta.portfolio} target="_blank" rel="noopener noreferrer">
+                                        <FaGlobeAmericas /> {resumeData.meta.portfolio}
+                                    </a>
+                                </li>
+                            )}
                         </ul>
-                    </div>
-                ))}
-
-                <h4 className="resume_inner_title">Education</h4>
-                <div className="education_grid">
-                {resumeData.education?.map((item, index) => (
-                    <div className="resume_education_experience_item" key={index}>
-                        <div className="resume_education_experience_position">
-                            <p >{item?.degree} - <span>({item?.duration})</span></p>
-                        </div>
-                        {item?.info && (
-                            <div className="resume_education_experience_info">
-                                <p>{item?.info}</p>
-                            </div>
-                        )}
-                        <h5 className="education_institution">{item?.institution}</h5>
-                    </div>
-                ))}
-
-
+                    </address>
                 </div>
-                {resumeData.certificates?.length > 0 && (
-                    <>
-                        <h4 className="resume_inner_title">Certificates & Achievements</h4>
-                        <div className="certificates_grid">
-                        {resumeData.certificates?.map((cert, index) => (
-                            <div className="resume_certificate_item" key={index}>
-                                <div className="resume_certificate_title">
-                                    {cert?.link ? (
-                                        <a href={cert?.link} target="_blank" rel="noopener noreferrer">
-                                            {cert?.title}
-                                        </a>
-                                    ) : (
-                                        <p>{cert?.title}</p>
-                                    )}
+            </header>
+
+            <main className="resume_inner">
+                <section>
+                    <h2 className="resume_inner_title">Professional Summary</h2>
+                    <p className="resume_inner_about">{resumeData.meta.about}</p>
+                </section>
+
+                <section>
+                    <h2 className="resume_inner_title">Work Experience</h2>
+                    {resumeData.experience.map((item, index) => (
+                        <article className="resume_education_experience_item" key={index}>
+                            <div className="d-flex align-items-center justify-content-between resume_subtitle">
+                                <h3>{item.company}</h3>
+                                <time className="resume_duration">{item.duration}</time>
+                            </div>
+                            <div className="resume_education_experience_position">
+                                <p><strong>{item.position}</strong></p>
+                            </div>
+
+                            {item.impact?.length > 0 && (
+                                <div className="resume_impact">
+                                    <h4>Key Achievements</h4>
+                                    <ul>
+                                        {item.impact.map((achievement, idx) => (
+                                            <li key={idx}>{achievement}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                {cert?.info && (
-                                    <div className="resume_certificate_info">
-                                        <p>{cert?.info}</p>
-                                    </div>
+                            )}
+
+                            {item.leadership?.length > 0 && (
+                                <div className="resume_leadership">
+                                    <h4>Leadership & Ownership</h4>
+                                    <ul>
+                                        {item.leadership.map((lead, idx) => (
+                                            <li key={idx}>{lead}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            <div className="resume_projects_section">
+                                <h4>Key Projects</h4>
+                                <ul className="projects_list">
+                                    {item.projects?.map((project, idx) => (
+                                        <li className="project_item" key={idx}>
+                                            <p className="project_header">
+                                                <strong>{project.name}</strong>
+                                                {project.type && (
+                                                    <span className="project_type"> — {project.type}</span>
+                                                )}
+                                                {project.techStack?.length > 0 && (
+                                                    <span className="project_tech"> [{project.techStack.join(", ")}]</span>
+                                                )}
+                                            </p>
+                                            {project.description && (
+                                                <p className="project_description">{project.description}</p>
+                                            )}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="resume_responsibilities">
+                                <h4>Responsibilities</h4>
+                                <ul className="resume_education_experience_responsibility">
+                                    {item.responsibilities?.map((r, idx) => (
+                                        <li key={idx}>{r}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </article>
+                    ))}
+                </section>
+
+                <section>
+                    <h2 className="resume_inner_title">Education</h2>
+                    <div className="education_grid">
+                        {resumeData.education.map((item, index) => (
+                            <article className="resume_education_experience_item" key={index}>
+                                <div className="resume_education_experience_position">
+                                    <p><strong>{item.degree}</strong></p>
+                                </div>
+                                <h3 className="education_institution">{item.institution}</h3>
+                                <p className="resume_education_meta">
+                                    <time>{item.duration}</time>
+                                    {item.info && <span> · {item.info}</span>}
+                                </p>
+                                {item.coursework?.length > 0 && (
+                                    <p className="resume_education_coursework">
+                                        <strong>Relevant Coursework:</strong> {item.coursework.join(", ")}
+                                    </p>
                                 )}
-                                <div className="resume_certificate_issuer">
-                                    <p>{cert?.issuer} - <span>({cert?.date})</span></p>
-                                </div>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+
+                {resumeData.certificates?.length > 0 && (
+                    <section>
+                        <h2 className="resume_inner_title">Certificates & Achievements</h2>
+                        <div className="certificates_grid">
+                            {resumeData.certificates.map((cert, index) => (
+                                <article className="resume_certificate_item" key={index}>
+                                    <div className="resume_certificate_title">
+                                        {cert.link ? (
+                                            <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                                                {cert.title}
+                                            </a>
+                                        ) : (
+                                            <p>{cert.title}</p>
+                                        )}
+                                    </div>
+                                    {cert.info && (
+                                        <div className="resume_certificate_info">
+                                            <p>{cert.info}</p>
+                                        </div>
+                                    )}
+                                    <div className="resume_certificate_issuer">
+                                        <p>{cert.issuer} — <time>({cert.date})</time></p>
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
+                <section>
+                    <h2 className="resume_inner_title">Skills</h2>
+                    <dl className="resume_skills_list">
+                        {Object.entries(resumeData.skills).map(([category, skillList]) => (
+                            <div className="resume_skills_row" key={category}>
+                                <dt>{skillCategoryLabels[category] || category}:</dt>
+                                <dd>{skillList.join(", ")}</dd>
                             </div>
                         ))}
-                        </div>
-                    </>
-                )}
-                <h4 className="resume_inner_title">Skills</h4>
-                <ul className="resume_skills">
-                    {resumeData.skills?.map((skill, index) => (
-                        <li key={index}>{skill}</li>
-                    ))}
-                </ul>
-            </div>
+                    </dl>
+                </section>
+            </main>
 
             <div className="resume_print">
-                <button onClick={() => handlePrint()}><MdPrint /></button>
+                <button onClick={handlePrint} aria-label="Print resume"><MdPrint /></button>
             </div>
-        </div>
+        </article>
     )
 }
 
