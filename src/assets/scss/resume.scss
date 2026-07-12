@@ -1,6 +1,18 @@
 $white: #ffffff;
 $black: rgb(17, 24, 39);
 
+header{
+    a{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            font-weight: 800;
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+
 .resume{
     &_container{
 
@@ -72,6 +84,7 @@ $black: rgb(17, 24, 39);
     }
 
     &_header{
+
         &_img{
             height: 120px;
             width: 100px;
@@ -110,6 +123,12 @@ $black: rgb(17, 24, 39);
                     color: $black;
                     font-size: 12px;
                     text-decoration: none;
+
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        text-decoration: none !important;
+                    }
 
                     svg{
                         width: 10px;
