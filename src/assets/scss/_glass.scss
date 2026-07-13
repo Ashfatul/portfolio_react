@@ -1,0 +1,31 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.glass {
+  @include glass-card;
+}
+
+.glass-sm {
+  @include glass-card;
+  border-radius: 8px;
+}
+
+.glass-lg {
+  @include glass-card;
+  border-radius: 24px;
+}
+
+.glass-nav {
+  background: $nav-bg;
+  backdrop-filter: $backdrop-blur;
+  -webkit-backdrop-filter: $backdrop-blur;
+  border-bottom: 1px solid $glass-border;
+}
+
+.glass-glow {
+  @include glass-card;
+
+  &:hover {
+    box-shadow: 0 0 30px $glow-color;
+  }
+}

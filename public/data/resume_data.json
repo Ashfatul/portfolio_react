@@ -9,7 +9,15 @@
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
+      "status": "Open for opportunities",
+      "languages": ["Bangla", "English", "Hindi"],
       "about": "Frontend developer with 3+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
+   },
+   "stats": {
+      "yearsExperience": "3+",
+      "figmaDesigns": "200+",
+      "productsShipped": "11",
+      "componentsBuilt": "50+"
    },
    "experience": [
       {
@@ -100,6 +108,119 @@
             "Collaborated with 3 designers and 4 backend engineers to deliver features on 2-week sprint cycles with zero missed deadlines",
             "Defined responsive design standards supporting 5 breakpoints, delivering consistent UX from 320px mobile to 4K displays"
          ]
+      },
+      {
+         "company": "MightyTech",
+         "duration": "Dec 2020 - Mar 2022",
+         "position": "Quality Assurance Tester",
+         "impact": [],
+         "leadership": [],
+         "projects": [],
+         "responsibilities": [
+            "Collaborated with developers to identify and resolve software bugs across multiple products",
+            "Conducted manual and automated testing, contributing to testing strategies and documentation"
+         ]
+      }
+   ],
+   "showcase_projects": [
+      {
+         "id": "levelup",
+         "name": "LevelUp LMS",
+         "type": "Learning Management Software",
+         "description": "Developed 50+ screens from Figma designs; added course dashboard, progress tracking, and quiz engine serving 2,000+ students",
+         "techStack": ["React", "SCSS", "REST API"],
+         "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+         "featured": true
+      },
+      {
+         "id": "aorabooks",
+         "name": "Aorabooks",
+         "type": "Accounting Software",
+         "description": "Designed financial reporting dashboards and invoice management UI, processing 500+ monthly transactions with real-time updates",
+         "techStack": ["React", "JavaScript", "REST API"],
+         "gradient": "linear-gradient(135deg, #f093fb, #f5576c)",
+         "featured": true
+      },
+      {
+         "id": "infixlms",
+         "name": "InfixLMS",
+         "type": "Learning Management Software",
+         "description": "Optimized enrollment flows and quiz modules, improving page load speed by 35% through lazy loading and code splitting",
+         "techStack": ["React", "jQuery", "SCSS"],
+         "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)",
+         "featured": true
+      },
+      {
+         "id": "infixedu",
+         "name": "InfixEdu",
+         "type": "School Management Software",
+         "description": "Added attendance, grading, and scheduling features used by 15+ educational institutions daily",
+         "techStack": ["React", "jQuery", "SCSS"],
+         "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)",
+         "featured": false
+      },
+      {
+         "id": "amazcart",
+         "name": "Amazcart",
+         "type": "E-commerce Platform",
+         "description": "Implemented product catalog with 1,000+ SKU support, cart system, and a 4-step checkout flow optimized for mobile",
+         "techStack": ["React", "SCSS", "REST API"],
+         "gradient": "linear-gradient(135deg, #fa709a, #fee140)",
+         "featured": true
+      },
+      {
+         "id": "lawcham",
+         "name": "Lawcham",
+         "type": "Law Firm Software",
+         "description": "Streamlined case management by creating a dashboard and client portal, reducing manual lookup time by 60%",
+         "techStack": ["React", "SCSS"],
+         "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+         "featured": false
+      },
+      {
+         "id": "vcard",
+         "name": "VCard",
+         "type": "Business Card Software",
+         "description": "Created a drag-and-drop card builder with 20+ templates, live preview, and one-click sharing via QR code",
+         "techStack": ["React", "SCSS"],
+         "gradient": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+         "featured": false
+      },
+      {
+         "id": "edulia",
+         "name": "Edulia",
+         "type": "Theme for InfixEdu",
+         "description": "Produced a theme with 30+ reusable UI components, selected as the default skin for InfixEdu",
+         "techStack": ["HTML", "CSS", "JavaScript"],
+         "gradient": "linear-gradient(135deg, #89f7fe, #66a6ff)",
+         "featured": false
+      },
+      {
+         "id": "bebooking",
+         "name": "BeBooking",
+         "type": "Appointment Booking Software",
+         "description": "Automated appointment scheduling with a calendar-based interface handling 200+ weekly bookings and email confirmations",
+         "techStack": ["React", "SCSS", "REST API"],
+         "gradient": "linear-gradient(135deg, #fddb92, #d1fdff)",
+         "featured": false
+      },
+      {
+         "id": "helpdesk",
+         "name": "HelpDesk",
+         "type": "Support Ticket Software",
+         "description": "Launched ticket management system with priority queues, SLA tracking, and agent dashboards processing 300+ tickets/month",
+         "techStack": ["React", "SCSS"],
+         "gradient": "linear-gradient(135deg, #c471f5, #fa71cd)",
+         "featured": false
+      },
+      {
+         "id": "aorasoft",
+         "name": "Aorasoft",
+         "type": "Company Website",
+         "description": "Achieved 90+ Lighthouse performance score and 3x organic traffic growth on a marketing site with SEO optimization",
+         "techStack": ["React", "SCSS"],
+         "gradient": "linear-gradient(135deg, #48c6ef, #6f86d6)",
+         "featured": false
       }
    ],
    "education": [

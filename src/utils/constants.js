@@ -1,0 +1,47 @@
+export const SECTION_IDS = [
+  'hero',
+  'about',
+  'skills',
+  'experience',
+  'projects',
+  'education',
+  'contact',
+];
+
+export const NAV_ITEMS = [
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'education', label: 'Education' },
+  { id: 'contact', label: 'Contact' },
+];
+
+export const SKILL_ICON_MAP = {
+  'JavaScript (ES6+)': 'SiJavascript',
+  'React': 'FaReact',
+  'Next.js': 'SiNextdotjs',
+  'jQuery': 'SiJquery',
+  'HTML5': 'FaHtml5',
+  'CSS3': 'FaCss3Alt',
+  'SCSS/Sass': 'FaSass',
+  'Responsive Web Design': 'MdDevices',
+  'Cross-Browser Compatibility': 'FaGlobe',
+  'Node.js': 'FaNodeJs',
+  'Express.js': 'SiExpress',
+  'MongoDB': 'SiMongodb',
+  'REST APIs': 'TbApi',
+  'Git': 'FaGitAlt',
+  'GitHub': 'FaGithub',
+  'npm': 'SiNpm',
+  'Vite': 'SiVite',
+  'Figma': 'FaFigma',
+  'VS Code': 'VscCode',
+  'Postman': 'SiPostman',
+  'Chrome DevTools': 'FaChrome',
+  'Agile/Scrum': 'MdGroups',
+  'Code Review': 'MdRateReview',
+  'Component-Based Architecture': 'MdWidgets',
+  'Performance Optimization': 'MdSpeed',
+  'SEO': 'MdTravelExplore',
+};

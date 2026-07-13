@@ -1,0 +1,175 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(var(--accent-1-rgb), 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(var(--accent-1-rgb), 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(var(--accent-1-rgb), 0.03) 0%, transparent 50%);
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+    z-index: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  &__greeting {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: $text-secondary;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 900;
+    @include gradient-text;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.5rem;
+    min-height: 2.5rem;
+
+    &-cursor {
+      border-right: 3px solid var(--accent-1);
+      animation: blink-cursor 1s step-end infinite;
+      padding-right: 2px;
+    }
+  }
+
+  &__about {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    color: $text-secondary;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 2.5rem;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    @include glass-card;
+    font-size: 1.25rem;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    &:hover {
+      color: var(--accent-1);
+      box-shadow: 0 0 20px $glow-color;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__ctas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__cta {
+    padding: 0.75rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all $transition-base;
+
+    &--primary {
+      background: $accent-gradient;
+      color: #fff;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(var(--accent-1-rgb), 0.3);
+      }
+    }
+
+    &--secondary {
+      @include glass-card;
+      color: $text-primary;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__floating-icons {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    @include below(sm) {
+      display: none;
+    }
+  }
+
+  &__floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--accent-1);
+    opacity: 0.08;
+
+    &:nth-child(1) { top: 15%; left: 10%; animation: float-1 8s ease-in-out infinite; }
+    &:nth-child(2) { top: 25%; right: 15%; animation: float-2 10s ease-in-out infinite; }
+    &:nth-child(3) { bottom: 30%; left: 8%; animation: float-3 7s ease-in-out infinite; }
+    &:nth-child(4) { bottom: 20%; right: 10%; animation: float-1 9s ease-in-out infinite 1s; }
+    &:nth-child(5) { top: 60%; left: 20%; animation: float-2 11s ease-in-out infinite 2s; }
+    &:nth-child(6) { top: 10%; right: 25%; animation: float-3 8s ease-in-out infinite 0.5s; }
+  }
+
+  &__scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: $text-muted;
+    font-size: 0.8rem;
+    animation: scroll-bounce 2s ease-in-out infinite;
+
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.education {
+  @include section-container;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+
+    @include below(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    @include glass-card;
+    padding: 1.5rem;
+  }
+
+  &__degree {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  &__institution {
+    color: var(--accent-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: $text-muted;
+    margin-bottom: 1rem;
+  }
+
+  &__coursework {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  &__coursework-pill {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    background: $bg-secondary;
+    border: 1px solid $glass-border;
+    color: $text-secondary;
+  }
+
+  &__certs-title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__cert {
+    @include glass-card;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__cert-title {
+    font-size: 1rem;
+    font-weight: 600;
+
+    a {
+      color: var(--accent-1);
+      transition: opacity $transition-base;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__cert-date {
+    font-size: 0.8rem;
+    color: $text-muted;
+  }
+
+  &__cert-issuer {
+    font-size: 0.85rem;
+    color: $text-secondary;
+    margin-bottom: 0.25rem;
+  }
+
+  &__cert-info {
+    font-size: 0.85rem;
+    color: $text-muted;
+  }
+}

@@ -1,0 +1,144 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.about {
+  @include section-container;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 3rem;
+    align-items: start;
+
+    @include below(lg) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__card {
+    @include glass-card;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 6rem;
+    perspective: 1000px;
+
+    @include below(lg) {
+      position: static;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  &__avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0 auto 1.25rem;
+    border: 2px solid $glass-border;
+  }
+
+  &__name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  &__position {
+    color: var(--accent-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      color: $text-secondary;
+
+      svg {
+        color: var(--accent-1);
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    @include glass-card;
+    font-size: 1.1rem;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    &:hover {
+      color: var(--accent-1);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__bio {
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__stat {
+    @include glass-card;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-1);
+
+    &-number {
+      font-size: 2rem;
+      font-weight: 800;
+      @include gradient-text;
+      line-height: 1.2;
+    }
+
+    &-label {
+      font-size: 0.8rem;
+      color: $text-muted;
+      margin-top: 0.25rem;
+    }
+  }
+}

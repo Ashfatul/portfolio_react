@@ -1,0 +1,77 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.skills {
+  @include section-container;
+
+  &__bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+
+    @include below(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include below(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__category {
+    @include glass-card;
+    padding: 1.5rem;
+
+    &--large {
+      grid-column: span 2;
+
+      @include below(sm) {
+        grid-column: span 1;
+      }
+    }
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__category-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-1);
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 8px;
+    background: $bg-secondary;
+    border: 1px solid $glass-border;
+    font-size: 0.85rem;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    svg {
+      font-size: 1rem;
+      color: var(--accent-1);
+    }
+
+    &:hover {
+      border-color: var(--accent-1);
+      color: $text-primary;
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px $glow-color;
+    }
+  }
+}
