@@ -15,6 +15,7 @@
          "English",
          "Hindi"
       ],
+      "heroAbout": "Frontend Developer focused on building responsive React interfaces, smooth user experiences, and production-ready web products.",
       "about": "Frontend Developer with 3 years of experience building commercial web products using React, TypeScript, Next.js, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ products across SaaS, CodeCanyon, and client projects — converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch at work, plus multiple full-stack personal projects using Next.js 16, Supabase, and Tailwind CSS."
    },
    "stats": {

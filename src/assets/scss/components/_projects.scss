@@ -66,13 +66,13 @@
     overflow: hidden;
     position: relative;
 
-    &--featured {
-      grid-column: span 2;
+    // &--featured {
+    //   grid-column: span 2;
 
-      @include below(sm) {
-        grid-column: span 1;
-      }
-    }
+    //   @include below(sm) {
+    //     grid-column: span 1;
+    //   }
+    // }
   }
 
   &__card-gradient {

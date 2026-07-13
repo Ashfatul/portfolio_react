@@ -79,7 +79,7 @@ export default function Hero({ data }) {
         </motion.h2>
 
         <motion.p variants={item} className="hero__about">
-          {data?.meta?.about}
+          {data?.meta?.heroAbout || data?.meta?.about}
         </motion.p>
 
         <motion.div variants={item} className="hero__social">
