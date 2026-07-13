@@ -2,7 +2,6 @@
 @use "../mixins" as *;
 
 .contact {
-  @include section-container;
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -33,6 +32,12 @@
   }
 
   & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__inner {
+    @include section-container;
     position: relative;
     z-index: 1;
   }

@@ -123,19 +123,21 @@ export default function Experience({ data }) {
 
   return (
     <section id="experience" className="experience">
-      <ScrollReveal>
-        <h2 className="section-heading">Experience</h2>
-        <p className="section-subheading">My professional journey</p>
-      </ScrollReveal>
+      <div className="experience__inner">
+        <ScrollReveal>
+          <h2 className="section-heading">Experience</h2>
+          <p className="section-subheading">My professional journey</p>
+        </ScrollReveal>
 
-      <div className="experience__timeline" ref={timelineRef}>
-        <motion.div
-          className="experience__line-progress"
-          style={{ scaleY, height: '100%' }}
-        />
-        {experience.map((exp, idx) => (
-          <TimelineItem key={idx} exp={exp} side={idx % 2 === 0 ? 'left' : 'right'} />
-        ))}
+        <div className="experience__timeline" ref={timelineRef}>
+          <motion.div
+            className="experience__line-progress"
+            style={{ scaleY, height: '100%' }}
+          />
+          {experience.map((exp, idx) => (
+            <TimelineItem key={idx} exp={exp} side={idx % 2 === 0 ? 'left' : 'right'} />
+          ))}
+        </div>
       </div>
     </section>
   );

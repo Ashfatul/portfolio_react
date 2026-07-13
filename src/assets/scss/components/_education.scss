@@ -2,7 +2,6 @@
 @use "../mixins" as *;
 
 .education {
-  @include section-container;
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -34,6 +33,12 @@
   }
 
   & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__inner {
+    @include section-container;
     position: relative;
     z-index: 1;
   }
