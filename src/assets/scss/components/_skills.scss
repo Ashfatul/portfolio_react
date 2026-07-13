@@ -2,7 +2,6 @@
 @use "../mixins" as *;
 
 .skills {
-  @include section-container;
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -31,6 +30,12 @@
     border-radius: 50%;
     background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 68%);
     pointer-events: none;
+  }
+
+  &__inner{
+    @include section-container;
+    position: relative;
+    z-index: 1;
   }
 
   & > * {
