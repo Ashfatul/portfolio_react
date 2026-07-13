@@ -1,4 +1,4 @@
-import "../../assets/scss/pages/_resume.scss"
+import "../../assets/scss/pages/resume.scss"
 import { FaGithub, FaGlobeAmericas, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa"
 import { BsTelephoneOutbound } from "react-icons/bs"
 import { MdPrint } from "react-icons/md"
