@@ -356,6 +356,36 @@ h3.education{
     gap: 12px;
 }
 
+.achievements_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.resume_achievement_item{
+    border: 1px solid #e5e7eb;
+    border-left: 3px solid $black;
+    border-radius: 4px;
+    padding: 10px 12px;
+    background: #fafafa;
+
+    .resume_achievement_title{
+        font-size: 13px;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 4px;
+        line-height: 1.3;
+    }
+
+    .resume_achievement_description{
+        font-size: 12px;
+        line-height: 1.4;
+        color: rgb(60, 60, 60);
+        margin-bottom: 0;
+    }
+}
+
 .resume_certificate_info,
 .resume_education_experience_info{
     font-size: 12px;

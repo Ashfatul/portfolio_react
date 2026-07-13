@@ -78,6 +78,20 @@ const Resume = () => {
                     <p className="resume_inner_about">{resumeData.meta.about}</p>
                 </section>
 
+                {resumeData.achievements?.length > 0 && (
+                    <section>
+                        <h2 className="resume_inner_title">Key Achievements</h2>
+                        <div className="achievements_grid">
+                            {resumeData.achievements.map((achievement, index) => (
+                                <article className="resume_achievement_item" key={index}>
+                                    <h3 className="resume_achievement_title">{achievement.title}</h3>
+                                    <p className="resume_achievement_description">{achievement.description}</p>
+                                </article>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
                 <section>
                     <h2 className="resume_inner_title">Work Experience</h2>
                     {resumeData.experience.map((item, index) => (
@@ -135,7 +149,7 @@ const Resume = () => {
                             </div>
 
                             <div className="resume_responsibilities">
-                                <h4>Responsibilities</h4>
+                                <h4>Core Responsibilities</h4>
                                 <ul className="resume_education_experience_responsibility">
                                     {item.responsibilities?.map((r, idx) => (
                                         <li key={idx}>{r}</li>
