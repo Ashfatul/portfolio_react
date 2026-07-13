@@ -56,7 +56,6 @@
   &__card {
     @include glass-card;
     padding: 2rem;
-    text-align: center;
     position: sticky;
     top: 6rem;
     perspective: 1000px;
@@ -81,8 +80,9 @@
   }
 
   &__avatar {
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     border-radius: 20px;
     object-fit: cover;
     margin: 0 auto 1.25rem;
@@ -122,6 +122,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.6rem;
     margin-bottom: 1.5rem;
     font-size: 0.85rem;
@@ -129,7 +130,7 @@
     &-item {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 0.5rem;
       color: $text-secondary;
 
@@ -144,7 +145,7 @@
   &__social {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.75rem;
   }
 
@@ -180,6 +181,7 @@
     grid-template-columns: minmax(0, 1.3fr) minmax(220px, 0.9fr);
     gap: 1.5rem;
     align-items: end;
+    margin-bottom: 1.5rem;
 
     @include below(md) {
       grid-template-columns: 1fr;
