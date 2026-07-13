@@ -9,24 +9,20 @@
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "Frontend Developer with 3 years of professional experience building commercial SaaS applications using React, JavaScript, SCSS, and modern frontend technologies. Served as the sole frontend developer for nearly two years, owning frontend development across 17+ commercial products ranging from enterprise LMS platforms and e-commerce systems to accounting and business management software. Experienced in translating 200+ Figma designs into responsive, production-ready interfaces, integrating REST APIs, optimizing application performance, and collaborating with designers, backend engineers, project managers, and executive stakeholders. Currently expanding full-stack expertise with Next.js, Node.js, Express.js, and MongoDB through personal projects."
+      "about": "Frontend Developer with 3 years of experience building SaaS products using React, JavaScript, SCSS, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ commercial products and converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch, delivered ~50 screens for LevelUp LMS, and integrated 30+ APIs with performance-focused UX improvements."
    },
    "achievements": [
       {
          "title": "Frontend Ownership",
-         "description": "Served as the sole frontend developer for nearly two years, managing frontend development across approximately 17 commercial products."
+         "description": "Owned delivery across 17+ SaaS products for nearly two years."
       },
       {
          "title": "Product Development",
-         "description": "Built 6+ frontend applications from scratch and contributed to the ongoing development of 10+ existing enterprise products."
+         "description": "Built 6+ applications and improved 10+ existing products."
       },
       {
-         "title": "UI Engineering",
-         "description": "Translated more than 200 Figma designs into responsive, production-ready user interfaces using React, JavaScript, SCSS, and Laravel Blade."
-      },
-      {
-         "title": "Cross-functional Collaboration",
-         "description": "Worked closely with designers, backend engineers, project managers, and company leadership to deliver commercial SaaS applications."
+         "title": "UI & API Execution",
+         "description": "Converted 200+ Figma designs and integrated 30+ REST APIs."
       }
    ],
    "experience": [
@@ -35,16 +31,13 @@
          "duration": "Jun 2023 - May 2026",
          "position": "Frontend Developer",
          "impact": [
-            "Served as the sole frontend developer for nearly two years, leading frontend implementation, UI maintenance, and feature delivery across approximately 17 commercial products.",
-            "Built 6+ frontend applications from scratch and contributed to the continuous development and maintenance of 10+ existing SaaS products across education, e-commerce, accounting, legal, booking, and business management domains.",
-            "Converted more than 200 Figma designs into responsive, production-ready React and Laravel Blade interfaces with strong attention to design consistency, usability, and cross-browser compatibility.",
-            "Developed the complete student-facing frontend for the LevelUp LMS platform, delivering approximately 50 dynamic React screens with REST API integration, multilingual support, RTL layouts, reusable page builder components, and complex user workflows."
+            "Sole frontend developer for nearly two years, owning 17+ commercial products.",
+            "Built 6+ applications and maintained 10+ SaaS products across LMS, e-commerce, accounting, and legal.",
+            "Delivered ~50 React screens for LevelUp LMS with REST API, multilingual, and RTL support."
          ],
          "leadership": [
-            "Served as the sole frontend developer for nearly two years, independently managing frontend development, UI maintenance, feature implementation, and frontend quality across approximately 17 commercial products.",
-            "Collaborated closely with designers, backend engineers, project managers, project leads, and company leadership to transform business requirements and Figma designs into production-ready user interfaces.",
-            "Balanced development across legacy Laravel applications and modern React projects, ensuring a consistent user experience while supporting multiple concurrent product releases.",
-            "Partnered with backend developers during API planning and implementation by defining frontend requirements, validating integrations, and resolving technical challenges throughout development."
+            "Led frontend planning and execution independently, balancing legacy Laravel Blade and modern React codebases.",
+            "Collaborated with designers, backend engineers, and product leadership to ship production-ready features on schedule."
          ],
          "projects": [
             {
@@ -55,7 +48,7 @@
                   "jQuery",
                   "SCSS"
                ],
-               "description": "Enhanced and maintained a commercial LMS by implementing new user interface designs, modernizing existing frontend modules, resolving UI and responsive issues, and collaborating closely with backend developers to deliver new features and improve overall user experience."
+               "description": "Enhanced LMS modules with responsive UI upgrades, bug fixes, and feature-ready frontend integration."
             },
             {
                "name": "InfixEdu",
@@ -68,7 +61,7 @@
                   "jQuery",
                   "SCSS"
                ],
-               "description": "Improved and maintained the frontend of a large school management platform by implementing new interface designs, redesigning existing pages, fixing UI inconsistencies, enhancing responsive behavior, and supporting backend developers with production-ready frontend templates."
+               "description": "Redesigned key pages, improved responsive behavior, and delivered production-ready templates for backend integration."
             },
             {
                "name": "LevelUp",
@@ -82,7 +75,7 @@
                   "React Hook Form",
                   "REST API"
                ],
-               "description": "Built the complete student-facing frontend from scratch for a next-generation LMS, developing approximately 50 responsive React screens including authentication, course management, quizzes, instructor profiles, multilingual support, RTL layouts, dynamic page builder components, checkout, coupon workflows, blog, certificate verification, and user dashboards while integrating REST APIs and collaborating closely with backend engineers."
+               "description": "Built the student portal from scratch with ~50 responsive React screens, API-driven workflows, multilingual and RTL support."
             },
             {
                "name": "Amazcart",
@@ -92,7 +85,7 @@
                   "SCSS",
                   "REST API"
                ],
-               "description": "Maintained and enhanced the frontend of a commercial e-commerce platform by implementing new interface designs, resolving responsive and UI issues, improving existing user experiences, and collaborating with backend developers to deliver frontend enhancements across customer-facing modules."
+               "description": "Improved customer-facing e-commerce modules with new UI, responsive fixes, and API-integrated enhancements."
             },
             {
                "name": "Aorabooks",
@@ -101,7 +94,7 @@
                   "React",
                   "JavaScript"
                ],
-               "description": "Enhanced an existing accounting SaaS platform by implementing new user interface designs, improving dashboard experiences, redesigning POS-related modules, developing a custom organizational chart interface, and supporting ongoing frontend improvements across the application."
+               "description": "Upgraded dashboard and POS interfaces, including custom org-chart UI and reusable components."
             },
             {
                "name": "Lawcham",
@@ -110,69 +103,15 @@
                   "React",
                   "SCSS"
                ],
-               "description": "Developed the complete frontend interface from scratch based on Figma designs, creating responsive layouts and reusable React components for seamless backend integration across legal management workflows."
-            },
-            {
-               "name": "HelpDesk",
-               "type": "Support Ticket Management Software",
-               "techStack": [
-                  "React",
-                  "SCSS"
-               ],
-               "description": "Maintained and enhanced an existing helpdesk platform by implementing dark mode, improving RTL support, resolving frontend issues, refining responsive layouts, and delivering UI enhancements across multiple application modules."
-            },
-            {
-               "name": "VCard",
-               "type": "Digital Business Card Platform",
-               "techStack": [
-                  "React",
-                  "SCSS"
-               ],
-               "description": "Developed the complete frontend from Figma designs and later redesigned key application interfaces, including landing pages, digital card layouts, and reusable UI components to improve the overall user experience."
-            },
-            {
-               "name": "BeBooking",
-               "type": "Appointment Booking Software",
-               "techStack": [
-                  "React",
-                  "SCSS"
-               ],
-               "description": "Converted Figma designs into responsive React interfaces for an appointment booking platform, delivering reusable frontend components that were integrated with backend functionality by the development team."
-            },
-            {
-               "name": "Edulia",
-               "type": "Education Website Theme",
-               "techStack": [
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "SCSS"
-               ],
-               "description": "Developed responsive frontend pages and reusable UI sections from Figma designs for an education-focused website theme, ensuring consistency across desktop, tablet, and mobile devices."
-            },
-            {
-               "name": "Aorasoft",
-               "type": "Corporate Website",
-               "techStack": [
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "SCSS"
-               ],
-               "description": "Converted Figma designs into responsive, cross-browser compatible frontend pages for the company's corporate website while maintaining visual consistency and modern web standards."
+               "description": "Built legal workflow frontend from Figma to production with reusable React components and responsive layouts."
             }
          ],
          "responsibilities": [
-            "Served as the sole frontend developer for nearly two years, managing frontend development, UI maintenance, feature implementation, and design consistency across approximately 17 commercial products.",
-            "Built reusable React components and frontend modules for commercial SaaS applications, improving development consistency, scalability, and long-term maintainability.",
-            "Translated 200+ Figma designs into responsive, pixel-perfect user interfaces using React, JavaScript, SCSS, Bootstrap, Tailwind CSS, HTML5, and CSS3.",
-            "Integrated 30+ REST API endpoints using React Query, Context API, Axios, and React Hook Form to deliver dynamic, data-driven user experiences.",
-            "Implemented responsive layouts, multilingual interfaces, RTL support, semantic HTML, and cross-browser compatibility across desktop, tablet, and mobile devices.",
-            "Optimized frontend performance through lazy loading, code splitting, memoization, dynamic imports, image optimization, skeleton loading, debouncing, throttling, and efficient rendering techniques.",
-            "Maintained and enhanced both modern React applications and legacy Laravel Blade projects by implementing new designs, resolving UI issues, and improving overall user experience.",
-            "Collaborated daily with designers, backend engineers, project managers, project leads, and company leadership to translate business requirements into production-ready frontend solutions.",
-            "Analyzed frontend requirements, coordinated API contracts with backend developers, and independently implemented frontend integrations for dynamic application features.",
-            "Used Git with feature branches, pull requests, code reviews, and collaborative development workflows to ensure reliable code integration and project stability."
+            "Built reusable React components for commercial SaaS applications.",
+            "Translated 200+ Figma designs into responsive interfaces using React, JavaScript, SCSS, and Laravel Blade.",
+            "Integrated 30+ REST APIs using React Query, Context API, Axios, and React Hook Form.",
+            "Implemented multilingual, RTL, semantic HTML, and cross-browser support.",
+            "Optimized performance with lazy loading, code splitting, and memoization."
          ]
       }
    ],
@@ -186,8 +125,6 @@
             "Data Structures & Algorithms",
             "Object-Oriented Programming",
             "Database Systems",
-            "Computer Networks",
-            "Discrete Mathematics",
             "Software Engineering"
          ]
       },
@@ -204,7 +141,7 @@
          "issuer": "Learn with Sumit",
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
-         "info": "Completed an advanced React development program with 93.56% overall performance, covering modern React architecture, hooks, routing, state management, API integration, and production-ready application development."
+         "info": "Advanced React program (93.56%) covering architecture, hooks, routing, state management, and API integration."
       }
    ],
    "skills": {
@@ -222,15 +159,12 @@
          "RTL Support",
          "Semantic HTML"
       ],
-      "reactEcosystem": [
-         "Context API",
-         "React Query",
-         "React Hook Form",
-         "React Router",
-         "Axios"
-      ],
       "backend": [
          "REST API Integration",
+         "React Query",
+         "Context API",
+         "React Hook Form",
+         "Axios",
          "Node.js",
          "Express.js",
          "MongoDB",
