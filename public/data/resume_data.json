@@ -1,7 +1,7 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Javascript Engineer",
+      "position": "Frontend Developer | React | Next.js | TypeScript",
       "yearsOfExperience": 3,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
@@ -10,8 +10,12 @@
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
       "status": "Open for opportunities",
-      "languages": ["Bangla", "English", "Hindi"],
-      "about": "Frontend developer with 3+ years of experience building production web applications using React, JavaScript, and SCSS. Converted 200+ Figma designs into responsive UIs across 11 commercial products including LMS platforms, e-commerce systems, and SaaS tools. Currently building full-stack skills with Next.js, Node.js, and MongoDB."
+      "languages": [
+         "Bangla",
+         "English",
+         "Hindi"
+      ],
+      "about": "Frontend Developer with 3 years of experience building commercial web products using React, TypeScript, Next.js, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ products across SaaS, CodeCanyon, and client projects — converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch at work, plus multiple full-stack personal projects using Next.js 16, Supabase, and Tailwind CSS."
    },
    "stats": {
       "yearsExperience": "3+",
@@ -19,94 +23,111 @@
       "productsShipped": "11",
       "componentsBuilt": "50+"
    },
+   "achievements": [
+      {
+         "title": "Frontend Ownership",
+         "description": "Owned delivery across 17+ products (SaaS, CodeCanyon, and client projects) for nearly two years."
+      },
+      {
+         "title": "Product Development",
+         "description": "Built 6+ applications at work and multiple full-stack projects independently."
+      },
+      {
+         "title": "UI & API Execution",
+         "description": "Converted 200+ Figma designs and integrated 30+ REST APIs."
+      },
+      {
+         "title": "Modern Stack Adoption",
+         "description": "Built full-stack apps with Next.js 16, TypeScript, and Supabase — deployed on Vercel."
+      }
+   ],
    "experience": [
       {
          "company": "SpondonIT",
-         "duration": "2023 - Present",
+         "duration": "Jun 2023 - May 2026",
          "position": "Frontend Developer",
          "impact": [
-            "Built LevelUp LMS frontend from scratch, delivering 50+ screens within a 3-month deadline and reducing client revision cycles by 40%",
-            "Created a shared component library reused in 6 products, cutting average feature delivery time from 2 weeks to under 5 days",
-            "Delivered 11 SaaS applications serving 10,000+ active users across education, e-commerce, and legal domains"
+            "Served as the sole frontend developer, independently managing all UI deliverables across the entire product portfolio.",
+            "Shipped production features across diverse domains — LMS, e-commerce, accounting, and legal — balancing new builds with legacy maintenance.",
+            "Delivered ~50 React screens for LevelUp LMS with REST API integration, multilingual, and RTL support."
          ],
          "leadership": [
-            "Introduced component architecture and code review standards for LevelUp LMS, followed by a 4-person dev team as the project baseline",
-            "Managed frontend delivery across 5 concurrent product launches, aligning design and engineering teams across 3 time zones"
+            "Led frontend planning and execution independently, balancing legacy Laravel Blade and modern React codebases.",
+            "Collaborated with designers, backend engineers, and product leadership to ship production-ready features on schedule."
          ],
          "projects": [
             {
-               "name": "LevelUp",
-               "type": "Learning Management Software",
-               "techStack": ["React", "SCSS", "REST API"],
-               "description": "Developed 50+ screens from Figma designs; added course dashboard, progress tracking, and quiz engine serving 2,000+ students"
-            },
-            {
-               "name": "Aorabooks",
-               "type": "Accounting Software",
-               "techStack": ["React", "JavaScript", "REST API"],
-               "description": "Designed financial reporting dashboards and invoice management UI, processing 500+ monthly transactions with real-time updates"
-            },
-            {
                "name": "InfixLMS",
                "type": "Learning Management Software",
-               "techStack": ["React", "jQuery", "SCSS"],
-               "description": "Optimized enrollment flows and quiz modules, improving page load speed by 35% through lazy loading and code splitting"
+               "techStack": [
+                  "React",
+                  "jQuery",
+                  "SCSS"
+               ],
+               "description": "Enhanced LMS modules with responsive UI upgrades, bug fixes, and feature-ready frontend integration."
             },
             {
                "name": "InfixEdu",
                "type": "School Management Software",
-               "techStack": ["React", "jQuery", "SCSS"],
-               "description": "Added attendance, grading, and scheduling features used by 15+ educational institutions daily"
+               "techStack": [
+                  "Laravel Blade",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "jQuery",
+                  "SCSS"
+               ],
+               "description": "Redesigned key pages, improved responsive behavior, and delivered production-ready templates for backend integration."
+            },
+            {
+               "name": "LevelUp",
+               "type": "Learning Management Software",
+               "techStack": [
+                  "React",
+                  "JavaScript",
+                  "SCSS",
+                  "React Query",
+                  "Context API",
+                  "React Hook Form",
+                  "REST API"
+               ],
+               "description": "Built the student portal from scratch with ~50 responsive React screens, API-driven workflows, multilingual and RTL support."
             },
             {
                "name": "Amazcart",
                "type": "E-commerce Platform",
-               "techStack": ["React", "SCSS", "REST API"],
-               "description": "Implemented product catalog with 1,000+ SKU support, cart system, and a 4-step checkout flow optimized for mobile"
+               "techStack": [
+                  "React",
+                  "SCSS",
+                  "REST API"
+               ],
+               "description": "Improved customer-facing e-commerce modules with new UI, responsive fixes, and API-integrated enhancements."
+            },
+            {
+               "name": "Aorabooks",
+               "type": "Accounting Software",
+               "techStack": [
+                  "React",
+                  "JavaScript"
+               ],
+               "description": "Upgraded dashboard and POS interfaces, including custom org-chart UI and reusable components."
             },
             {
                "name": "Lawcham",
-               "type": "Law Firm Software",
-               "techStack": ["React", "SCSS"],
-               "description": "Streamlined case management by creating a dashboard and client portal, reducing manual lookup time by 60%"
-            },
-            {
-               "name": "VCard",
-               "type": "Business Card Software",
-               "techStack": ["React", "SCSS"],
-               "description": "Created a drag-and-drop card builder with 20+ templates, live preview, and one-click sharing via QR code"
-            },
-            {
-               "name": "Edulia",
-               "type": "Theme for InfixEdu",
-               "techStack": ["HTML", "CSS", "JavaScript"],
-               "description": "Produced a theme with 30+ reusable UI components, selected as the default skin for InfixEdu"
-            },
-            {
-               "name": "BeBooking",
-               "type": "Appointment Booking Software",
-               "techStack": ["React", "SCSS", "REST API"],
-               "description": "Automated appointment scheduling with a calendar-based interface handling 200+ weekly bookings and email confirmations"
-            },
-            {
-               "name": "HelpDesk",
-               "type": "Support Ticket Software",
-               "techStack": ["React", "SCSS"],
-               "description": "Launched ticket management system with priority queues, SLA tracking, and agent dashboards processing 300+ tickets/month"
-            },
-            {
-               "name": "Aorasoft",
-               "type": "Company Website",
-               "techStack": ["React", "SCSS"],
-               "description": "Achieved 90+ Lighthouse performance score and 3x organic traffic growth on a marketing site with SEO optimization"
+               "type": "Law Firm Management Software",
+               "techStack": [
+                  "React",
+                  "SCSS"
+               ],
+               "description": "Built legal workflow frontend from Figma to production with reusable React components and responsive layouts."
             }
          ],
          "responsibilities": [
-            "Converted 200+ Figma designs into production React components spanning multiple SaaS and e-commerce products",
-            "Fixed 150+ UI bugs and performance issues, maintaining 99.5% uptime for 5 concurrently live SaaS applications",
-            "Integrated 30+ REST API endpoints with frontend state management, ensuring real-time data sync across dashboards",
-            "Collaborated with 3 designers and 4 backend engineers to deliver features on 2-week sprint cycles with zero missed deadlines",
-            "Defined responsive design standards supporting 5 breakpoints, delivering consistent UX from 320px mobile to 4K displays"
+            "Built reusable React components for commercial web applications.",
+            "Translated 200+ Figma designs into responsive interfaces using React, JavaScript, SCSS, and Laravel Blade.",
+            "Integrated 30+ REST APIs using React Query, Context API, Axios, and React Hook Form.",
+            "Implemented multilingual, RTL, semantic HTML, and cross-browser support.",
+            "Optimized performance with lazy loading, code splitting, and memoization."
          ]
       },
       {
@@ -128,7 +149,11 @@
          "name": "LevelUp LMS",
          "type": "Learning Management Software",
          "description": "Developed 50+ screens from Figma designs; added course dashboard, progress tracking, and quiz engine serving 2,000+ students",
-         "techStack": ["React", "SCSS", "REST API"],
+         "techStack": [
+            "React",
+            "SCSS",
+            "REST API"
+         ],
          "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
          "featured": true
       },
@@ -137,7 +162,11 @@
          "name": "Aorabooks",
          "type": "Accounting Software",
          "description": "Designed financial reporting dashboards and invoice management UI, processing 500+ monthly transactions with real-time updates",
-         "techStack": ["React", "JavaScript", "REST API"],
+         "techStack": [
+            "React",
+            "JavaScript",
+            "REST API"
+         ],
          "gradient": "linear-gradient(135deg, #f093fb, #f5576c)",
          "featured": true
       },
@@ -146,7 +175,11 @@
          "name": "InfixLMS",
          "type": "Learning Management Software",
          "description": "Optimized enrollment flows and quiz modules, improving page load speed by 35% through lazy loading and code splitting",
-         "techStack": ["React", "jQuery", "SCSS"],
+         "techStack": [
+            "React",
+            "jQuery",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)",
          "featured": true
       },
@@ -155,7 +188,11 @@
          "name": "InfixEdu",
          "type": "School Management Software",
          "description": "Added attendance, grading, and scheduling features used by 15+ educational institutions daily",
-         "techStack": ["React", "jQuery", "SCSS"],
+         "techStack": [
+            "React",
+            "jQuery",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)",
          "featured": false
       },
@@ -164,7 +201,11 @@
          "name": "Amazcart",
          "type": "E-commerce Platform",
          "description": "Implemented product catalog with 1,000+ SKU support, cart system, and a 4-step checkout flow optimized for mobile",
-         "techStack": ["React", "SCSS", "REST API"],
+         "techStack": [
+            "React",
+            "SCSS",
+            "REST API"
+         ],
          "gradient": "linear-gradient(135deg, #fa709a, #fee140)",
          "featured": true
       },
@@ -173,7 +214,10 @@
          "name": "Lawcham",
          "type": "Law Firm Software",
          "description": "Streamlined case management by creating a dashboard and client portal, reducing manual lookup time by 60%",
-         "techStack": ["React", "SCSS"],
+         "techStack": [
+            "React",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
          "featured": false
       },
@@ -182,7 +226,10 @@
          "name": "VCard",
          "type": "Business Card Software",
          "description": "Created a drag-and-drop card builder with 20+ templates, live preview, and one-click sharing via QR code",
-         "techStack": ["React", "SCSS"],
+         "techStack": [
+            "React",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #ffecd2, #fcb69f)",
          "featured": false
       },
@@ -191,7 +238,11 @@
          "name": "Edulia",
          "type": "Theme for InfixEdu",
          "description": "Produced a theme with 30+ reusable UI components, selected as the default skin for InfixEdu",
-         "techStack": ["HTML", "CSS", "JavaScript"],
+         "techStack": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+         ],
          "gradient": "linear-gradient(135deg, #89f7fe, #66a6ff)",
          "featured": false
       },
@@ -200,7 +251,11 @@
          "name": "BeBooking",
          "type": "Appointment Booking Software",
          "description": "Automated appointment scheduling with a calendar-based interface handling 200+ weekly bookings and email confirmations",
-         "techStack": ["React", "SCSS", "REST API"],
+         "techStack": [
+            "React",
+            "SCSS",
+            "REST API"
+         ],
          "gradient": "linear-gradient(135deg, #fddb92, #d1fdff)",
          "featured": false
       },
@@ -209,7 +264,10 @@
          "name": "HelpDesk",
          "type": "Support Ticket Software",
          "description": "Launched ticket management system with priority queues, SLA tracking, and agent dashboards processing 300+ tickets/month",
-         "techStack": ["React", "SCSS"],
+         "techStack": [
+            "React",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #c471f5, #fa71cd)",
          "featured": false
       },
@@ -218,9 +276,52 @@
          "name": "Aorasoft",
          "type": "Company Website",
          "description": "Achieved 90+ Lighthouse performance score and 3x organic traffic growth on a marketing site with SEO optimization",
-         "techStack": ["React", "SCSS"],
+         "techStack": [
+            "React",
+            "SCSS"
+         ],
          "gradient": "linear-gradient(135deg, #48c6ef, #6f86d6)",
          "featured": false
+      }
+   ],
+   "personalProjects": [
+      {
+         "name": "AI Interview Platform",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "Vercel AI SDK",
+            "Monaco Editor"
+         ],
+         "description": "Full-stack AI-powered mock interview platform with configurable coding/theory interviews, split-screen code editor, anti-cheat system, and AI-generated scorecards. Supports OpenAI, Gemini, and Ollama providers.",
+         "link": "https://github.com/ashfatul/ai-interview"
+      },
+      {
+         "name": "Aniya",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "Recharts"
+         ],
+         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
+         "link": "https://aniya-app.vercel.app"
+      },
+      {
+         "name": "Product Manager",
+         "techStack": [
+            "React 19",
+            "TypeScript",
+            "Vite",
+            "Zustand",
+            "React Query",
+            "Ant Design"
+         ],
+         "description": "Product management dashboard built with React 19 and TypeScript, featuring Zustand for state management and React Query for server-state.",
+         "link": "https://github.com/ashfatul/product-m"
       }
    ],
    "education": [
@@ -228,8 +329,13 @@
          "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
          "duration": "2024 - Present",
-         "info": "Expected Graduation: 2028",
-         "coursework": ["Data Structures & Algorithms", "Object-Oriented Programming", "Database Systems", "Computer Networks", "Discrete Mathematics", "Software Engineering"]
+         "info": "Expected Graduation: May 2027",
+         "coursework": [
+            "Data Structures & Algorithms",
+            "Object-Oriented Programming",
+            "Database Systems",
+            "Software Engineering"
+         ]
       },
       {
          "degree": "Diploma in Civil Engineering",
@@ -244,13 +350,61 @@
          "issuer": "Learn with Sumit",
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
-         "info": "Achieved 93.56% overall performance."
+         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router."
       }
    ],
    "skills": {
-      "frontend": ["JavaScript (ES6+)", "React", "Next.js", "jQuery", "HTML5", "CSS3", "SCSS/Sass", "Responsive Web Design", "Cross-Browser Compatibility"],
-      "backend": ["Node.js", "Express.js", "MongoDB", "REST APIs"],
-      "tools": ["Git", "GitHub", "npm", "Vite", "Figma", "VS Code", "Postman", "Chrome DevTools"],
-      "practices": ["Agile/Scrum", "Code Review", "Component-Based Architecture", "Performance Optimization", "SEO"]
+      "frontend": [
+         "React",
+         "Next.js",
+         "TypeScript",
+         "JavaScript (ES6+)",
+         "HTML5",
+         "CSS3",
+         "SCSS/Sass",
+         "Tailwind CSS",
+         "Bootstrap",
+         "jQuery",
+         "Responsive Web Design",
+         "Cross-Browser Compatibility",
+         "RTL Support",
+         "Semantic HTML"
+      ],
+      "stateAndData": [
+         "React Query (TanStack)",
+         "Zustand",
+         "Context API",
+         "React Hook Form",
+         "Axios",
+         "REST API Integration"
+      ],
+      "backendBasics": [
+         "Node.js",
+         "Express.js",
+         "Supabase",
+         "MongoDB",
+         "Prisma",
+         "PostgreSQL"
+      ],
+      "tools": [
+         "Git",
+         "GitHub",
+         "Figma",
+         "Postman",
+         "Chrome DevTools",
+         "npm",
+         "Vite",
+         "Vercel",
+         "VS Code"
+      ],
+      "practices": [
+         "Component-Based Architecture",
+         "Performance Optimization",
+         "Responsive Design",
+         "Code Review",
+         "Agile/Scrum",
+         "Git Workflow",
+         "UI/UX Collaboration"
+      ]
    }
 }

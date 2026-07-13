@@ -8,7 +8,8 @@ import resumeData from "../../../public/data/resume_data.json"
 
 const skillCategoryLabels = {
     frontend: "Frontend",
-    backend: "Backend",
+    stateAndData: "State & Data",
+    backendBasics: "Backend & Database",
     tools: "Tools & Platforms",
     practices: "Practices"
 }
@@ -19,6 +20,7 @@ const Resume = () => {
     }
 
     return (
+        <div className="resume_page">
         <article className="resume_container">
             <Link to="/" className="resume_back_link">&larr; Back to Portfolio</Link>
 
@@ -81,6 +83,20 @@ const Resume = () => {
                     <p className="resume_inner_about">{resumeData.meta.about}</p>
                 </section>
 
+                {resumeData.achievements?.length > 0 && (
+                    <section>
+                        <h2 className="resume_inner_title">Key Achievements</h2>
+                        <div className="achievements_grid">
+                            {resumeData.achievements.map((achievement, index) => (
+                                <article className="resume_achievement_item" key={index}>
+                                    <h3 className="resume_achievement_title">{achievement.title}</h3>
+                                    <p className="resume_achievement_description">{achievement.description}</p>
+                                </article>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
                 <section>
                     <h2 className="resume_inner_title">Work Experience</h2>
                     {resumeData.experience.map((item, index) => (
@@ -139,19 +155,46 @@ const Resume = () => {
                                 </div>
                             )}
 
-                            {item.responsibilities?.length > 0 && (
-                                <div className="resume_responsibilities">
-                                    <h4>Responsibilities</h4>
-                                    <ul className="resume_education_experience_responsibility">
-                                        {item.responsibilities.map((r, idx) => (
-                                            <li key={idx}>{r}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
+                            <div className="resume_responsibilities">
+                                <h4>Core Responsibilities</h4>
+                                <ul className="resume_education_experience_responsibility">
+                                    {item.responsibilities?.map((r, idx) => (
+                                        <li key={idx}>{r}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </article>
                     ))}
                 </section>
+
+                {resumeData.personalProjects?.length > 0 && (
+                    <section>
+                        <h2 className="resume_inner_title">Personal Projects</h2>
+                        <ul className="projects_list">
+                            {resumeData.personalProjects.map((project, index) => (
+                                <li className="project_item" key={index}>
+                                    <p className="project_header">
+                                        <strong>
+                                            {project.link ? (
+                                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                                    {project.name}
+                                                </a>
+                                            ) : (
+                                                project.name
+                                            )}
+                                        </strong>
+                                        {project.techStack?.length > 0 && (
+                                            <span className="project_tech"> [{project.techStack.join(", ")}]</span>
+                                        )}
+                                    </p>
+                                    {project.description && (
+                                        <p className="project_description">{project.description}</p>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                )}
 
                 <section>
                     <h2 className="resume_inner_title">Education</h2>
@@ -222,6 +265,7 @@ const Resume = () => {
                 <button onClick={handlePrint} aria-label="Print resume"><MdPrint /></button>
             </div>
         </article>
+        </div>
     )
 }
 
