@@ -29,21 +29,57 @@
 
   &__dot {
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background: $glass-border;
+    display: grid;
+    place-items: center;
+    background: transparent;
     cursor: pointer;
-    transition: all $transition-base;
+    transition: transform $transition-base, opacity $transition-base;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: rgba(var(--accent-1-rgb), 0.18);
+      border: 1px solid rgba(var(--accent-1-rgb), 0.16);
+      opacity: 0.45;
+      transition: all $transition-base;
+    }
+
+    &::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $glass-border;
+      position: relative;
+      z-index: 1;
+      transition: all $transition-base;
+    }
 
     &:hover,
     &--active {
-      background: var(--accent-1);
-      transform: scale(1.4);
+      transform: scale(1.35);
+
+      &::before {
+        opacity: 1;
+        background: rgba(var(--accent-1-rgb), 0.2);
+        box-shadow: 0 0 0 6px rgba(var(--accent-1-rgb), 0.08);
+      }
+
+      &::after {
+        background: var(--accent-1);
+        box-shadow: 0 0 10px rgba(var(--accent-1-rgb), 0.55);
+      }
     }
 
     &--active {
-      box-shadow: 0 0 10px rgba(var(--accent-1-rgb), 0.5);
+      &::before {
+        box-shadow: 0 0 0 8px rgba(var(--accent-1-rgb), 0.1);
+      }
     }
   }
 
@@ -52,14 +88,15 @@
     right: calc(100% + 12px);
     top: 50%;
     transform: translateY(-50%);
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    background: $bg-secondary;
-    border: 1px solid $glass-border;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba($bg-secondary, 0.95);
+    border: 1px solid rgba(var(--accent-1-rgb), 0.14);
     font-size: 0.75rem;
     color: $text-primary;
     white-space: nowrap;
     pointer-events: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
 }
 
