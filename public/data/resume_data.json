@@ -9,12 +9,12 @@
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "Frontend Developer with 3 years of experience building SaaS products using React, JavaScript, SCSS, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ commercial products and converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch, delivered ~50 screens for LevelUp LMS, and integrated 30+ APIs with performance-focused UX improvements."
+      "about": "Frontend Developer with 3 years of experience building commercial web products using React, JavaScript, SCSS, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ products across SaaS, CodeCanyon, and client projects — converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch, delivered ~50 screens for LevelUp LMS, and integrated 30+ APIs with performance-focused UX improvements."
    },
    "achievements": [
       {
          "title": "Frontend Ownership",
-         "description": "Owned delivery across 17+ SaaS products for nearly two years."
+         "description": "Owned delivery across 17+ products (SaaS, CodeCanyon, and client projects) for nearly two years."
       },
       {
          "title": "Product Development",
@@ -31,9 +31,9 @@
          "duration": "Jun 2023 - May 2026",
          "position": "Frontend Developer",
          "impact": [
-            "Sole frontend developer for nearly two years, owning 17+ commercial products.",
-            "Built 6+ applications and maintained 10+ SaaS products across LMS, e-commerce, accounting, and legal.",
-            "Delivered ~50 React screens for LevelUp LMS with REST API, multilingual, and RTL support."
+            "Served as the sole frontend developer, independently managing all UI deliverables across the entire product portfolio.",
+            "Shipped production features across diverse domains — LMS, e-commerce, accounting, and legal — balancing new builds with legacy maintenance.",
+            "Delivered ~50 React screens for LevelUp LMS with REST API integration, multilingual, and RTL support."
          ],
          "leadership": [
             "Led frontend planning and execution independently, balancing legacy Laravel Blade and modern React codebases.",
@@ -107,7 +107,7 @@
             }
          ],
          "responsibilities": [
-            "Built reusable React components for commercial SaaS applications.",
+            "Built reusable React components for commercial web applications.",
             "Translated 200+ Figma designs into responsive interfaces using React, JavaScript, SCSS, and Laravel Blade.",
             "Integrated 30+ REST APIs using React Query, Context API, Axios, and React Hook Form.",
             "Implemented multilingual, RTL, semantic HTML, and cross-browser support.",
