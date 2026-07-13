@@ -3,6 +3,40 @@
 
 .skills {
   @include section-container;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(var(--accent-1-rgb), 0.09), transparent 26%),
+    radial-gradient(circle at 8% 72%, rgba(79, 70, 229, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 22%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(var(--accent-1-rgb), 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--accent-1-rgb), 0.05) 1px, transparent 1px);
+    background-size: 84px 84px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto auto -10% -10%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 68%);
+    pointer-events: none;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 
   &__bento {
     display: grid;

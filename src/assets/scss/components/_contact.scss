@@ -3,6 +3,39 @@
 
 .contact {
   @include section-container;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(var(--accent-1-rgb), 0.1), transparent 24%),
+    radial-gradient(circle at 12% 84%, rgba(79, 70, 229, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 18%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(var(--accent-1-rgb), 0.05) 1px, transparent 1px);
+    background-size: 120px 120px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto auto 8% 18%;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.12), transparent 68%);
+    pointer-events: none;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 
   &__grid {
     display: grid;
@@ -75,6 +108,14 @@
   &__form-wrapper {
     @include glass-card;
     padding: 2rem;
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+
+    @include below(md) {
+      position: static;
+      top: auto;
+    }
   }
 
   &__form {

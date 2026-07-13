@@ -44,113 +44,115 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <div className="contact__grid">
-        <ScrollReveal>
-          <div className="contact__info">
-            <h2 className="section-heading">Let&apos;s Work Together</h2>
-            <p>
-              Have a project in mind or just want to say hi? Feel free to reach out.
-              I&apos;m always open to discussing new ideas and opportunities.
-            </p>
+      <div className="contact__inner">
+        <div className="contact__grid">
+          <ScrollReveal>
+            <div className="contact__info">
+              <h2 className="section-heading">Let&apos;s Work Together</h2>
+              <p>
+                Have a project in mind or just want to say hi? Feel free to reach out.
+                I&apos;m always open to discussing new ideas and opportunities.
+              </p>
 
-            <div className="contact__info-cards">
-              {CONTACT_INFO.map(({ icon: Icon, label, value, href }) => (
-                <a
-                  key={label}
-                  href={href || '#'}
-                  target={href?.startsWith('http') ? '_blank' : undefined}
-                  rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="contact__info-card"
-                >
-                  <div className="contact__info-card-icon">
-                    <Icon />
-                  </div>
-                  <div className="contact__info-card-content">
-                    <p>{label}</p>
-                    <p>{value}</p>
-                  </div>
-                </a>
-              ))}
+              <div className="contact__info-cards">
+                {CONTACT_INFO.map(({ icon: Icon, label, value, href }) => (
+                  <a
+                    key={label}
+                    href={href || '#'}
+                    target={href?.startsWith('http') ? '_blank' : undefined}
+                    rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="contact__info-card"
+                  >
+                    <div className="contact__info-card-icon">
+                      <Icon />
+                    </div>
+                    <div className="contact__info-card-content">
+                      <p>{label}</p>
+                      <p>{value}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
-          <div className="contact__form-wrapper">
-            <form className="contact__form" onSubmit={handleSubmit}>
-              <div className="contact__field">
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                  className="contact__field-input"
-                  placeholder=" "
-                />
-                <label className="contact__field-label">Your Name</label>
-              </div>
+          <ScrollReveal delay={0.2}>
+            <div className="contact__form-wrapper">
+              <form className="contact__form" onSubmit={handleSubmit}>
+                <div className="contact__field">
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    value={form.name}
+                    onChange={handleChange}
+                    className="contact__field-input"
+                    placeholder=" "
+                  />
+                  <label className="contact__field-label">Your Name</label>
+                </div>
 
-              <div className="contact__field">
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                  className="contact__field-input"
-                  placeholder=" "
-                />
-                <label className="contact__field-label">Your Email</label>
-              </div>
+                <div className="contact__field">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={form.email}
+                    onChange={handleChange}
+                    className="contact__field-input"
+                    placeholder=" "
+                  />
+                  <label className="contact__field-label">Your Email</label>
+                </div>
 
-              <div className="contact__field">
-                <textarea
-                  name="message"
-                  required
-                  value={form.message}
-                  onChange={handleChange}
-                  className="contact__field-textarea"
-                  placeholder=" "
-                  rows={5}
-                />
-                <label className="contact__field-label">Your Message</label>
-              </div>
+                <div className="contact__field">
+                  <textarea
+                    name="message"
+                    required
+                    value={form.message}
+                    onChange={handleChange}
+                    className="contact__field-textarea"
+                    placeholder=" "
+                    rows={5}
+                  />
+                  <label className="contact__field-label">Your Message</label>
+                </div>
 
-              <motion.button
-                type="submit"
-                className="contact__submit"
-                disabled={status === 'loading'}
-                whileTap={{ scale: 0.97 }}
-              >
-                {status === 'loading' ? 'Sending...' : 'Send Message'}
-              </motion.button>
+                <motion.button
+                  type="submit"
+                  className="contact__submit"
+                  disabled={status === 'loading'}
+                  whileTap={{ scale: 0.97 }}
+                >
+                  {status === 'loading' ? 'Sending...' : 'Send Message'}
+                </motion.button>
 
-              <AnimatePresence>
-                {status === 'success' && (
-                  <motion.div
-                    className="contact__feedback contact__feedback--success"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    Message sent successfully! I&apos;ll get back to you soon.
-                  </motion.div>
-                )}
-                {status === 'error' && (
-                  <motion.div
-                    className="contact__feedback contact__feedback--error"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    Failed to send message. Please try again or email directly.
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </form>
-          </div>
-        </ScrollReveal>
+                <AnimatePresence>
+                  {status === 'success' && (
+                    <motion.div
+                      className="contact__feedback contact__feedback--success"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      Message sent successfully! I&apos;ll get back to you soon.
+                    </motion.div>
+                  )}
+                  {status === 'error' && (
+                    <motion.div
+                      className="contact__feedback contact__feedback--error"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      Failed to send message. Please try again or email directly.
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </form>
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );

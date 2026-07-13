@@ -3,6 +3,39 @@
 
 .projects {
   @include section-container;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 20% 14%, rgba(var(--accent-1-rgb), 0.09), transparent 24%),
+    radial-gradient(circle at 78% 76%, rgba(79, 70, 229, 0.09), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.012), transparent 20%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, rgba(var(--accent-1-rgb), 0.04) 25%, transparent 25%, transparent 50%, rgba(var(--accent-1-rgb), 0.04) 50%, rgba(var(--accent-1-rgb), 0.04) 75%, transparent 75%, transparent);
+    background-size: 24px 24px;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto auto -12% 10%;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 70%);
+    pointer-events: none;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 
   &__filters {
     display: flex;

@@ -9,17 +9,28 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  isolation: isolate;
+  padding: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(var(--accent-1-rgb), 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(var(--accent-1-rgb), 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(var(--accent-1-rgb), 0.03) 0%, transparent 50%);
 
   &__bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 20% 50%, rgba(var(--accent-1-rgb), 0.08) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(var(--accent-1-rgb), 0.05) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 80%, rgba(var(--accent-1-rgb), 0.03) 0%, transparent 50%);
     background-size: 200% 200%;
     animation: gradient-shift 15s ease infinite;
     z-index: 0;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: $section-max-width;
+    margin: 0 auto;
+    padding: 2rem clamp(1.5rem, 4vw, 3rem);
+    position: relative;
+    z-index: 1;
   }
 
   &__content {

@@ -3,6 +3,40 @@
 
 .education {
   @include section-container;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(var(--accent-1-rgb), 0.07), transparent 24%),
+    radial-gradient(circle at 88% 10%, rgba(245, 158, 11, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 18%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(var(--accent-1-rgb), 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245, 158, 11, 0.05) 1px, transparent 1px);
+    background-size: 88px 88px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto -6% 0 auto;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.12), transparent 70%);
+    pointer-events: none;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 
   &__grid {
     display: grid;
