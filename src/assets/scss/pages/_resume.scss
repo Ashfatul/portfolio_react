@@ -487,4 +487,19 @@ h3.education_institution {
         page-break-before: auto;
         margin-top: 20px;
     }
+
+    /* Ensure printed page margins show white background and preserve colors */
+    html, body {
+        background: $white !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    .resume_page {
+        background: $white !important;
+    }
+
+    .resume_container {
+        box-shadow: none !important;
+    }
 }
