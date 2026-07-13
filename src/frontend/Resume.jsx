@@ -7,7 +7,8 @@ import resumeData from "../../public/data/resume_data.json"
 
 const skillCategoryLabels = {
     frontend: "Frontend",
-    backend: "Backend",
+    stateAndData: "State & Data",
+    backendBasics: "Backend & Database",
     tools: "Tools & Platforms",
     practices: "Practices"
 }
@@ -159,6 +160,35 @@ const Resume = () => {
                         </article>
                     ))}
                 </section>
+
+                {resumeData.personalProjects?.length > 0 && (
+                    <section>
+                        <h2 className="resume_inner_title">Personal Projects</h2>
+                        <ul className="projects_list">
+                            {resumeData.personalProjects.map((project, index) => (
+                                <li className="project_item" key={index}>
+                                    <p className="project_header">
+                                        <strong>
+                                            {project.link ? (
+                                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                                    {project.name}
+                                                </a>
+                                            ) : (
+                                                project.name
+                                            )}
+                                        </strong>
+                                        {project.techStack?.length > 0 && (
+                                            <span className="project_tech"> [{project.techStack.join(", ")}]</span>
+                                        )}
+                                    </p>
+                                    {project.description && (
+                                        <p className="project_description">{project.description}</p>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                )}
 
                 <section>
                     <h2 className="resume_inner_title">Education</h2>

@@ -1,7 +1,7 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Frontend Developer | React | JavaScript",
+      "position": "Frontend Developer | React | Next.js | TypeScript",
       "yearsOfExperience": 3,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
@@ -9,7 +9,7 @@
       "github": "https://github.com/ashfatul",
       "linkedin": "https://linkedin.com/in/ashfatul",
       "portfolio": "https://ashfatul.netlify.app/",
-      "about": "Frontend Developer with 3 years of experience building commercial web products using React, JavaScript, SCSS, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ products across SaaS, CodeCanyon, and client projects — converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch, delivered ~50 screens for LevelUp LMS, and integrated 30+ APIs with performance-focused UX improvements."
+      "about": "Frontend Developer with 3 years of experience building commercial web products using React, TypeScript, Next.js, and REST APIs. Served as the sole frontend developer for nearly two years, supporting 17+ products across SaaS, CodeCanyon, and client projects — converting 200+ Figma designs into responsive, production-ready interfaces. Built 6+ applications from scratch at work, plus multiple full-stack personal projects using Next.js 16, Supabase, and Tailwind CSS."
    },
    "achievements": [
       {
@@ -18,11 +18,15 @@
       },
       {
          "title": "Product Development",
-         "description": "Built 6+ applications and improved 10+ existing products."
+         "description": "Built 6+ applications at work and multiple full-stack projects independently."
       },
       {
          "title": "UI & API Execution",
          "description": "Converted 200+ Figma designs and integrated 30+ REST APIs."
+      },
+      {
+         "title": "Modern Stack Adoption",
+         "description": "Built full-stack apps with Next.js 16, TypeScript, and Supabase — deployed on Vercel."
       }
    ],
    "experience": [
@@ -115,6 +119,46 @@
          ]
       }
    ],
+   "personalProjects": [
+      {
+         "name": "AI Interview Platform",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "Vercel AI SDK",
+            "Monaco Editor"
+         ],
+         "description": "Full-stack AI-powered mock interview platform with configurable coding/theory interviews, split-screen code editor, anti-cheat system, and AI-generated scorecards. Supports OpenAI, Gemini, and Ollama providers.",
+         "link": "https://github.com/ashfatul/ai-interview"
+      },
+      {
+         "name": "Aniya",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "Recharts"
+         ],
+         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
+         "link": "https://aniya-app.vercel.app"
+      },
+      {
+         "name": "Product Manager",
+         "techStack": [
+            "React 19",
+            "TypeScript",
+            "Vite",
+            "Zustand",
+            "React Query",
+            "Ant Design"
+         ],
+         "description": "Product management dashboard built with React 19 and TypeScript, featuring Zustand for state management and React Query for server-state.",
+         "link": "https://github.com/ashfatul/product-m"
+      }
+   ],
    "education": [
       {
          "degree": "Bachelor of Science in Computer Science",
@@ -141,34 +185,41 @@
          "issuer": "Learn with Sumit",
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
-         "info": "Advanced React program (93.56%) covering architecture, hooks, routing, state management, and API integration."
+         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router."
       }
    ],
    "skills": {
       "frontend": [
          "React",
+         "Next.js",
+         "TypeScript",
          "JavaScript (ES6+)",
          "HTML5",
          "CSS3",
          "SCSS/Sass",
-         "Bootstrap",
          "Tailwind CSS",
+         "Bootstrap",
          "jQuery",
          "Responsive Web Design",
          "Cross-Browser Compatibility",
          "RTL Support",
          "Semantic HTML"
       ],
-      "backend": [
-         "REST API Integration",
-         "React Query",
+      "stateAndData": [
+         "React Query (TanStack)",
+         "Zustand",
          "Context API",
          "React Hook Form",
          "Axios",
+         "REST API Integration"
+      ],
+      "backendBasics": [
          "Node.js",
          "Express.js",
+         "Supabase",
          "MongoDB",
-         "Next.js"
+         "Prisma",
+         "PostgreSQL"
       ],
       "tools": [
          "Git",
@@ -178,6 +229,7 @@
          "Chrome DevTools",
          "npm",
          "Vite",
+         "Vercel",
          "VS Code"
       ],
       "practices": [
