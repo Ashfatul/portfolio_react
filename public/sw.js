@@ -12,6 +12,11 @@ self.addEventListener('fetch', (e) => {
   // Only handle GET requests to avoid caching issues with APIs or external requests
   if (e.request.method !== 'GET') return;
 
+  // Filter out unsupported schemes (e.g., chrome-extension://, data:)
+  if (!e.request.url.startsWith('http://') && !e.request.url.startsWith('https://')) {
+    return;
+  }
+
   e.respondWith(
     caches.match(e.request).then((cachedResponse) => {
       if (cachedResponse) {
