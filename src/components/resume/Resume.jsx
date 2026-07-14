@@ -3,6 +3,7 @@ import { FaGithub, FaGlobeAmericas, FaLinkedinIn, FaRegEnvelope } from "react-ic
 import { BsTelephoneOutbound } from "react-icons/bs"
 import { MdPrint } from "react-icons/md"
 import { IoLocationOutline } from "react-icons/io5"
+import { FiArrowLeft } from "react-icons/fi"
 import { Link } from "react-router-dom"
 import resumeData from "../../../public/data/resume_data.json"
 
@@ -22,7 +23,10 @@ const Resume = () => {
     return (
         <div className="resume_page">
         <article className="resume_container">
-            <Link to="/" className="resume_back_link">&larr; Back to Portfolio</Link>
+            <Link to="/" className="resume_back_link">
+                <FiArrowLeft />
+                <span>Back to Portfolio</span>
+            </Link>
 
             <header className="resume_header">
                 <div className="resume_header_left">

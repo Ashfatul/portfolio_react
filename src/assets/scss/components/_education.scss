@@ -110,55 +110,195 @@
   }
 
   &__certs-title {
+    margin-top: 3.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__featured-cert {
+    @include glass-card;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 2.2rem;
+    padding: 2.2rem;
+    border-radius: 20px;
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 40%),
+      $bg-card;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include below(md) {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+      padding: 1.6rem;
+    }
+  }
+
+  &__cert-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__cert-badge-tag {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #fff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+  }
+
+  &__cert-featured-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $text-primary;
+    line-height: 1.2;
+  }
+
+  &__cert-featured-issuer {
+    font-size: 0.88rem;
+    color: $text-muted;
+    margin-top: -0.2rem;
+  }
+
+  &__cert-feedback {
+    position: relative;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: $text-secondary;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-1);
+    margin: 0.8rem 0;
+  }
+
+  &__cert-topics {
+    margin-top: 0.8rem;
+  }
+
+  &__topics-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-muted;
+    margin-bottom: 0.5rem;
+  }
+
+  &__topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  &__topic-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.6rem;
+    border-radius: 6px;
+    background: $bg-secondary;
+    border: 1px solid $glass-border;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    &:hover {
+      border-color: var(--accent-1);
+      color: $text-primary;
+    }
+  }
+
+  /* Sidebar performance stats and actions */
+  &__cert-sidebar {
+    @include glass-card;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  &__sidebar-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-muted;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.5rem;
+  }
+
+  &__cert-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
     margin-bottom: 1.5rem;
   }
 
-  &__cert {
-    @include glass-card;
-    padding: 1.25rem;
-    margin-bottom: 1rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__cert-header {
+  &__cert-stat {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.2;
   }
 
-  &__cert-title {
-    font-size: 1rem;
-    font-weight: 600;
+  &__cert-stat-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-1);
+    background: linear-gradient(135deg, var(--accent-1), #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    a {
-      color: var(--accent-1);
-      transition: opacity $transition-base;
+  &__cert-stat-lbl {
+    font-size: 0.78rem;
+    color: $text-muted;
+    font-weight: 500;
+    margin-top: 0.2rem;
+  }
 
-      &:hover {
-        opacity: 0.8;
+  &__cert-actions {
+    margin-top: auto;
+  }
+
+  &__cert-verify-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0.65rem;
+    border-radius: 8px;
+    background: var(--accent-1);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all $transition-base;
+    box-shadow: 0 4px 12px rgba(var(--accent-1-rgb), 0.2);
+
+    svg {
+      font-size: 0.9rem;
+      transition: transform $transition-base;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, var(--accent-1), #7c3aed);
+      box-shadow: 0 6px 18px rgba(var(--accent-1-rgb), 0.3);
+
+      svg {
+        transform: translate(1px, -1px);
       }
     }
-  }
-
-  &__cert-date {
-    font-size: 0.8rem;
-    color: $text-muted;
-  }
-
-  &__cert-issuer {
-    font-size: 0.85rem;
-    color: $text-secondary;
-    margin-bottom: 0.25rem;
-  }
-
-  &__cert-info {
-    font-size: 0.85rem;
-    color: $text-muted;
   }
 }

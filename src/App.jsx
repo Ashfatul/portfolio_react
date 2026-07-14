@@ -24,14 +24,11 @@ export default function App() {
 
   if (loading || !data) {
     return (
-      <div style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'var(--text-muted)',
-      }}>
-        Loading...
+      <div className="preloader">
+        <div className="preloader__spinner">
+          <div className="preloader__circle" />
+          <div className="preloader__circle-inner" />
+        </div>
       </div>
     );
   }
