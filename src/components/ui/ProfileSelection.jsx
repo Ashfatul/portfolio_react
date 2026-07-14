@@ -368,7 +368,7 @@ export default function ProfileSelection() {
             <FaServer />
           </div>
           <div style={cardContentStyle}>
-            <p style={cardSubtitleStyle}>Node.js · Supabase · MongoDB</p>
+            <p style={cardSubtitleStyle}>React · Node.js · MongoDB</p>
             <h2 style={cardTitleStyle}>Full Stack Developer</h2>
             <p style={cardDescStyle}>
               Explore backend integrations, API design, and full-stack flows.

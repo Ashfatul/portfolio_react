@@ -1,7 +1,7 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Full Stack Developer | React | Node.js | Supabase | Next.js",
+      "position": "Frontend-Focused Full Stack Developer | React | Node.js | MongoDB",
       "yearsOfExperience": 3,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
@@ -15,27 +15,27 @@
          "English",
          "Hindi"
       ],
-      "heroAbout": "Full Stack Developer focused on building end-to-end web applications, robust APIs, and modern frontends.",
-      "about": "Full Stack Developer with 3 years of experience building web products from base database configuration to responsive user interfaces. Highly proficient in React, Next.js, and TypeScript, combined with solid skills in Node.js, Express, Supabase, PostgreSQL, and MongoDB. Proven capability to coordinate frontend UI execution with API systems, integrate multiple REST endpoints, and implement clean backend server/database architectures."
+      "heroAbout": "Frontend-focused Full Stack Developer specialized in building highly interactive interfaces, database integrations, and serverless workflows.",
+      "about": "Frontend-focused Full Stack Developer with 3+ years of professional experience building modern user interfaces and SaaS platforms. Proficient in React, Next.js, and TypeScript, combined with hands-on experience structuring backend workflows using Node.js, Express, Supabase, PostgreSQL, and MongoDB. Skilled in linking client-side applications with secure database schemas, building serverless endpoints, and managing real-time data flows."
    },
    "stats": {
-      "yearsExperience": "3",
-      "fullStackApps": "5+",
+      "yearsExperience": "3+",
+      "fullStackApps": "4+",
       "productsShipped": "17+",
       "apiIntegrations": "30+"
    },
    "achievements": [
       {
-         "title": "Full Stack & Frontend Ownership",
-         "description": "Built and deployed multiple production-ready full stack web applications integrating React/Next.js frontends with Supabase and MongoDB backends."
+         "title": "Frontend & Full Stack Dev",
+         "description": "Led UI development and successfully integrated database/serverless features for multiple production-grade web applications using Supabase and MongoDB."
       },
       {
-         "title": "API Architect & Integration",
-         "description": "Architected and integrated 30+ REST APIs, managing database workflows, roles, and real-time synchronizations."
+         "title": "API & DB Integrations",
+         "description": "Connected 30+ REST APIs, managed database models, and set up dynamic authentication workflows with role-based features."
       },
       {
          "title": "Production Scale Dev",
-         "description": "Contributed to 17+ commercial and SaaS products, balancing client frontend implementations with robust service architectures."
+         "description": "Contributed to 17+ commercial and SaaS products, translating design visual concepts into functional full-stack flows."
       }
    ],
    "experience": [
