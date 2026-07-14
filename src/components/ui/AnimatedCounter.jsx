@@ -9,8 +9,9 @@ export function AnimatedCounter({ value, duration = 2 }) {
   useEffect(() => {
     if (!isInView) return;
 
-    const numericPart = parseInt(value.replace(/\D/g, ''), 10);
-    const suffix = value.replace(/\d/g, '');
+    const stringValue = String(value);
+    const numericPart = parseInt(stringValue.replace(/\D/g, ''), 10);
+    const suffix = stringValue.replace(/\d/g, '');
 
     if (isNaN(numericPart)) {
       setDisplay(value);
