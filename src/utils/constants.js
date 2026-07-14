@@ -17,31 +17,62 @@ export const NAV_ITEMS = [
   { id: 'contact', label: 'Contact' },
 ];
 
+// One icon per skill, with a generic fallback (`FiTag`) for anything unmapped
+// so no pill renders without an icon. Keys must match the strings in
+// public/data/resume_data.json -> skills.*  verbatim.
 export const SKILL_ICON_MAP = {
-  'JavaScript (ES6+)': 'SiJavascript',
+  // ---------- Frontend ----------
   'React': 'FaReact',
   'Next.js': 'SiNextdotjs',
-  'jQuery': 'SiJquery',
+  'TypeScript': 'SiTypescript',
+  'JavaScript (ES6+)': 'SiJavascript',
   'HTML5': 'FaHtml5',
   'CSS3': 'FaCss3Alt',
   'SCSS/Sass': 'FaSass',
+  'Tailwind CSS': 'SiTailwindcss',
+  'Bootstrap': 'SiBootstrap',
+  'jQuery': 'SiJquery',
   'Responsive Web Design': 'MdDevices',
   'Cross-Browser Compatibility': 'FaGlobe',
+  'RTL Support': 'MdTranslate',
+  'Semantic HTML': 'SiHtml5',
+
+  // ---------- State & Data ----------
+  'React Query (TanStack)': 'SiReactquery',
+  'Zustand': 'MdAccountTree',
+  'Context API': 'SiReact',
+  'React Hook Form': 'SiReacthookform',
+  'Axios': 'SiAxios',
+  'REST API Integration': 'TbApi',
+
+  // ---------- Backend basics ----------
   'Node.js': 'FaNodeJs',
   'Express.js': 'SiExpress',
+  'Supabase': 'SiSupabase',
   'MongoDB': 'SiMongodb',
-  'REST APIs': 'TbApi',
+  'Prisma': 'SiPrisma',
+  'PostgreSQL': 'SiPostgresql',
+
+  // ---------- Tools ----------
   'Git': 'FaGitAlt',
   'GitHub': 'FaGithub',
-  'npm': 'SiNpm',
-  'Vite': 'SiVite',
   'Figma': 'FaFigma',
-  'VS Code': 'VscCode',
   'Postman': 'SiPostman',
   'Chrome DevTools': 'FaChrome',
-  'Agile/Scrum': 'MdGroups',
-  'Code Review': 'MdRateReview',
+  'npm': 'SiNpm',
+  'Vite': 'SiVite',
+  'Vercel': 'SiVercel',
+  'VS Code': 'VscVscode',
+
+  // ---------- Practices ----------
   'Component-Based Architecture': 'MdWidgets',
   'Performance Optimization': 'MdSpeed',
-  'SEO': 'MdTravelExplore',
+  'Responsive Design': 'MdDevices',
+  'Code Review': 'MdRateReview',
+  'Agile/Scrum': 'MdGroups',
+  'Git Workflow': 'FaGitAlt',
+  'UI/UX Collaboration': 'MdDesignServices',
 };
+
+// Generic fallback used for any skill whose name isn't in the map above
+export const FALLBACK_ICON = 'FiTag';
