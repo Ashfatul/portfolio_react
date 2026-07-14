@@ -1,42 +1,20 @@
-import { createBrowserRouter } from "react-router-dom";
-import FrontendLayout from "./layout/FrontendLayout";
-import Resume from "./frontend/Resume";
-import Home from "./frontend/Home";
-import About from "./frontend/About";
-import Projects from "./frontend/Projects";
-import Contact from "./frontend/Contact";
+import { createBrowserRouter } from 'react-router-dom';
+import App from './App';
+import Resume from './components/resume/Resume';
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <FrontendLayout/>,
-        children: [
-            {
-                path: "/",
-                element: <Home/>
-            },
-            {
-                path: "/about",
-                element: <About/>
-            },
-            {
-                path: "/projects",
-                element: <Projects/>
-            },
-            {
-                path: "/contact",
-                element: <Contact/>
-            },
-            {
-                path: "*",
-                element: <div>404</div>
-            }
-        ]
-    },
-    {
-        path: "/resume",
-        element: <Resume />
-    }
+  {
+    path: '/',
+    element: <App />,
+  },
+  {
+    path: '/resume',
+    element: <Resume />,
+  },
+  {
+    path: '*',
+    element: <App />,
+  },
 ]);
 
 export default router;

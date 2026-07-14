@@ -1,0 +1,357 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0;
+  background: $bg-primary;
+
+  &__blob {
+    position: absolute;
+    width: clamp(250px, 40vw, 550px);
+    height: clamp(250px, 40vw, 550px);
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.16;
+    z-index: 0;
+    pointer-events: none;
+
+    &--1 {
+      top: 15%;
+      left: 10%;
+      background: var(--accent-1);
+      animation: float-blob-1 25s ease-in-out infinite alternate;
+    }
+
+    &--2 {
+      bottom: 15%;
+      right: 10%;
+      background: var(--accent-2);
+      animation: float-blob-2 25s ease-in-out infinite alternate;
+    }
+  }
+
+  &__bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: $section-max-width;
+    margin: 0 auto;
+    padding: 6rem clamp(1.5rem, 4vw, 3rem) 3rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__grid-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 3.5rem;
+    align-items: center;
+
+    @include below(lg) {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include below(lg) {
+      align-items: center;
+    }
+  }
+
+  &__status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(var(--accent-1-rgb), 0.06);
+    border: 1px solid rgba(var(--accent-1-rgb), 0.15);
+    border-radius: 99px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__status-pulse {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-1);
+    border-radius: 50%;
+    animation: status-pulse-glow 2s infinite;
+  }
+
+  &__greeting {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: $text-secondary;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  &__name {
+    font-size: clamp(3.2rem, 5vw, 4.8rem);
+    font-weight: 900;
+    @include gradient-text;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: clamp(1.2rem, 3.2vw, 1.8rem);
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.25rem;
+    min-height: 2.2rem;
+
+    &-cursor {
+      border-right: 3px solid var(--accent-1);
+      animation: blink-cursor 1s step-end infinite;
+      padding-right: 2px;
+    }
+  }
+
+  &__about {
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+    color: $text-secondary;
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 2.2rem;
+    text-align: left;
+
+    @include below(lg) {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2.2rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    @include glass-card;
+    font-size: 1.15rem;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    &:hover {
+      color: var(--accent-1);
+      border-color: rgba(var(--accent-1-rgb), 0.25);
+      box-shadow: 0 4px 15px rgba(var(--accent-1-rgb), 0.15);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__ctas {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__cta {
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: all $transition-base;
+
+    &--primary {
+      background: $accent-gradient;
+      color: #fff;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(var(--accent-1-rgb), 0.3);
+      }
+    }
+
+    &--secondary {
+      @include glass-card;
+      color: $text-primary;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+
+  /* Right Column Code Window Mockup */
+  &__graphic-content {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__code-window {
+    width: 100%;
+    max-width: 440px;
+    background: #0d0d15;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 
+      0 20px 50px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    text-align: left;
+  }
+
+  &__code-header {
+    background: #141420;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__code-dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__code-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    &--red { background: #ff5f56; }
+    &--yellow { background: #ffbd2e; }
+    &--green { background: #27c93f; }
+  }
+
+  &__code-tab {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: $text-muted;
+    background: #0d0d15;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  &__code-body {
+    padding: 1.5rem;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin: 0;
+
+    .code-kw { color: #f43f5e; }
+    .code-var { color: #38bdf8; }
+    .code-str { color: #10b981; }
+    .code-num { color: #fbbf24; }
+    .code-comment { color: $text-muted; }
+  }
+
+  &__floating-icons {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    @include below(sm) {
+      display: none;
+    }
+  }
+
+  &__floating-icon {
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--accent-1);
+    opacity: 0.15;
+    transition: all $transition-base;
+
+    &:nth-child(1) { top: 12%; left: 8%; animation: float-1 8s ease-in-out infinite; }
+    &:nth-child(2) { top: 22%; right: 12%; animation: float-2 10s ease-in-out infinite; }
+    &:nth-child(3) { bottom: 25%; left: 6%; animation: float-3 7s ease-in-out infinite; }
+    &:nth-child(4) { bottom: 18%; right: 8%; animation: float-1 9s ease-in-out infinite 1s; }
+    &:nth-child(5) { top: 55%; left: 16%; animation: float-2 11s ease-in-out infinite 2s; }
+    &:nth-child(6) { top: 8%; right: 22%; animation: float-3 8s ease-in-out infinite 0.5s; }
+  }
+
+  &__scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    color: $text-muted;
+    font-size: 0.78rem;
+    animation: scroll-bounce 2s ease-in-out infinite;
+
+    svg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/* Animations specific to Hero Section */
+@keyframes float-blob-1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, 30px) scale(1.1); }
+}
+
+@keyframes float-blob-2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-50px, -30px) scale(1.1); }
+}
+
+@keyframes status-pulse-glow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(var(--accent-1-rgb), 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(var(--accent-1-rgb), 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(var(--accent-1-rgb), 0);
+  }
+}

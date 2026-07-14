@@ -1,0 +1,217 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(var(--accent-1-rgb), 0.1), transparent 24%),
+    radial-gradient(circle at 12% 84%, rgba(79, 70, 229, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 18%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(var(--accent-1-rgb), 0.05) 1px, transparent 1px);
+    background-size: 120px 120px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto auto 8% 18%;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.12), transparent 68%);
+    pointer-events: none;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__inner {
+    @include section-container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-end;
+
+    @include below(md) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__info {
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 0rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  &__info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 20px;
+  }
+
+  &__info-card {
+    @include glass-card;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all $transition-base;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: $bg-secondary;
+      color: var(--accent-1);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    &-content {
+      p:first-child {
+        font-size: 0.8rem;
+        color: $text-muted;
+        margin-bottom: 0.15rem;
+      }
+
+      p:last-child {
+        font-size: 0.9rem;
+        color: $text-primary;
+      }
+    }
+  }
+
+  &__form-wrapper {
+    @include glass-card;
+    padding: 2rem;
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+
+    @include below(md) {
+      position: static;
+      top: auto;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__field {
+    position: relative;
+
+    &-input,
+    &-textarea {
+      width: 100%;
+      padding: 1rem 0 0.5rem;
+      border-bottom: 2px solid $glass-border;
+      font-size: 0.95rem;
+      color: $text-primary;
+      background: transparent;
+      transition: border-color $transition-base;
+
+      &:focus {
+        border-bottom-color: var(--accent-1);
+      }
+
+      &:focus ~ .contact__field-label,
+      &:not(:placeholder-shown) ~ .contact__field-label {
+        top: -4px;
+        font-size: 0.75rem;
+        color: var(--accent-1);
+      }
+    }
+
+    &-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    &-label {
+      position: absolute;
+      top: 0.75rem;
+      left: 0;
+      font-size: 0.9rem;
+      color: $text-muted;
+      pointer-events: none;
+      transition: all $transition-base;
+    }
+  }
+
+  &__submit {
+    padding: 0.85rem 2rem;
+    border-radius: 12px;
+    background: $accent-gradient;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all $transition-base;
+    align-self: flex-start;
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(var(--accent-1-rgb), 0.3);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &__feedback {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+
+    &--success {
+      background: rgba(16, 185, 129, 0.1);
+      color: $success;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    &--error {
+      background: rgba(239, 68, 68, 0.1);
+      color: $error;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+  }
+}

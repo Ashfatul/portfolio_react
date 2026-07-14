@@ -1,0 +1,327 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.about {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(var(--accent-1-rgb), 0.08), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(79, 70, 229, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 18%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(var(--accent-1-rgb), 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--accent-1-rgb), 0.06) 1px, transparent 1px);
+    background-size: 72px 72px;
+    opacity: 0.14;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto -8% 4rem auto;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.12), transparent 68%);
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  &__inner {
+    @include section-container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 3rem;
+    align-items: start;
+
+    @include below(lg) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__card {
+    @include glass-card;
+    padding: 2rem;
+    position: sticky;
+    top: 6rem;
+    perspective: 1000px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: auto -20% -35% auto;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(var(--accent-1-rgb), 0.18), transparent 70%);
+      pointer-events: none;
+    }
+
+    @include below(lg) {
+      position: static;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  &__avatar {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0 auto 1.25rem;
+    border: 2px solid $glass-border;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  &__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    background: rgba(var(--accent-1-rgb), 0.08);
+    color: var(--accent-1);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  &__position {
+    color: var(--accent-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      color: $text-secondary;
+
+      svg {
+        color: var(--accent-1);
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    @include glass-card;
+    font-size: 1.1rem;
+    color: $text-secondary;
+    transition: all $transition-base;
+
+    &:hover {
+      color: var(--accent-1);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 1.25rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.45rem;
+    color: var(--accent-1);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  &__split-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 1.5rem;
+    align-items: stretch;
+
+    @include below(md) {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+  }
+
+  &__bio-panel {
+    @include glass-card;
+    padding: 1.6rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__bio {
+    margin-bottom: 0;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: $text-secondary;
+  }
+
+  &__achievements-panel {
+    @include glass-card;
+    padding: 1.6rem;
+    border-radius: 20px;
+  }
+
+  &__achievements-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-1);
+    margin-bottom: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.5rem;
+  }
+
+  &__achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  &__achievement-card {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.45;
+
+    .about__achievement-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: $text-primary;
+    }
+
+    .about__achievement-desc {
+      font-size: 0.85rem;
+      color: $text-secondary;
+      margin-top: 0.15rem;
+    }
+  }
+
+  &__highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+
+    @include below(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__highlight {
+    @include glass-card;
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    border: 1px solid rgba(var(--accent-1-rgb), 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+
+    &-label {
+      font-size: 0.78rem;
+      color: $text-muted;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    &-value {
+      font-size: 0.96rem;
+      color: $text-primary;
+      line-height: 1.5;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__stat {
+    @include glass-card;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-1);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+
+    &-number {
+      font-size: 2rem;
+      font-weight: 800;
+      @include gradient-text;
+      line-height: 1.2;
+    }
+
+    &-label {
+      font-size: 0.8rem;
+      color: $text-muted;
+      margin-top: 0.25rem;
+    }
+  }
+}

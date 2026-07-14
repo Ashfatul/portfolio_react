@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $text-primary;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
+h4 { font-size: clamp(1.1rem, 1.5vw, 1.35rem); }
+h5 { font-size: clamp(1rem, 1.2vw, 1.15rem); }
+
+p {
+  color: $text-secondary;
+  line-height: 1.8;
+}
+
+.section-heading {
+  background: $accent-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.section-subheading {
+  color: $text-secondary;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  max-width: 600px;
+  margin-bottom: 3rem;
+}

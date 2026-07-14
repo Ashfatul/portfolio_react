@@ -1,0 +1,58 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.footer {
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  border-top: 1px solid $glass-border;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, rgba(var(--accent-1-rgb), 0.04), transparent 55%),
+    radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.08), transparent 35%);
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: $accent-gradient;
+  }
+
+  &__container {
+    max-width: $section-max-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include below(md) {
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    @include gradient-text;
+  }
+
+  &__tagline {
+    font-size: 0.85rem;
+    color: $text-muted;
+  }
+
+  &__copy {
+    font-size: 0.85rem;
+    color: $text-muted;
+  }
+}
