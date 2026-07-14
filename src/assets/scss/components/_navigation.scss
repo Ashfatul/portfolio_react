@@ -7,8 +7,8 @@
   left: 0;
   right: 0;
   z-index: $z-nav;
-  padding: 1rem 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 1.25rem 0;
+  transition: padding $transition-base;
 
   &__container {
     max-width: $section-max-width;
@@ -17,14 +17,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: $nav-bg;
-    backdrop-filter: $backdrop-blur;
-    -webkit-backdrop-filter: $backdrop-blur;
-    border: 1px solid $glass-border;
+    background: transparent;
+    border: 1px solid transparent;
     border-radius: 50px;
+    transition: background $transition-base, border-color $transition-base,
+      backdrop-filter $transition-base, box-shadow $transition-base, padding $transition-base;
 
     @include below(md) {
       padding: 0.6rem 1.25rem;
+    }
+  }
+
+  &--scrolled {
+    padding: 0.75rem 0;
+
+    .nav__container {
+      background: $nav-bg;
+      backdrop-filter: $backdrop-blur;
+      -webkit-backdrop-filter: $backdrop-blur;
+      border: 1px solid $glass-border;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
   }
 
