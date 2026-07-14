@@ -188,37 +188,25 @@
   &__pill {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    padding: 0.42rem 0.78rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.035);
+    gap: 0.25rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    background: $bg-secondary;
     border: 1px solid $glass-border;
-    font-size: 0.82rem;
-    font-weight: 500;
+    font-size: 0.8rem;
     color: $text-secondary;
-    line-height: 1;
-    transition: color $transition-base, background $transition-base,
-      border-color $transition-base, transform $transition-base,
-      box-shadow $transition-base;
+    transition: all $transition-base;
     cursor: default;
-    will-change: transform;
 
     svg {
       font-size: 0.95rem;
       color: var(--accent-1);
-      transition: color $transition-base, transform $transition-base;
+      transition: color $transition-base;
     }
 
     &:hover {
+      border-color: var(--accent-1);
       color: $text-primary;
-      background: rgba(var(--accent-1-rgb), 0.08);
-      border-color: rgba(var(--accent-1-rgb), 0.35);
-      box-shadow: 0 6px 16px rgba(var(--accent-1-rgb), 0.15);
-
-      svg {
-        color: var(--accent-1);
-        transform: scale(1.08);
-      }
     }
   }
 

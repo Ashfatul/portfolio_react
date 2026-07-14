@@ -107,7 +107,6 @@ export default function Skills({ data }) {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: '-40px' }}
                         transition={{ delay: i * 0.04, duration: 0.28, ease: 'easeOut' }}
-                        whileHover={{ y: -2 }}
                       >
                         <span className="skills__pill-icon">
                           <SkillIcon name={skill} />

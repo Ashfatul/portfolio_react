@@ -335,14 +335,26 @@
             "Data Structures & Algorithms",
             "Object-Oriented Programming",
             "Database Systems",
-            "Software Engineering"
+            "Software Engineering",
+            "Computer Networks",
+            "Operating Systems",
+            "Web Development",
+            "Discrete Mathematics"
          ]
       },
       {
          "degree": "Diploma in Civil Engineering",
          "institution": "Bogura Polytechnic Institute, Bogura",
          "duration": "2018 - 2023",
-         "info": "CGPA: 3.60 / 4.00"
+         "info": "CGPA: 3.60 / 4.00",
+         "coursework": [
+            "Structural Mechanics",
+            "Surveying",
+            "Transportation Engineering",
+            "Geotechnical Engineering",
+            "Estimating & Costing",
+            "Construction Management"
+         ]
       }
    ],
    "certificates": [
