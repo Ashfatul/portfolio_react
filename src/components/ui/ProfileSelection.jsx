@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaReact, FaServer } from 'react-icons/fa';
+import { FaReact, FaServer, FaGithub, FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
 
 export default function ProfileSelection() {
@@ -10,7 +10,7 @@ export default function ProfileSelection() {
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    padding: '2rem',
+    padding: '3rem 2rem',
     backgroundColor: 'var(--bg-primary)',
     color: 'var(--text-primary)',
     fontFamily: 'inherit',
@@ -46,27 +46,45 @@ export default function ProfileSelection() {
 
   const headerStyle = {
     textAlign: 'center',
-    marginBottom: '3rem',
+    marginBottom: '3.5rem',
     zIndex: 1,
   };
 
   const nameStyle = {
-    fontSize: '2.5rem',
+    fontSize: '2.8rem',
     fontWeight: '800',
     letterSpacing: '-0.02em',
-    marginBottom: '0.5rem',
+    marginBottom: '0.75rem',
     background: 'var(--accent-gradient)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
   };
 
   const taglineStyle = {
-    fontSize: '1.1rem',
+    fontSize: '1.15rem',
     color: 'var(--text-secondary)',
     fontWeight: '400',
     maxWidth: '500px',
     margin: '0 auto',
     lineHeight: '1.5',
+  };
+
+  const footerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1.5rem',
+    marginTop: '4rem',
+    zIndex: 1,
+  };
+
+  const footerLinkStyle = {
+    color: 'var(--text-secondary)',
+    fontSize: '1.25rem',
+    transition: 'all 0.2s ease',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
   };
 
   const gridStyle = {
@@ -155,9 +173,9 @@ export default function ProfileSelection() {
       <div style={backgroundGlowRight} />
       
       <header style={headerStyle}>
-        <h1 style={nameStyle}>A. A. M. Ashfatul Islam</h1>
+        <h1 style={nameStyle}>Ashfatul Islam</h1>
         <p style={taglineStyle}>
-          Welcome! Please choose a profile to tailor your portfolio and resume experience:
+          Choose a profile below to explore my resume, projects, and skills aligned with your hiring needs.
         </p>
       </header>
 
@@ -238,6 +256,40 @@ export default function ProfileSelection() {
           </div>
         </Link>
       </div>
+
+      <footer style={footerStyle}>
+        <a
+          href="https://github.com/ashfatul"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={footerLinkStyle}
+          onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-1)'}
+          onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://linkedin.com/in/ashfatul"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={footerLinkStyle}
+          onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-1)'}
+          onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+          aria-label="LinkedIn"
+        >
+          <FaLinkedinIn />
+        </a>
+        <a
+          href="mailto:ashfatul.islam@gmail.com"
+          style={footerLinkStyle}
+          onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-1)'}
+          onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+          aria-label="Email"
+        >
+          <FaRegEnvelope />
+        </a>
+      </footer>
     </div>
   );
 }
