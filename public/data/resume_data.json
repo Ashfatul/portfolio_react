@@ -50,7 +50,7 @@
          "impact": [
             "Served as the sole frontend developer, independently managing all UI deliverables across the entire product portfolio.",
             "Shipped production features across diverse domains — LMS, e-commerce, accounting, and legal — balancing new builds with legacy maintenance.",
-            "Delivered ~50 React screens for LevelUp LMS with REST API integration, multilingual, and RTL support."
+            "Delivered ~50 React screens for Marifa LMS with REST API integration, multilingual, and RTL support."
          ],
          "leadership": [
             "Built the entire React frontend for a Learning Management System (LMS) independently, converting provided Figma designs into production-ready user interfaces.",
@@ -86,7 +86,7 @@
                "description": "Redesigned key pages, improved responsive behavior, and delivered production-ready templates for backend integration."
             },
             {
-               "name": "LevelUp",
+               "name": "Marifa LMS",
                "type": "Learning Management Software",
                "techStack": [
                   "React",
@@ -153,8 +153,8 @@
    ],
    "showcase_projects": [
       {
-         "id": "levelup",
-         "name": "LevelUp LMS",
+         "id": "marifalms",
+         "name": "Marifa LMS",
          "type": "Learning Management Software",
          "description": "Built the complete frontend from provided Figma designs, implementing courses, classes, quizzes, blogs, dashboards, and API-driven user workflows.",
          "techStack": [
@@ -165,6 +165,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+         "image": "/projects/marifalms.png",
          "featured": true
       },
       {
@@ -182,6 +183,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #f093fb, #f5576c)",
+         "image": "/projects/aorabooks.png",
          "featured": true
       },
       {
@@ -199,6 +201,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)",
+         "image": "/projects/infixlms.png",
          "featured": true
       },
       {
@@ -216,6 +219,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)",
+         "image": "/projects/infixedu.png",
          "featured": false
       },
       {
@@ -231,6 +235,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #fa709a, #fee140)",
+         "image": "/projects/amazcart.png",
          "featured": true
       },
       {
@@ -246,11 +251,12 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+         "image": "/projects/lawcham.png",
          "featured": false
       },
       {
-         "id": "vcard",
-         "name": "VCard",
+         "id": "alvcard",
+         "name": "alvcard",
          "type": "Business Card Software",
          "description": "Developed responsive frontend interfaces for digital business card creation, customization, and sharing workflows.",
          "techStack": [
@@ -261,6 +267,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+         "image": "/projects/alvcard.png",
          "featured": false
       },
       {
@@ -276,6 +283,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #89f7fe, #66a6ff)",
+         "image": "/projects/edulia.png",
          "featured": false
       },
       {
@@ -291,11 +299,12 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #fddb92, #d1fdff)",
+         "image": "/projects/bebooking.png",
          "featured": false
       },
       {
-         "id": "helpdesk",
-         "name": "HelpDesk",
+         "id": "idesk",
+         "name": "iDesk",
          "type": "Support Ticket Software",
          "description": "Developed responsive frontend interfaces for ticket management, support dashboards, and customer service workflows.",
          "techStack": [
@@ -306,6 +315,7 @@
             "Bootstrap"
          ],
          "gradient": "linear-gradient(135deg, #c471f5, #fa71cd)",
+         "image": "/projects/idesk.png",
          "featured": false
       },
       {
@@ -321,6 +331,7 @@
             "Tailwind CSS"
          ],
          "gradient": "linear-gradient(135deg, #48c6ef, #6f86d6)",
+         "image": "/projects/aorasoft.png",
          "featured": false
       }
    ],

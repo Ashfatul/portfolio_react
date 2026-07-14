@@ -71,10 +71,28 @@ export default function Projects({ data }) {
                 }}
               >
                 <div
-                  className="projects__card-gradient"
-                  style={{ background: project.gradient }}
+                  className="projects__card-media"
+                  style={project.image ? {} : { background: project.gradient }}
                 >
-                  <span className="projects__card-gradient-text">{project.name}</span>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className="projects__card-image"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.parentElement.style.background = project.gradient;
+                        const fallbackText = e.target.parentElement.querySelector('.projects__card-fallback-text');
+                        if (fallbackText) fallbackText.style.display = 'block';
+                      }}
+                    />
+                  ) : null}
+                  <span
+                    className="projects__card-fallback-text"
+                    style={{ display: project.image ? 'none' : 'block' }}
+                  >
+                    {project.name}
+                  </span>
                 </div>
 
                 <div className="projects__card-body">

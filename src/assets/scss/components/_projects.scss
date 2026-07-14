@@ -131,26 +131,30 @@
         0 25px 50px rgba(0, 0, 0, 0.4),
         0 0 30px rgba(var(--accent-1-rgb), 0.1);
 
-      .projects__card-gradient::before {
+      .projects__card-media::before {
         opacity: 0.6;
         transform: scale(1.05);
       }
       
-      .projects__card-gradient-text {
+      .projects__card-fallback-text {
         transform: scale(1.05);
         color: rgba(255, 255, 255, 0.25);
+      }
+
+      .projects__card-image {
+        transform: scale(1.06);
       }
     }
   }
 
-  &__card-gradient {
-    height: 150px;
+  &__card-media {
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s ease;
+    background: #09090e;
 
     &::before {
       content: '';
@@ -161,19 +165,28 @@
       opacity: 0.3;
       transition: all 0.4s ease;
       z-index: 1;
+      pointer-events: none;
     }
+  }
 
-    &-text {
-      font-size: 2.2rem;
-      font-weight: 900;
-      color: rgba(255, 255, 255, 0.18);
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      z-index: 2;
-      transition: all 0.4s ease;
-      text-align: center;
-      padding: 0 1rem;
-    }
+  &__card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 2;
+  }
+
+  &__card-fallback-text {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.18);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 3;
+    transition: all 0.4s ease;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   &__card-body {
