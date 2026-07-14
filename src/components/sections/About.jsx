@@ -16,7 +16,7 @@ export default function About({ data }) {
   const meta = data?.meta;
   const stats = data?.stats;
   const keyHighlights = [
-    { label: 'Experience', value: stats?.yearsExperience || '0+' },
+    { label: 'Focus', value: 'React / Next.js' },
     { label: 'Status', value: meta?.status || 'Available' },
     { label: 'Languages', value: meta?.languages?.join(' / ') || 'Bangla / English' },
   ];
@@ -71,29 +71,38 @@ export default function About({ data }) {
 
           <div className="about__content">
             <ScrollReveal>
-              <div className="about__heading-row">
-                <div>
-                  <p className="about__kicker">About Me</p>
-                  <h2 className="section-heading">Designing clean interfaces with real-world impact</h2>
-                </div>
-                <p className="about__summary">{meta?.heroAbout || meta?.about}</p>
-              </div>
-
-              <div className="about__bio-panel">
-                <p className="about__bio">{meta?.about}</p>
-              </div>
+              <p className="about__kicker">About Me</p>
+              <h2 className="section-heading">Designing clean interfaces with real-world impact</h2>
             </ScrollReveal>
 
-              <div className="about__highlights">
-                {keyHighlights.map(({ label, value }, idx) => (
-                  <ScrollReveal key={label} delay={0.15 + idx * 0.08} className="about__highlight">
-                    <span className="about__highlight-label">{label}</span>
-                    <strong className="about__highlight-value">{value}</strong>
-                  </ScrollReveal>
-                ))}
-              </div>
+            <div className="about__split-grid">
+              <ScrollReveal delay={0.08} className="about__bio-panel">
+                <p className="about__bio">{meta?.about}</p>
+              </ScrollReveal>
 
-              <div className="about__stats">
+              <ScrollReveal delay={0.12} className="about__achievements-panel">
+                <h4 className="about__achievements-title">Key Accomplishments</h4>
+                <ul className="about__achievements-list">
+                  {data?.achievements?.map((ach, idx) => (
+                    <li key={idx} className="about__achievement-card">
+                      <strong className="about__achievement-heading">{ach.title}</strong>
+                      <span className="about__achievement-desc">{ach.description}</span>
+                    </li>
+                  ))}
+                </ul>
+              </ScrollReveal>
+            </div>
+
+            <div className="about__highlights">
+              {keyHighlights.map(({ label, value }, idx) => (
+                <ScrollReveal key={label} delay={0.15 + idx * 0.08} className="about__highlight">
+                  <span className="about__highlight-label">{label}</span>
+                  <strong className="about__highlight-value">{value}</strong>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <div className="about__stats">
                 {STAT_CONFIG.map(({ key, label }, idx) => (
                   <ScrollReveal key={key} delay={0.25 + idx * 0.08} className="about__stat">
                     <div className="about__stat-number">

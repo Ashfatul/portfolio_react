@@ -141,32 +141,31 @@ export default function Experience({ data }) {
             </div>
           </ScrollReveal>
 
-          {/* Right Column: Performance Stats */}
-          <div className="experience__stats-sidebar">
-            {METRICS.map((metric, idx) => {
-              const Icon = metric.icon;
-              return (
-                <ScrollReveal key={idx} delay={0.15 + idx * 0.08}>
-                  <motion.div
-                    className="experience__stat-card"
-                    whileHover={{ y: -4, scale: 1.02 }}
-                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                  >
-                    <div className="experience__stat-icon-wrapper">
-                      <Icon className="experience__stat-icon" />
+          {/* Right Column: Performance Stats Grid in a Single Card */}
+          <ScrollReveal delay={0.15} className="experience__stats-reveal">
+            <div className="experience__stats-card">
+              <h4 className="experience__stats-title">Performance Metrics</h4>
+              <div className="experience__stats-grid">
+                {METRICS.map((metric, idx) => {
+                  const Icon = metric.icon;
+                  return (
+                    <div key={idx} className="experience__stat-item">
+                      <div className="experience__stat-icon-wrapper">
+                        <Icon className="experience__stat-icon" />
+                      </div>
+                      <div className="experience__stat-details">
+                        <h4 className="experience__stat-number">
+                          <AnimatedCounter value={metric.value} />
+                          <span className="experience__stat-suffix">{metric.suffix}</span>
+                        </h4>
+                        <p className="experience__stat-label">{metric.label}</p>
+                      </div>
                     </div>
-                    <div className="experience__stat-details">
-                      <h4 className="experience__stat-number">
-                        <AnimatedCounter value={metric.value} />
-                        <span className="experience__stat-suffix">{metric.suffix}</span>
-                      </h4>
-                      <p className="experience__stat-label">{metric.label}</p>
-                    </div>
-                  </motion.div>
-                </ScrollReveal>
-              );
-            })}
-          </div>
+                  );
+                })}
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

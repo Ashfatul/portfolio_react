@@ -466,7 +466,7 @@ h3.education_institution {
     }
 
     button {
-        background: green;
+        background: var(--accent-1);
         height: 50px;
         width: 50px;
         display: flex;
@@ -476,11 +476,23 @@ h3.education_institution {
         border: 0;
         outline: 0;
         cursor: pointer;
+        transition: all $transition-base;
+        box-shadow: 0 4px 12px rgba(var(--accent-1-rgb), 0.25);
 
         svg {
             color: $white !important;
             width: 25px;
             height: auto;
+            transition: transform $transition-base;
+        }
+
+        &:hover {
+            background: linear-gradient(135deg, var(--accent-1), #7c3aed);
+            box-shadow: 0 6px 18px rgba(var(--accent-1-rgb), 0.35);
+
+            svg {
+                transform: scale(1.1);
+            }
         }
     }
 }
