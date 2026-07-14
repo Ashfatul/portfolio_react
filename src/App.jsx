@@ -16,6 +16,7 @@ import Education from './components/sections/Education';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 import BackToTop from './components/ui/BackToTop';
+import InstallPrompt from './components/ui/InstallPrompt';
 
 export default function App() {
   const { data, loading } = usePortfolioData();
@@ -52,6 +53,7 @@ export default function App() {
 
       <Footer />
       <BackToTop />
+      <InstallPrompt />
     </>
   );
 }
