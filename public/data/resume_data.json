@@ -336,51 +336,63 @@
       }
    ],
    "personalProjects": [
-      {
-         "name": "AI Travel Planner",
-         "techStack": [
-            "Next.js 16",
-            "Tailwind CSS",
-            "MongoDB",
-            "Gemini API",
-            "Pixels API"
-         ],
-         "description": "AI-powered travel planning web application that generates personalized itineraries based on user preferences, leveraging Gemini API for natural language processing and itinerary generation.",
-         "link": "https://lws8.vercel.app/"
-      },
-      {
-         "name": "Aniya",
-         "techStack": [
-            "Next.js 16",
-            "TypeScript",
-            "Tailwind CSS",
-            "Supabase"
-         ],
-         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
-         "link": "https://aniya-app.vercel.app"
-      },
-      {
-         "name": "E-commerce Website",
-         "techStack": [
-            "Next.js 16",
-            "MongoDB",
-            "NextAuth.js",
-            "ImageKit",
-            "Nodemailer"
-         ],
-         "description": "A full-stack e-commerce application built with Next.js 16 as the capstone project of the Learn with Sumit Next.js course, featuring authentication, product management, image uploads, email integration, and a responsive shopping experience.",
-         "link": "https://lwsfinal-beta.vercel.app/"
-      },
-      {
-         "name": "Mess Management Website",
-         "techStack": [
-            "Next.js 16",
-            "Supabase",
-            "Vite"
-         ],
-         "description": "Mess management website built with Next.js 16 and Supabase, featuring real-time data synchronization and a responsive user interface.",
-         "link": "https://lwsfinal-beta.vercel.app/"
-      }
+       {
+          "id": "aitravelplanner",
+          "name": "AI Travel Planner",
+          "techStack": [
+             "Next.js 16",
+             "Tailwind CSS",
+             "MongoDB",
+             "Gemini API",
+             "Pixels API"
+          ],
+          "description": "AI-powered travel planning web application that generates personalized itineraries based on user preferences, leveraging Gemini API for natural language processing and itinerary generation.",
+          "link": "https://lws8.vercel.app/",
+          "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+          "image": "/projects/aitravelplanner.png"
+       },
+       {
+          "id": "aniya",
+          "name": "Aniya",
+          "techStack": [
+             "Next.js 16",
+             "TypeScript",
+             "Tailwind CSS",
+             "Supabase"
+          ],
+          "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
+          "link": "https://aniya-app.vercel.app",
+          "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)",
+          "image": "/projects/aniya.png"
+       },
+       {
+          "id": "ecommerce",
+          "name": "E-commerce Website",
+          "techStack": [
+             "Next.js 16",
+             "MongoDB",
+             "NextAuth.js",
+             "ImageKit",
+             "Nodemailer"
+          ],
+          "description": "A full-stack e-commerce application built with Next.js 16 as the capstone project of the Learn with Sumit Next.js course, featuring authentication, product management, image uploads, email integration, and a responsive shopping experience.",
+          "link": "https://lwsfinal-beta.vercel.app/",
+          "gradient": "linear-gradient(135deg, #00c6ff, #0072ff)",
+          "image": "/projects/ecommerce.png"
+       },
+       {
+          "id": "messmanagement",
+          "name": "Mess Management Website",
+          "techStack": [
+             "Next.js 16",
+             "Supabase",
+             "Vite"
+          ],
+          "description": "Mess management website built with Next.js 16 and Supabase, featuring real-time data synchronization and a responsive user interface.",
+          "link": "https://lwsfinal-beta.vercel.app/",
+          "gradient": "linear-gradient(135deg, #f857a6, #ff5858)",
+          "image": "/projects/messmanagement.png"
+       }
    ],
    "education": [
       {

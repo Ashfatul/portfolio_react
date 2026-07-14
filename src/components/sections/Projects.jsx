@@ -3,40 +3,61 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 export default function Projects({ data }) {
-  const projects = data?.showcase_projects;
+  const [activeTab, setActiveTab] = useState('Commercial');
   const [filter, setFilter] = useState('All');
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setFilter('All');
+  };
+
+  const projects = useMemo(() => {
+    return activeTab === 'Commercial'
+      ? data?.showcase_projects || []
+      : data?.personalProjects || [];
+  }, [data, activeTab]);
+
   const techFilters = useMemo(() => {
-    if (!projects) return ['All'];
     const techs = new Set();
     projects.forEach(p => p.techStack?.forEach(t => techs.add(t)));
     return ['All', ...Array.from(techs)];
   }, [projects]);
 
   const filtered = useMemo(() => {
-    if (!projects) return [];
     if (filter === 'All') return projects;
     return projects.filter(p => p.techStack?.includes(filter));
   }, [projects, filter]);
 
-  if (!projects?.length) return null;
+  if (!data?.showcase_projects?.length && !data?.personalProjects?.length) return null;
 
   return (
     <section id="projects" className="projects">
       <div className="projects__inner">
         <ScrollReveal>
           <h2 className="section-heading">Projects</h2>
-          <p className="section-subheading">Professional work I&apos;ve delivered</p>
+          <p className="section-subheading">Products and application engineering I&apos;ve delivered</p>
         </ScrollReveal>
+
+        {/* Tabs for project categories */}
+        <div className="projects__tabs">
+          <button
+            className={`projects__tab ${activeTab === 'Commercial' ? 'projects__tab--active' : ''}`}
+            onClick={() => handleTabChange('Commercial')}
+          >
+            Commercial Work
+          </button>
+          <button
+            className={`projects__tab ${activeTab === 'Personal' ? 'projects__tab--active' : ''}`}
+            onClick={() => handleTabChange('Personal')}
+          >
+            Personal Projects
+          </button>
+        </div>
 
         <div className="projects__filters">
           {techFilters.map((tech, idx) => (
-            <motion.button
-              key={tech}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.03, duration: 0.3 }}
+            <button
+              key={`${activeTab}-${tech}`}
               className={`projects__filter ${filter === tech ? 'projects__filter--active' : ''}`}
               onClick={() => setFilter(tech)}
             >
@@ -48,7 +69,7 @@ export default function Projects({ data }) {
                   transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                 />
               )}
-            </motion.button>
+            </button>
           ))}
         </div>
 
@@ -117,6 +138,20 @@ export default function Projects({ data }) {
 
                 <div className="projects__card-overlay">
                   <p>{project.description}</p>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects__card-link-btn"
+                    >
+                      View Project &rarr;
+                    </a>
+                  ) : (
+                    <span className="projects__card-badge">
+                      {activeTab === 'Commercial' ? 'Commercial Production' : 'Personal Project'}
+                    </span>
+                  )}
                 </div>
               </motion.div>
             ))}
