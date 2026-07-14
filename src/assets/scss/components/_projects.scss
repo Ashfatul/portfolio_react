@@ -45,15 +45,21 @@
   &__filters {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.6rem;
     margin-bottom: 2.5rem;
     overflow-x: auto;
-    padding: 0.4rem;
+    padding: 0.4rem 1.5rem;
     -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
 
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    @include breakpoint(md) {
+      justify-content: flex-start;
+      padding: 0.4rem;
     }
   }
 
@@ -68,6 +74,7 @@
     transition: color $transition-base;
     border: 1px solid transparent;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
 
     &:hover {
       color: $text-primary;
@@ -86,6 +93,8 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(var(--accent-1-rgb), 0.25);
     z-index: -1;
+    background-size: 300% 300%;
+    background-position: right center;
   }
 
   &__grid {
