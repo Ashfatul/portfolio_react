@@ -55,13 +55,17 @@ export default function Contact() {
               </p>
 
               <div className="contact__info-cards">
-                {CONTACT_INFO.map(({ icon: Icon, label, value, href }) => (
-                  <a
+                {CONTACT_INFO.map(({ icon: Icon, label, value, href }, idx) => (
+                  <motion.a
                     key={label}
                     href={href || '#'}
                     target={href?.startsWith('http') ? '_blank' : undefined}
                     rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="contact__info-card"
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.08, duration: 0.4 }}
                   >
                     <div className="contact__info-card-icon">
                       <Icon />
@@ -70,7 +74,7 @@ export default function Contact() {
                       <p>{label}</p>
                       <p>{value}</p>
                     </div>
-                  </a>
+                  </motion.a>
                 ))}
               </div>
             </div>

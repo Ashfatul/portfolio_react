@@ -30,9 +30,13 @@ export default function Projects({ data }) {
         </ScrollReveal>
 
         <div className="projects__filters">
-          {techFilters.map(tech => (
-            <button
+          {techFilters.map((tech, idx) => (
+            <motion.button
               key={tech}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.03, duration: 0.3 }}
               className={`projects__filter ${filter === tech ? 'projects__filter--active' : ''}`}
               onClick={() => setFilter(tech)}
             >
@@ -44,21 +48,27 @@ export default function Projects({ data }) {
                   transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                 />
               )}
-            </button>
+            </motion.button>
           ))}
         </div>
 
         <motion.div className="projects__grid" layout>
           <AnimatePresence mode="popLayout">
-            {filtered.map(project => (
+            {filtered.map((project, idx) => (
               <motion.div
                 key={project.id}
                 className={`projects__card ${project.featured ? 'projects__card--featured' : ''}`}
                 layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
+                initial={{ opacity: 0, y: 35, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: '-40px' }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 80,
+                  damping: 15,
+                  delay: idx * 0.06,
+                }}
               >
                 <div
                   className="projects__card-gradient"
@@ -72,8 +82,17 @@ export default function Projects({ data }) {
                   <span className="projects__card-type">{project.type}</span>
                   <p className="projects__card-desc">{project.description}</p>
                   <div className="projects__card-tech">
-                    {project.techStack?.map(tech => (
-                      <span key={tech} className="projects__card-tag">{tech}</span>
+                    {project.techStack?.map((tech, i) => (
+                      <motion.span
+                        key={tech}
+                        className="projects__card-tag"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: i * 0.03, duration: 0.2 }}
+                      >
+                        {tech}
+                      </motion.span>
                     ))}
                   </div>
                 </div>

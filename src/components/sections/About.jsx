@@ -84,29 +84,25 @@ export default function About({ data }) {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.15}>
               <div className="about__highlights">
-                {keyHighlights.map(({ label, value }) => (
-                  <div key={label} className="about__highlight">
+                {keyHighlights.map(({ label, value }, idx) => (
+                  <ScrollReveal key={label} delay={0.15 + idx * 0.08} className="about__highlight">
                     <span className="about__highlight-label">{label}</span>
                     <strong className="about__highlight-value">{value}</strong>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
-            </ScrollReveal>
 
-            <ScrollReveal delay={0.25}>
               <div className="about__stats">
-                {STAT_CONFIG.map(({ key, label }) => (
-                  <div key={key} className="about__stat">
+                {STAT_CONFIG.map(({ key, label }, idx) => (
+                  <ScrollReveal key={key} delay={0.25 + idx * 0.08} className="about__stat">
                     <div className="about__stat-number">
                       <AnimatedCounter value={stats?.[key] || '0'} />
                     </div>
                     <div className="about__stat-label">{label}</div>
-                  </div>
+                  </ScrollReveal>
                 ))}
               </div>
-            </ScrollReveal>
           </div>
         </div>
       </div>

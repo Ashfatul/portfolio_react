@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 export default function Education({ data }) {
@@ -24,8 +25,17 @@ export default function Education({ data }) {
                 </div>
                 {edu.coursework?.length > 0 && (
                   <div className="education__coursework">
-                    {edu.coursework.map(course => (
-                      <span key={course} className="education__coursework-pill">{course}</span>
+                    {edu.coursework.map((course, i) => (
+                      <motion.span
+                        key={course}
+                        className="education__coursework-pill"
+                        initial={{ opacity: 0, y: 8 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-40px' }}
+                        transition={{ delay: i * 0.04, duration: 0.28, ease: 'easeOut' }}
+                      >
+                        {course}
+                      </motion.span>
                     ))}
                   </div>
                 )}
