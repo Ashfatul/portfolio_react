@@ -135,15 +135,15 @@ export default function Hero({ data }) {
               <pre className="hero__code-body">
                 <code>
                   <span className="code-kw">const</span> <span className="code-var">developer</span> = &#123;<br />
-                  &nbsp;&nbsp;name: <span className="code-str">&apos;{name}&apos;</span>,<br />
-                  &nbsp;&nbsp;role: <span className="code-str">&apos;Frontend Developer&apos;</span>,<br />
-                  &nbsp;&nbsp;skills: [<br />
+                  &nbsp;&nbsp;<span className="code-key">name</span>: <span className="code-str">&apos;{name}&apos;</span>,<br />
+                  &nbsp;&nbsp;<span className="code-key">role</span>: <span className="code-str">&apos;Full-Stack Engineer&apos;</span>,<br />
+                  &nbsp;&nbsp;<span className="code-key">skills</span>: [<br />
                   &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-str">&apos;React&apos;</span>, <span className="code-str">&apos;Next.js&apos;</span>,<br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-str">&apos;TypeScript&apos;</span>, <span className="code-str">&apos;SCSS&apos;</span><br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-str">&apos;Node.js&apos;</span>, <span className="code-str">&apos;TypeScript&apos;</span><br />
                   &nbsp;&nbsp;],<br />
-                  &nbsp;&nbsp;experience: <span className="code-num">3</span>, <span className="code-comment">// years</span><br />
-                  &nbsp;&nbsp;passion: <span className="code-str">&apos;Building Wow UI/UX Interfaces&apos;</span>,<br />
-                  &nbsp;&nbsp;status: <span className="code-str">&apos;Open to Work&apos;</span><br />
+                  &nbsp;&nbsp;<span className="code-key">experience</span>: <span className="code-num">3</span>, <span className="code-comment">// years</span><br />
+                  &nbsp;&nbsp;<span className="code-key">passion</span>: <span className="code-str">&apos;Building Scalable Products&apos;</span>,<br />
+                  &nbsp;&nbsp;<span className="code-key">status</span>: <span className="code-str">&apos;Open to Work&apos;</span><br />
                   &#125;;
                 </code>
               </pre>
