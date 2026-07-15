@@ -1,0 +1,289 @@
+{
+   "meta": {
+      "name": "A. A. M. Ashfatul Islam",
+      "position": "Frontend-Focused Full Stack Developer | React | Node.js | MongoDB",
+      "yearsOfExperience": 3,
+      "email": "ashfatul.islam@gmail.com",
+      "phone": "+8801719337222",
+      "address": "Shewrapara, Mirpur, Dhaka, Bangladesh",
+      "github": "https://github.com/ashfatul",
+      "linkedin": "https://linkedin.com/in/ashfatul",
+      "portfolio": "https://ashfatul.netlify.app/",
+      "status": "Open for opportunities",
+      "languages": [
+         "Bangla",
+         "English",
+         "Hindi"
+      ],
+      "heroAbout": "Frontend-focused Full Stack Developer specialized in building highly interactive interfaces, database integrations, and serverless workflows.",
+      "about": "Frontend-focused Full Stack Developer with 3+ years of professional experience building modern user interfaces and SaaS platforms. Proficient in React, Next.js, and TypeScript, combined with hands-on experience structuring backend workflows using Node.js, Express, Supabase, PostgreSQL, and MongoDB. Skilled in linking client-side applications with secure database schemas, building serverless endpoints, and managing real-time data flows."
+   },
+   "stats": {
+      "yearsExperience": "3+",
+      "fullStackApps": "4+",
+      "productsShipped": "17+",
+      "apiIntegrations": "30+"
+   },
+   "achievements": [
+      {
+         "title": "Frontend & Full Stack Dev",
+         "description": "Led UI development and successfully integrated database/serverless features for multiple production-grade web applications using Supabase and MongoDB."
+      },
+      {
+         "title": "API & DB Integrations",
+         "description": "Connected 30+ REST APIs, managed database models, and set up dynamic authentication workflows with role-based features."
+      },
+      {
+         "title": "Production Scale Dev",
+         "description": "Contributed to 17+ commercial and SaaS products, translating design visual concepts into functional full-stack flows."
+      }
+   ],
+   "experience": [
+      {
+         "company": "SpondonIT",
+         "duration": "Jun 2023 - May 2026",
+         "position": "Full Stack / Frontend Developer",
+         "impact": [
+            "Acted as lead UI engineer and contributor to backend integrations across 17+ SaaS, LMS, and administrative applications.",
+            "Designed and connected React frontends with dynamic server systems, boosting features for LMS, e-commerce, and dashboard apps.",
+            "Engineered robust React forms, global state flows, and query caching for high-load web dashboards."
+         ],
+         "leadership": [
+            "Independently owned the entire UI layout and backend integration modules for a React-based commercial LMS product.",
+            "Partnered with database and service teams to implement end-to-end features, resolving API structure and state caching challenges."
+         ],
+         "projects": [
+            {
+               "name": "Marifa LMS",
+               "type": "Learning Management Software",
+               "techStack": [
+                  "React",
+                  "JavaScript",
+                  "REST API",
+                  "SCSS",
+                  "React Query",
+                  "Context API",
+                  "Axios"
+               ],
+               "description": "Engineered the full frontend system, wiring complex courses, live class feeds, user profiles, and assessment systems to backend REST APIs."
+            },
+            {
+               "name": "Aorabooks",
+               "type": "Accounting Software",
+               "techStack": [
+                  "Laravel Blade",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "jQuery",
+                  "SCSS",
+                  "Bootstrap"
+               ],
+               "description": "Enhanced business workflow systems, including custom dashboard charts, accounting pipelines, and invoice generations."
+            }
+         ],
+         "responsibilities": [
+            "Designed full stack integrations linking client UIs with RESTful server backends.",
+            "Wired React Context, React Query, and database endpoints to build responsive single-page platforms.",
+            "Maintained Git workflows, reviewed code, and worked within Agile teams to ensure quick features shipment."
+         ]
+      }
+   ],
+   "showcase_projects": [
+      {
+         "id": "aniya",
+         "name": "Aniya",
+         "type": "Baby Tracker (Full Stack PWA)",
+         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, and family sharing with role-based access. Deployed on Vercel.",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase"
+         ],
+         "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)",
+         "image": "/projects/aniya.png",
+         "featured": true
+      },
+      {
+         "id": "aitravelplanner",
+         "name": "AI Travel Planner",
+         "type": "AI Platform (Full Stack)",
+         "description": "AI-powered travel planner that generates personalized itineraries based on user preferences using Gemini API and MongoDB.",
+         "techStack": [
+            "Next.js 16",
+            "Tailwind CSS",
+            "MongoDB",
+            "Gemini API"
+         ],
+         "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+         "image": "/projects/aitravelplanner.png",
+         "featured": true
+      },
+      {
+         "id": "marifalms",
+         "name": "Marifa LMS",
+         "type": "Learning Management Software",
+         "description": "Frontend lead for Marifa LMS, integrating REST APIs with state controllers, dynamic workflows, and responsive views.",
+         "techStack": [
+            "React",
+            "JavaScript",
+            "SCSS",
+            "REST API"
+         ],
+         "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+         "image": "/projects/marifalms.png",
+         "featured": true
+      }
+   ],
+   "personalProjects": [
+      {
+         "id": "aniya",
+         "name": "Aniya",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase"
+         ],
+         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
+         "link": "https://aniya-app.vercel.app",
+         "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)",
+         "image": "/projects/aniya.png"
+      },
+      {
+         "id": "aitravelplanner",
+         "name": "AI Travel Planner",
+         "techStack": [
+            "Next.js 16",
+            "Tailwind CSS",
+            "MongoDB",
+            "Gemini API",
+            "Pixels API"
+         ],
+         "description": "AI-powered travel planning web application that generates personalized itineraries based on user preferences, leveraging Gemini API for natural language processing.",
+         "link": "https://lws8.vercel.app/",
+         "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+         "image": "/projects/aitravelplanner.png"
+      },
+      {
+         "id": "ecommerce",
+         "name": "E-commerce Website",
+         "techStack": [
+            "Next.js 16",
+            "MongoDB",
+            "NextAuth.js",
+            "ImageKit",
+            "Nodemailer"
+         ],
+         "description": "A full-stack e-commerce application built with Next.js 16, featuring authentication, product management, image uploads, and email integration.",
+         "link": "https://lwsfinal-beta.vercel.app/",
+         "gradient": "linear-gradient(135deg, #00c6ff, #0072ff)",
+         "image": "/projects/ecommerce.png"
+      },
+      {
+         "id": "messmanagement",
+         "name": "Mess Management Website",
+         "techStack": [
+            "Next.js 16",
+            "Supabase",
+            "Vite"
+         ],
+         "description": "Mess management website built with Next.js 16 and Supabase, featuring real-time data synchronization.",
+         "link": "https://lwsfinal-beta.vercel.app/",
+         "gradient": "linear-gradient(135deg, #f857a6, #ff5858)",
+         "image": "/projects/messmanagement.png"
+      }
+   ],
+   "education": [
+      {
+         "degree": "Bachelor of Science in Computer Science",
+         "institution": "Bangladesh University, Mohammadpur, Dhaka",
+         "duration": "2024 - Present",
+         "info": "Expected Graduation: May 2027",
+         "coursework": [
+            "Data Structures & Algorithms",
+            "Object-Oriented Programming",
+            "Database Systems",
+            "Software Engineering",
+            "Computer Networks",
+            "Operating Systems",
+            "Web Development",
+            "Discrete Mathematics"
+         ]
+      },
+      {
+         "degree": "Diploma in Civil Engineering",
+         "institution": "Bogura Polytechnic Institute, Bogura",
+         "duration": "2018 - 2023",
+         "info": "CGPA: 3.60 / 4.00",
+         "coursework": [
+            "Structural Mechanics",
+            "Surveying",
+            "Transportation Engineering",
+            "Geotechnical Engineering",
+            "Estimating & Costing",
+            "Construction Management"
+         ]
+      }
+   ],
+   "certificates": [
+      {
+         "title": "Reactive Accelerator - Batch 4",
+         "issuer": "Learn with Sumit",
+         "date": "April 2026",
+         "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
+         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router."
+      }
+   ],
+   "skills": {
+      "backendBasics": [
+         "Node.js",
+         "Express.js",
+         "Supabase",
+         "MongoDB",
+         "Prisma",
+         "PostgreSQL",
+         "REST API Design",
+         "Database Design"
+      ],
+      "frontend": [
+         "React",
+         "Next.js",
+         "TypeScript",
+         "JavaScript (ES6+)",
+         "HTML5",
+         "CSS3",
+         "SCSS/Sass",
+         "Tailwind CSS",
+         "Bootstrap",
+         "Responsive Web Design"
+      ],
+      "stateAndData": [
+         "React Query (TanStack)",
+         "Zustand",
+         "Context API",
+         "React Hook Form",
+         "Axios",
+         "REST API Integration"
+      ],
+      "tools": [
+         "Git",
+         "GitHub",
+         "Figma",
+         "Postman",
+         "npm",
+         "Vite",
+         "Vercel",
+         "VS Code"
+      ],
+      "practices": [
+         "Full-Stack Architecture",
+         "Performance Optimization",
+         "Responsive Design",
+         "Code Review",
+         "Agile/Scrum",
+         "Git Workflow"
+      ]
+   }
+}

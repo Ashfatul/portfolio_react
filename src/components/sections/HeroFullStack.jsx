@@ -107,7 +107,7 @@ export default function Hero({ data }) {
             </motion.div>
 
             <motion.div variants={item} className="hero__ctas">
-              <a href="/frontend/resume" target="_blank" rel="noopener noreferrer" className="hero__cta hero__cta--primary">
+              <a href="/fullstack/resume" target="_blank" rel="noopener noreferrer" className="hero__cta hero__cta--primary">
                 View Resume
               </a>
               <button onClick={() => scrollToSection('contact')} className="hero__cta hero__cta--secondary">

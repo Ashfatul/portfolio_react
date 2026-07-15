@@ -5,7 +5,7 @@ import { MdPrint } from "react-icons/md"
 import { IoLocationOutline } from "react-icons/io5"
 import { FiArrowLeft } from "react-icons/fi"
 import { Link } from "react-router-dom"
-import resumeData from "../../../public/data/resume_data.json"
+import resumeData from "../../../public/data/resume_data_fullstack.json"
 
 const skillCategoryLabels = {
     frontend: "Frontend",
@@ -15,7 +15,7 @@ const skillCategoryLabels = {
     practices: "Practices"
 }
 
-const Resume = () => {
+const ResumeFullStack = () => {
     const handlePrint = () => {
         window.print()
     }
@@ -23,7 +23,7 @@ const Resume = () => {
     return (
         <div className="resume_page">
         <article className="resume_container">
-            <Link to="/frontend" className="resume_back_link">
+            <Link to="/fullstack" className="resume_back_link">
                 <FiArrowLeft />
                 <span>Back to Portfolio</span>
             </Link>
@@ -273,4 +273,4 @@ const Resume = () => {
     )
 }
 
-export default Resume
+export default ResumeFullStack
