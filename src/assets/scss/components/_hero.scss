@@ -289,7 +289,7 @@
   &__code-tab {
     font-family: monospace;
     font-size: 0.75rem;
-    color: $text-muted;
+    color: #9ca3af;
     background: #0d0d15;
     padding: 0.3rem 0.8rem;
     border-radius: 6px;
@@ -298,6 +298,7 @@
 
   &__code-body {
     padding: 1.5rem;
+    color: #e8e8ed;
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
     font-size: 0.82rem;
     line-height: 1.6;
@@ -319,7 +320,8 @@
     .code-var { color: #38bdf8; }
     .code-str { color: #10b981; }
     .code-num { color: #fbbf24; }
-    .code-comment { color: $text-muted; }
+    .code-comment { color: #6b7280; }
+    .code-key { color: #a78bfa; }
   }
 
   &__floating-icons {
