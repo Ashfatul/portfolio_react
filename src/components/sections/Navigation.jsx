@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NAV_ITEMS } from '../../utils/constants';
+import { NAV_ITEMS as DEFAULT_NAV_ITEMS } from '../../utils/constants';
 import { ThemeToggle } from '../ui/ThemeToggle';
 
-export default function Navigation({ activeSection, theme, toggleTheme }) {
+export default function Navigation({ activeSection, theme, toggleTheme, navItems = DEFAULT_NAV_ITEMS }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -36,7 +36,7 @@ export default function Navigation({ activeSection, theme, toggleTheme }) {
           </button>
 
           <div className="nav__links">
-            {NAV_ITEMS.map(({ id, label }) => (
+            {navItems.map(({ id, label }) => (
               <button
                 key={id}
                 className={`nav__link ${activeSection === id ? 'nav__link--active' : ''}`}
@@ -78,7 +78,7 @@ export default function Navigation({ activeSection, theme, toggleTheme }) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {NAV_ITEMS.map(({ id, label }) => (
+            {navItems.map(({ id, label }) => (
               <button
                 key={id}
                 className={`nav__mobile-link ${activeSection === id ? 'nav__mobile-link--active' : ''}`}

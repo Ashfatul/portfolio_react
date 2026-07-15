@@ -3,32 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 export default function Projects({ data }) {
-  const [activeTab, setActiveTab] = useState('Commercial');
-  const [filter, setFilter] = useState('All');
+  const [visibleCount, setVisibleCount] = useState(6);
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-    setFilter('All');
-  };
+  const allProjects = useMemo(() => {
+    const commercial = (data?.showcase_projects || []).map(p => ({ ...p, category: 'Commercial' }));
+    const personal = (data?.personalProjects || []).map(p => ({ ...p, category: 'Personal' }));
+    return [...commercial, ...personal];
+  }, [data]);
 
-  const projects = useMemo(() => {
-    return activeTab === 'Commercial'
-      ? data?.showcase_projects || []
-      : data?.personalProjects || [];
-  }, [data, activeTab]);
+  const visibleProjects = allProjects.slice(0, visibleCount);
+  const hasMore = allProjects.length > visibleCount;
 
-  const techFilters = useMemo(() => {
-    const techs = new Set();
-    projects.forEach(p => p.techStack?.forEach(t => techs.add(t)));
-    return ['All', ...Array.from(techs)];
-  }, [projects]);
-
-  const filtered = useMemo(() => {
-    if (filter === 'All') return projects;
-    return projects.filter(p => p.techStack?.includes(filter));
-  }, [projects, filter]);
-
-  if (!data?.showcase_projects?.length && !data?.personalProjects?.length) return null;
+  if (allProjects.length === 0) return null;
 
   return (
     <section id="projects" className="projects">
@@ -38,63 +24,28 @@ export default function Projects({ data }) {
           <p className="section-subheading">Products and application engineering I&apos;ve delivered</p>
         </ScrollReveal>
 
-        {/* Tabs for project categories */}
-        <div className="projects__tabs">
-          <button
-            className={`projects__tab ${activeTab === 'Commercial' ? 'projects__tab--active' : ''}`}
-            onClick={() => handleTabChange('Commercial')}
-          >
-            Commercial Work
-          </button>
-          <button
-            className={`projects__tab ${activeTab === 'Personal' ? 'projects__tab--active' : ''}`}
-            onClick={() => handleTabChange('Personal')}
-          >
-            Personal Projects
-          </button>
-        </div>
-
-        <div className="projects__filters">
-          {techFilters.map((tech, idx) => (
-            <button
-              key={`${activeTab}-${tech}`}
-              className={`projects__filter ${filter === tech ? 'projects__filter--active' : ''}`}
-              onClick={() => setFilter(tech)}
+        <div className="projects__grid">
+          {visibleProjects.map((project, idx) => (
+            <motion.div
+              key={project.id || `${project.name}-${idx}`}
+              className={`projects__card ${project.featured ? 'projects__card--featured' : ''}`}
+              initial={{ opacity: 0, y: 35, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{
+                type: 'spring',
+                stiffness: 80,
+                damping: 15,
+                delay: (idx % 6) * 0.06,
+              }}
             >
-              {tech}
-              {filter === tech && (
-                <motion.div
-                  className="projects__filter-bg"
-                  layoutId="filter-bg"
-                  transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                />
-              )}
-            </button>
-          ))}
-        </div>
-
-        <motion.div className="projects__grid" layout>
-          <AnimatePresence mode="popLayout">
-            {filtered.map((project, idx) => (
-              <motion.div
-                key={project.id}
-                className={`projects__card ${project.featured ? 'projects__card--featured' : ''}`}
-                layout
-                initial={{ opacity: 0, y: 35, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: '-40px' }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 80,
-                  damping: 15,
-                  delay: idx * 0.06,
-                }}
+              <div
+                className="projects__card-media"
+                style={project.image ? {} : { background: project.gradient }}
               >
-                <div
-                  className="projects__card-media"
-                  style={project.image ? {} : { background: project.gradient }}
-                >
+                <span className={`projects__card-category-badge projects__card-category-badge--${project.category.toLowerCase()}`}>
+                  {project.category}
+                </span>
                   {project.image ? (
                     <img
                       src={project.image}
@@ -121,24 +72,17 @@ export default function Projects({ data }) {
                   <span className="projects__card-type">{project.type}</span>
                   <p className="projects__card-desc">{project.description}</p>
                   <div className="projects__card-tech">
-                    {project.techStack?.map((tech, i) => (
-                      <motion.span
-                        key={tech}
-                        className="projects__card-tag"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.03, duration: 0.2 }}
-                      >
+                    {project.techStack?.map((tech) => (
+                      <span key={tech} className="projects__card-tag">
                         {tech}
-                      </motion.span>
+                      </span>
                     ))}
                   </div>
                 </div>
 
                 <div className="projects__card-overlay">
                   <p>{project.description}</p>
-                  {project.link ? (
+                  {project.link && (
                     <a
                       href={project.link}
                       target="_blank"
@@ -147,16 +91,22 @@ export default function Projects({ data }) {
                     >
                       View Project &rarr;
                     </a>
-                  ) : (
-                    <span className="projects__card-badge">
-                      {activeTab === 'Commercial' ? 'Commercial Production' : 'Personal Project'}
-                    </span>
                   )}
                 </div>
               </motion.div>
             ))}
-          </AnimatePresence>
-        </motion.div>
+        </div>
+
+        {hasMore && (
+          <div className="projects__load-more">
+            <button 
+              className="projects__load-more-btn"
+              onClick={() => setVisibleCount(prev => prev + 6)}
+            >
+              Load More Projects
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { IoLogoGithub } from 'react-icons/io';
 import { FaLinkedinIn, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { MdOutlineEmail, MdKeyboardArrowDown } from 'react-icons/md';
+import { MdOutlineEmail, MdKeyboardArrowDown, MdPhone, MdLocationOn } from 'react-icons/md';
 import { SiJavascript, SiMongodb, SiTypescript } from 'react-icons/si';
 
 const container = {
@@ -104,6 +104,13 @@ export default function Hero({ data }) {
               <a href={`mailto:${data?.meta?.email}`} className="hero__social-link" aria-label="Email">
                 <MdOutlineEmail />
               </a>
+              <a href={`tel:${data?.meta?.phone}`} className="hero__social-link" aria-label="Phone">
+                <MdPhone />
+              </a>
+              <div className="hero__location" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', marginLeft: '1rem', fontSize: '0.9rem' }}>
+                <MdLocationOn style={{ color: 'var(--accent-1)', fontSize: '1.1rem' }} />
+                <span>{data?.meta?.address}</span>
+              </div>
             </motion.div>
 
             <motion.div variants={item} className="hero__ctas">

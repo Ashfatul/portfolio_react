@@ -19,26 +19,47 @@ export default function Education({ data }) {
           {education?.map((edu, idx) => (
             <ScrollReveal key={idx} delay={idx * 0.1}>
               <div className="education__card">
-                <h3 className="education__degree">{edu.degree}</h3>
-                <p className="education__institution">{edu.institution}</p>
-                <div className="education__meta">
-                  <span>{edu.duration}</span>
-                  {edu.info && <span>{edu.info}</span>}
+                {/* Left Side: Main details */}
+                <div className="education__main">
+                  <span className="education__badge-tag">
+                    {edu.info?.includes('Expected') ? 'Currently Pursuing' : 'Completed'}
+                  </span>
+                  <h3 className="education__degree">{edu.degree}</h3>
+                  <p className="education__institution">{edu.institution}</p>
+                  
+                  <div className="education__meta-info">
+                    <span className="education__duration">{edu.duration}</span>
+                    {edu.info && (
+                      <>
+                        <span className="education__meta-dot">•</span>
+                        <span className="education__info">{edu.info}</span>
+                      </>
+                    )}
+                  </div>
+                  
+                  {edu.description && (
+                    <p className="education__description">{edu.description}</p>
+                  )}
                 </div>
+
+                {/* Right Side: Coursework */}
                 {edu.coursework?.length > 0 && (
-                  <div className="education__coursework">
-                    {edu.coursework.map((course, i) => (
-                      <motion.span
-                        key={course}
-                        className="education__coursework-pill"
-                        initial={{ opacity: 0, y: 8 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: '-40px' }}
-                        transition={{ delay: i * 0.04, duration: 0.28, ease: 'easeOut' }}
-                      >
-                        {course}
-                      </motion.span>
-                    ))}
+                  <div className="education__sidebar">
+                    <h5 className="education__sidebar-title">Key Coursework</h5>
+                    <div className="education__coursework">
+                      {edu.coursework.map((course, i) => (
+                        <motion.span
+                          key={course}
+                          className="education__coursework-pill"
+                          initial={{ opacity: 0, y: 8 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true, margin: '-40px' }}
+                          transition={{ delay: i * 0.04, duration: 0.28, ease: 'easeOut' }}
+                        >
+                          {course}
+                        </motion.span>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>

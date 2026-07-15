@@ -2,14 +2,13 @@ import { useMemo } from 'react';
 import { usePortfolioDataFullStack } from './hooks/usePortfolioDataFullStack';
 import { useTheme } from './hooks/useTheme';
 import { useScrollSpy } from './hooks/useScrollSpy';
-import { SECTION_IDS } from './utils/constants';
+import { SECTION_IDS, NAV_ITEMS } from './utils/constants';
 
 import { ScrollProgress } from './components/ui/ScrollProgress';
 import { SectionDots } from './components/ui/SectionDots';
 import Navigation from './components/sections/Navigation';
 import Hero from './components/sections/HeroFullStack';
 import About from './components/sections/About';
-import Skills from './components/sections/Skills';
 import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import Education from './components/sections/Education';
@@ -21,7 +20,7 @@ import InstallPrompt from './components/ui/InstallPrompt';
 export default function AppFullStack() {
   const { data, loading } = usePortfolioDataFullStack();
   const { theme, toggleTheme } = useTheme();
-  const sectionIds = useMemo(() => SECTION_IDS, []);
+  const sectionIds = useMemo(() => SECTION_IDS.filter(id => id !== 'skills'), []);
   const activeSection = useScrollSpy(sectionIds);
 
   if (loading || !data) {
@@ -39,19 +38,23 @@ export default function AppFullStack() {
     <>
       <ScrollProgress />
       <SectionDots activeSection={activeSection} />
-      <Navigation activeSection={activeSection} theme={theme} toggleTheme={toggleTheme} />
+      <Navigation 
+        activeSection={activeSection} 
+        theme={theme} 
+        toggleTheme={toggleTheme} 
+        navItems={NAV_ITEMS.filter(item => item.id !== 'skills')}
+      />
 
       <main>
         <Hero data={data} />
         <About data={data} />
-        <Skills data={data} />
         <Experience data={data} />
         <Projects data={data} />
         <Education data={data} />
         <Contact />
       </main>
 
-      <Footer />
+      <Footer data={data} />
       <BackToTop />
       <InstallPrompt />
     </>

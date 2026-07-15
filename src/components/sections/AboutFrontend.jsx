@@ -48,25 +48,19 @@ const STAT_CONFIG = [
   { key: 'componentsBuilt', label: 'Components' },
 ];
 
-export default function About({ data }) {
+export default function AboutFrontend({ data }) {
   const meta = data?.meta;
   const stats = data?.stats;
   
   const skillsObj = data?.skills || {};
   const frontendSkills = skillsObj.frontend || [];
-  const backendSkills = skillsObj.backendBasics || [];
   const tools = skillsObj.tools || [];
-  
-  // Mix of full-stack skills
-  const topSkills = [
-    ...frontendSkills.slice(0, 6),
-    ...backendSkills.slice(0, 6),
-    ...tools.slice(0, 4)
-  ];
+  const topSkills = [...frontendSkills.slice(0, 10), ...tools.slice(0, 5)];
 
   return (
     <section id="about" className="about-frontend">
       <div className="about-frontend__inner">
+
 
         <div className="about-frontend__bento">
           
@@ -74,22 +68,22 @@ export default function About({ data }) {
           <ScrollReveal delay={0.1} className="bento-box bento-box--image">
             <img src="/user.png" alt="Profile" className="bento-image" />
             <div className="bento-image-overlay">
-               <h3 className="bento-image-title">{meta?.name?.split(' ').slice(-2).join(' ')}</h3>
-               <p className="bento-image-subtitle">Full-Stack Engineer</p>
+               <h3 className="bento-image-title">Ashfatul Islam</h3>
+               <p className="bento-image-subtitle">Frontend Engineer</p>
             </div>
           </ScrollReveal>
 
           {/* Bento Box 2: The Bio */}
           <ScrollReveal delay={0.2} className="bento-box bento-box--bio">
-            <h3 className="bento-bio-headline">Building the web, from server to pixel.</h3>
+            <h3 className="bento-bio-headline">Building the web, one pixel at a time.</h3>
             <p className="bento-bio-text">
-              {meta?.about || "Full-Stack Developer with a passion for building scalable web products..."}
+              {meta?.about || "Frontend Developer with 3 years of experience building web products using React, Next.js, and TypeScript. Converted 200+ Figma designs into responsive interfaces and shipped 17+ commercial applications. Passionate about clean code, modern architectures, and delivering exceptional user experiences."}
             </p>
           </ScrollReveal>
 
           {/* Bento Box 3: The Stats */}
           <ScrollReveal delay={0.3} className="bento-box bento-box--stats">
-             {STAT_CONFIG.map(({ key, label }) => (
+             {STAT_CONFIG.map(({ key, label }, idx) => (
                 <div key={key} className="bento-stat-item">
                    <div className="bento-stat-value">{stats?.[key] || '0'}</div>
                    <div className="bento-stat-label">{label}</div>
@@ -103,12 +97,12 @@ export default function About({ data }) {
             <div className="bento-skills-wrapper">
               {topSkills.map((skill, i) => (
                 <motion.div 
-                  key={`${skill}-${i}`} 
+                  key={skill} 
                   className="bento-skill-pill"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: (i % 10) * 0.04, type: 'spring' }}
+                  transition={{ delay: i * 0.04, type: 'spring' }}
                   whileHover={{ y: -5, scale: 1.05 }}
                 >
                   <span className="skill-icon"><SkillIcon name={skill} /></span>

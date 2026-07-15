@@ -16,7 +16,7 @@
          "Hindi"
       ],
       "heroAbout": "Frontend Developer focused on building responsive React interfaces, smooth user experiences, and production-ready web products.",
-      "about": "Frontend Developer with 3 years of experience building commercial web products using HTML, CSS, JavaScript, React, TypeScript, Next.js, and REST APIs. Primarily worked with Laravel teams, creating responsive, pixel-perfect HTML/CSS markup and integrating it into Laravel applications, while also contributing to a React-based commercial project. Converted 200+ Figma designs into production-ready interfaces and built the frontend markup for 6+ commercial applications from scratch. Outside of work, built multiple full-stack personal projects using React, Next.js 16, Supabase, and Tailwind CSS to strengthen modern frontend and full-stack development skills."
+      "about": "Frontend Developer with 3 years of experience building web products using React, Next.js, and TypeScript. Converted 200+ Figma designs into responsive interfaces and shipped 17+ commercial applications. Passionate about clean code, modern architectures, and delivering exceptional user experiences."
    },
    "stats": {
       "yearsExperience": "3",
@@ -394,12 +394,13 @@
           "image": "/projects/messmanagement.png"
        }
    ],
-   "education": [
+    "education": [
       {
          "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
          "duration": "2024 - Present",
          "info": "Expected Graduation: May 2027",
+         "description": "Gaining a comprehensive foundation in computer science principles, algorithms, and modern software engineering practices. Actively applying theoretical concepts to real-world web development and optimizing scalable user interfaces.",
          "coursework": [
             "Data Structures & Algorithms",
             "Object-Oriented Programming",
@@ -409,20 +410,6 @@
             "Operating Systems",
             "Web Development",
             "Discrete Mathematics"
-         ]
-      },
-      {
-         "degree": "Diploma in Civil Engineering",
-         "institution": "Bogura Polytechnic Institute, Bogura",
-         "duration": "2018 - 2023",
-         "info": "CGPA: 3.60 / 4.00",
-         "coursework": [
-            "Structural Mechanics",
-            "Surveying",
-            "Transportation Engineering",
-            "Geotechnical Engineering",
-            "Estimating & Costing",
-            "Construction Management"
          ]
       }
    ],

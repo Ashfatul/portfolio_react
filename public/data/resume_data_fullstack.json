@@ -16,7 +16,7 @@
          "Hindi"
       ],
       "heroAbout": "Frontend-focused Full Stack Developer specialized in building highly interactive interfaces, database integrations, and serverless workflows.",
-      "about": "Frontend-focused Full Stack Developer with 3+ years of professional experience building modern user interfaces and SaaS platforms. Proficient in React, Next.js, and TypeScript, combined with hands-on experience structuring backend workflows using Node.js, Express, Supabase, PostgreSQL, and MongoDB. Skilled in linking client-side applications with secure database schemas, building serverless endpoints, and managing real-time data flows."
+      "about": "Frontend-focused Full Stack Developer with 3+ years building modern UIs and SaaS platforms using React, Next.js, and TypeScript. Experienced in structuring backend workflows with Node.js, Express, Supabase, and PostgreSQL to deliver full-stack solutions."
    },
    "stats": {
       "yearsExperience": "3+",
@@ -195,12 +195,13 @@
          "image": "/projects/messmanagement.png"
       }
    ],
-   "education": [
+    "education": [
       {
          "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
          "duration": "2024 - Present",
          "info": "Expected Graduation: May 2027",
+         "description": "Gaining a comprehensive foundation in computer science principles, algorithms, and modern software engineering practices. Actively applying theoretical concepts to real-world full-stack development and optimizing scalable applications.",
          "coursework": [
             "Data Structures & Algorithms",
             "Object-Oriented Programming",
@@ -210,20 +211,6 @@
             "Operating Systems",
             "Web Development",
             "Discrete Mathematics"
-         ]
-      },
-      {
-         "degree": "Diploma in Civil Engineering",
-         "institution": "Bogura Polytechnic Institute, Bogura",
-         "duration": "2018 - 2023",
-         "info": "CGPA: 3.60 / 4.00",
-         "coursework": [
-            "Structural Mechanics",
-            "Surveying",
-            "Transportation Engineering",
-            "Geotechnical Engineering",
-            "Estimating & Costing",
-            "Construction Management"
          ]
       }
    ],
