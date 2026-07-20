@@ -1,7 +1,7 @@
 {
    "meta": {
       "name": "A. A. M. Ashfatul Islam",
-      "position": "Frontend-Focused Full Stack Developer | React | Node.js | MongoDB",
+      "position": "Frontend-Focused Full Stack Developer | React | Express | Node.js | MongoDB",
       "yearsOfExperience": 3,
       "email": "ashfatul.islam@gmail.com",
       "phone": "+8801719337222",
@@ -16,41 +16,40 @@
          "Hindi"
       ],
       "heroAbout": "Frontend-focused Full Stack Developer specialized in building highly interactive interfaces, database integrations, and serverless workflows.",
-      "about": "Frontend-focused Full Stack Developer with 3+ years building modern UIs and SaaS platforms using React, Next.js, and TypeScript. Experienced in structuring backend workflows with Node.js, Express, Supabase, and PostgreSQL to deliver full-stack solutions."
+      "about": "Frontend-focused Full Stack Developer with 3+ years of experience building modern web applications and SaaS platforms using HTML, CSS, SCSS, JavaScript, React, Next.js, and TypeScript. Experienced in developing full-stack applications with Node.js, Express, MongoDB, and Supabase, including AI-powered solutions."
    },
    "stats": {
       "yearsExperience": "3+",
-      "fullStackApps": "4+",
       "productsShipped": "17+",
       "apiIntegrations": "30+"
    },
    "achievements": [
       {
          "title": "Frontend & Full Stack Dev",
-         "description": "Led UI development and successfully integrated database/serverless features for multiple production-grade web applications using Supabase and MongoDB."
+         "description": "Led frontend development and integrated backend services using Supabase and MongoDB to build multiple production-ready web applications."
       },
       {
          "title": "API & DB Integrations",
-         "description": "Connected 30+ REST APIs, managed database models, and set up dynamic authentication workflows with role-based features."
+         "description": "Built full-stack applications by integrating REST APIs, designing database schemas, and implementing authentication with role-based access control."
       },
       {
          "title": "Production Scale Dev",
-         "description": "Contributed to 17+ commercial and SaaS products, translating design visual concepts into functional full-stack flows."
+         "description": "Contributed to 17+ commercial and SaaS products by developing responsive user interfaces and translating Figma designs into production-ready web applications."
       }
    ],
    "experience": [
       {
          "company": "SpondonIT",
          "duration": "Jun 2023 - May 2026",
-         "position": "Full Stack / Frontend Developer",
+         "position": "Frontend Developer",
          "impact": [
-            "Acted as lead UI engineer and contributor to backend integrations across 17+ SaaS, LMS, and administrative applications.",
-            "Designed and connected React frontends with dynamic server systems, boosting features for LMS, e-commerce, and dashboard apps.",
-            "Engineered robust React forms, global state flows, and query caching for high-load web dashboards."
+            "Developed responsive frontend interfaces for 17+ commercial SaaS, LMS, e-commerce, and administrative web applications.",
+            "Translated Figma designs into production-ready React applications and integrated REST APIs to deliver dynamic user experiences.",
+            "Built reusable React components, complex forms, state management, and data-fetching workflows for scalable web applications."
          ],
          "leadership": [
-            "Independently owned the entire UI layout and backend integration modules for a React-based commercial LMS product.",
-            "Partnered with database and service teams to implement end-to-end features, resolving API structure and state caching challenges."
+            "Owned frontend implementation for React-based commercial applications, delivering responsive interfaces and integrating REST APIs.",
+            "Collaborated with designers and backend developers to implement features, resolve API integration challenges, and deliver production-ready user experiences."
          ],
          "projects": [
             {
@@ -139,9 +138,9 @@
             }
          ],
          "responsibilities": [
-            "Designed full stack integrations linking client UIs with RESTful server backends.",
-            "Wired React Context, React Query, and database endpoints to build responsive single-page platforms.",
-            "Maintained Git workflows, reviewed code, and worked within Agile teams to ensure quick features shipment."
+            "Developed responsive React applications by translating Figma designs into reusable, production-ready user interfaces.",
+            "Integrated REST APIs and implemented React Context and React Query to manage application state and dynamic data.",
+            "Collaborated using Git and Agile workflows to deliver features, fix issues, and maintain high-quality frontend code."
          ]
       }
    ],
@@ -333,6 +332,7 @@
       {
          "id": "aniya",
          "name": "Aniya",
+         "type": "Baby Milestone Tracker",
          "techStack": [
             "Next.js 16",
             "TypeScript",
@@ -347,6 +347,7 @@
       {
          "id": "aitravelplanner",
          "name": "AI Travel Planner",
+         "type": "AI-Powered Travel Planning Web App",
          "techStack": [
             "Next.js 16",
             "Tailwind CSS",
@@ -362,6 +363,7 @@
       {
          "id": "ecommerce",
          "name": "E-commerce Website",
+         "type": "Full-Stack E-commerce Application",
          "techStack": [
             "Next.js 16",
             "MongoDB",
@@ -377,6 +379,7 @@
       {
          "id": "messmanagement",
          "name": "Mess Management Website",
+         "type": "Full-Stack Mess Management Application",
          "techStack": [
             "Next.js 16",
             "Supabase",
@@ -388,7 +391,7 @@
          "image": "/projects/messmanagement.png"
       }
    ],
-    "education": [
+   "education": [
       {
          "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
@@ -422,7 +425,6 @@
          "Express.js",
          "Supabase",
          "MongoDB",
-         "Prisma",
          "PostgreSQL",
          "REST API Design",
          "Database Design"
