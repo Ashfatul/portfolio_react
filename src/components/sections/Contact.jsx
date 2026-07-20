@@ -7,7 +7,7 @@ import { ScrollReveal } from '../ui/ScrollReveal';
 import emailjs from '@emailjs/browser';
 
 const CONTACT_INFO = [
-  { icon: MdLocationOn, label: 'Location', value: 'Dhaka, Bangladesh' },
+  { icon: MdLocationOn, label: 'Location', value: 'Shewrapara, Mirpur, Dhaka, Bangladesh' },
   { icon: MdOutlineEmail, label: 'Email', value: 'ashfatul.islam@gmail.com', href: 'mailto:ashfatul.islam@gmail.com' },
   { icon: IoLogoGithub, label: 'GitHub', value: '@ashfatul', href: 'https://github.com/ashfatul' },
   { icon: FaLinkedinIn, label: 'LinkedIn', value: '@ashfatul', href: 'https://linkedin.com/in/ashfatul' },
