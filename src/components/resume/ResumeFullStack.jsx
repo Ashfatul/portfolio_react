@@ -214,6 +214,11 @@ const ResumeFullStack = () => {
                                         <time>{item.duration}</time>
                                         {item.info && <span> · {item.info}</span>}
                                     </p>
+                                    {item.description && (
+                                        <p className="resume_education_desc" style={{fontSize: '12px', color: '#666', marginTop: '4px'}}>
+                                            {item.description}
+                                        </p>
+                                    )}
                                 </div>
                                 {item.coursework?.length > 0 && (
                                     <div className="resume_education_coursework">

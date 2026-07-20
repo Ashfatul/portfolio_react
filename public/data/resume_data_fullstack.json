@@ -64,7 +64,7 @@
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
          "duration": "2024 - Present",
          "info": "Expected Graduation: May 2027",
-         "description": "Gaining a comprehensive foundation in computer science principles, algorithms, and modern software engineering practices. Actively applying theoretical concepts to real-world full-stack development and optimizing scalable applications.",
+         "description": "Building a strong foundation in computer science and modern software engineering.",
          "coursework": [
             "Data Structures & Algorithms",
             "Object-Oriented Programming",
@@ -84,7 +84,28 @@
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
          "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router.",
-         "technologies": ["React", "Next.js", "State Management", "API Integration", "App Router", "Hooks"]
+         "technologies": [
+            "Advanced JS",
+            "React.js 19",
+            "React-Redux",
+            "Next.js 15",
+            "Tailwind CSS",
+            "Client Component",
+            "Server Component",
+            "SSR, SSG, ISR, CSR",
+            "Caching & Revalidation",
+            "TypeScript",
+            "Next-Auth",
+            "GraphQL",
+            "Prisma",
+            "Socket.io",
+            "Docker + AWS",
+            "Testing",
+            "React Router",
+            "TanStack Query",
+            "React Hook Form",
+            "Framer Motion"
+         ]
       }
    ],
    "skills": {
