@@ -26,20 +26,16 @@
    },
    "achievements": [
       {
-         "title": "Frontend Ownership",
-         "description": "Served as the sole frontend developer for nearly three years, building production-ready interfaces across 17+ SaaS, CodeCanyon, and client products."
+         "title": "Frontend Arch.",
+         "description": "Built React interfaces for 17+ SaaS platforms."
       },
       {
-         "title": "Production UI Development",
-         "description": "Converted 200+ Figma designs into responsive, pixel-perfect, production-ready user interfaces."
+         "title": "UI Engineering",
+         "description": "Engineered 200+ pixel-perfect UI components."
       },
       {
-         "title": "UI & API Execution",
-         "description": "Integrated 30+ REST APIs and developed reusable React components for commercial web applications."
-      },
-      {
-         "title": "Modern Frontend Stack",
-         "description": "Built modern web applications using React, Next.js 16, TypeScript, and Supabase, deployed on Vercel."
+         "title": "API Integration",
+         "description": "Integrated 30+ APIs with global state management."
       }
    ],
    "experience": [
@@ -56,92 +52,6 @@
             "Built the entire React frontend for a Learning Management System (LMS) independently, converting provided Figma designs into production-ready user interfaces.",
             "Worked closely with designers and backend engineers to deliver responsive interfaces and integrate backend APIs on schedule."
          ],
-         "projects": [
-            {
-               "name": "InfixLMS",
-               "type": "Learning Management Software",
-               "techStack": [
-                  "HTML",
-                  "CSS",
-                  "Laravel Blade",
-                  "JavaScript",
-                  "jQuery",
-                  "SCSS",
-                  "Bootstrap"
-               ],
-               "description": "Enhanced LMS modules with responsive UI upgrades, bug fixes, and feature-ready frontend integration."
-            },
-            {
-               "name": "InfixEdu",
-               "type": "School Management Software",
-               "techStack": [
-                  "Laravel Blade",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "jQuery",
-                  "SCSS",
-                  "Bootstrap"
-               ],
-               "description": "Redesigned key pages, improved responsive behavior, and delivered production-ready templates for backend integration."
-            },
-            {
-               "name": "Marifa LMS",
-               "type": "Learning Management Software",
-               "techStack": [
-                  "React",
-                  "JavaScript",
-                  "SCSS",
-                  "React Query",
-                  "Context API",
-                  "React Hook Form",
-                  "REST API",
-                  "Axios",
-                  "Bootstrap"
-               ],
-               "description": "Built the complete React frontend for a Learning Management System (LMS) from scratch, implementing quizzes, classes, courses, blogs, dashboards, authentication, and API-driven user workflows."
-            },
-            {
-               "name": "Amazcart",
-               "type": "E-commerce Platform",
-               "techStack": [
-                  "Laravel Blade",
-                  "HTML",
-                  "CSS",
-                  "SCSS",
-                  "Bootstrap"
-               ],
-               "description": "Improved customer-facing e-commerce modules with new UI, responsive fixes, and API-integrated enhancements."
-            },
-            {
-               "name": "Aorabooks",
-               "type": "Accounting Software",
-               "techStack": [
-                  "Laravel Blade",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "jQuery",
-                  "SCSS",
-                  "Bootstrap"
-               ],
-               "description": "Upgraded dashboard and POS interfaces, including custom org-chart UI and reusable components."
-            },
-            {
-               "name": "Lawcham",
-               "type": "Law Firm Management Software",
-               "techStack": [
-                  "Laravel Blade",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "jQuery",
-                  "SCSS",
-                  "Bootstrap"
-               ],
-               "description": "Built production-ready frontends for both SaaS and single-user applications by converting Figma designs into responsive user interfaces with reusable components."
-            }
-         ],
          "responsibilities": [
             "Built reusable React components for commercial web applications.",
             "Translated 200+ Figma designs into responsive interfaces using React, JavaScript, SCSS, and Laravel Blade.",
@@ -151,250 +61,7 @@
          ]
       }
    ],
-   "showcase_projects": [
-      {
-         "id": "marifalms",
-         "name": "Marifa LMS",
-         "type": "Learning Management Software",
-         "description": "Built the complete frontend from provided Figma designs, implementing courses, classes, quizzes, blogs, dashboards, and API-driven user workflows.",
-         "techStack": [
-            "React",
-            "JavaScript",
-            "SCSS",
-            "REST API",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
-         "image": "/projects/marifalms.png",
-         "featured": true
-      },
-      {
-         "id": "aorabooks",
-         "name": "Aorabooks",
-         "type": "Accounting Software",
-         "description": "Converted Figma designs into responsive, production-ready interfaces for accounting dashboards, invoicing, and financial management modules.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #f093fb, #f5576c)",
-         "image": "/projects/aorabooks.png",
-         "featured": true
-      },
-      {
-         "id": "infixlms",
-         "name": "InfixLMS",
-         "type": "Learning Management Software",
-         "description": "Enhanced LMS modules with responsive UI upgrades, bug fixes, and feature-ready frontend integration.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)",
-         "image": "/projects/infixlms.png",
-         "featured": true
-      },
-      {
-         "id": "infixedu",
-         "name": "InfixEdu",
-         "type": "School Management Software",
-         "description": "Built production-ready frontend interfaces for school management features, including academic and administrative modules.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "jQuery",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)",
-         "image": "/projects/infixedu.png",
-         "featured": false
-      },
-      {
-         "id": "amazcart",
-         "name": "Amazcart",
-         "type": "E-commerce Platform",
-         "description": "Built responsive e-commerce frontend interfaces, including product browsing, shopping cart, checkout, and account management.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #fa709a, #fee140)",
-         "image": "/projects/amazcart.png",
-         "featured": true
-      },
-      {
-         "id": "lawcham",
-         "name": "Lawcham",
-         "type": "Law Firm Software",
-         "description": "Built responsive frontend interfaces for legal workflow management by converting Figma designs into reusable production-ready components.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
-         "image": "/projects/lawcham.png",
-         "featured": false
-      },
-      {
-         "id": "alvcard",
-         "name": "alvcard",
-         "type": "Business Card Software",
-         "description": "Developed responsive frontend interfaces for digital business card creation, customization, and sharing workflows.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #ffecd2, #fcb69f)",
-         "image": "/projects/alvcard.png",
-         "featured": false
-      },
-      {
-         "id": "edulia",
-         "name": "Edulia",
-         "type": "Theme for InfixEdu",
-         "description": "Converted provided designs into a responsive frontend theme with reusable UI components for the InfixEdu platform.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #89f7fe, #66a6ff)",
-         "image": "/projects/edulia.png",
-         "featured": false
-      },
-      {
-         "id": "bebooking",
-         "name": "BeBooking",
-         "type": "Appointment Booking Software",
-         "description": "Built responsive frontend interfaces for appointment scheduling, calendar management, and booking workflows.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #fddb92, #d1fdff)",
-         "image": "/projects/bebooking.png",
-         "featured": false
-      },
-      {
-         "id": "idesk",
-         "name": "iDesk",
-         "type": "Support Ticket Software",
-         "description": "Developed responsive frontend interfaces for ticket management, support dashboards, and customer service workflows.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Bootstrap"
-         ],
-         "gradient": "linear-gradient(135deg, #c471f5, #fa71cd)",
-         "image": "/projects/idesk.png",
-         "featured": false
-      },
-      {
-         "id": "aorasoft",
-         "name": "Aorasoft",
-         "type": "Company Website",
-         "description": "Built the company website frontend by converting provided Figma designs into responsive, production-ready interfaces.",
-         "techStack": [
-            "Laravel Blade",
-            "HTML",
-            "CSS",
-            "SCSS",
-            "Tailwind CSS"
-         ],
-         "gradient": "linear-gradient(135deg, #48c6ef, #6f86d6)",
-         "image": "/projects/aorasoft.png",
-         "featured": false
-      }
-   ],
-   "personalProjects": [
-       {
-          "id": "aitravelplanner",
-          "name": "AI Travel Planner",
-          "techStack": [
-             "Next.js 16",
-             "Tailwind CSS",
-             "MongoDB",
-             "Gemini API",
-             "Pixels API"
-          ],
-          "description": "AI-powered travel planning web application that generates personalized itineraries based on user preferences, leveraging Gemini API for natural language processing and itinerary generation.",
-          "link": "https://lws8.vercel.app/",
-          "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
-          "image": "/projects/aitravelplanner.png"
-       },
-       {
-          "id": "aniya",
-          "name": "Aniya",
-          "techStack": [
-             "Next.js 16",
-             "TypeScript",
-             "Tailwind CSS",
-             "Supabase"
-          ],
-          "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
-          "link": "https://aniya-app.vercel.app",
-          "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)",
-          "image": "/projects/aniya.png"
-       },
-       {
-          "id": "ecommerce",
-          "name": "E-commerce Website",
-          "techStack": [
-             "Next.js 16",
-             "MongoDB",
-             "NextAuth.js",
-             "ImageKit",
-             "Nodemailer"
-          ],
-          "description": "A full-stack e-commerce application built with Next.js 16 as the capstone project of the Learn with Sumit Next.js course, featuring authentication, product management, image uploads, email integration, and a responsive shopping experience.",
-          "link": "https://lwsfinal-beta.vercel.app/",
-          "gradient": "linear-gradient(135deg, #00c6ff, #0072ff)",
-          "image": "/projects/ecommerce.png"
-       },
-       {
-          "id": "messmanagement",
-          "name": "Mess Management Website",
-          "techStack": [
-             "Next.js 16",
-             "Supabase",
-             "Vite"
-          ],
-          "description": "Mess management website built with Next.js 16 and Supabase, featuring real-time data synchronization and a responsive user interface.",
-          "link": "https://lwsfinal-beta.vercel.app/",
-          "gradient": "linear-gradient(135deg, #f857a6, #ff5858)",
-          "image": "/projects/messmanagement.png"
-       }
-   ],
-    "education": [
+   "education": [
       {
          "degree": "Bachelor of Science in Computer Science",
          "institution": "Bangladesh University, Mohammadpur, Dhaka",
@@ -475,5 +142,276 @@
          "Git Workflow",
          "UI/UX Collaboration"
       ]
-   }
+   },
+   "projects": [
+      {
+         "id": "marifalms",
+         "name": "Marifa LMS",
+         "type": "Learning Management Software",
+         "description": "Built the complete frontend from provided Figma designs, implementing courses, classes, quizzes, blogs, dashboards, and API-driven user workflows.",
+         "techStack": [
+            "React",
+            "JavaScript",
+            "SCSS",
+            "REST API",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+         "image": "/projects/marifalms.png",
+         "featured": true,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "aorabooks",
+         "name": "Aorabooks",
+         "type": "Accounting Software",
+         "description": "Converted Figma designs into responsive, production-ready interfaces for accounting dashboards, invoicing, and financial management modules.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #f093fb, #f5576c)",
+         "image": "/projects/aorabooks.png",
+         "featured": true,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "infixlms",
+         "name": "InfixLMS",
+         "type": "Learning Management Software",
+         "description": "Enhanced LMS modules with responsive UI upgrades, bug fixes, and feature-ready frontend integration.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)",
+         "image": "/projects/infixlms.png",
+         "featured": true,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "infixedu",
+         "name": "InfixEdu",
+         "type": "School Management Software",
+         "description": "Built production-ready frontend interfaces for school management features, including academic and administrative modules.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)",
+         "image": "/projects/infixedu.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "amazcart",
+         "name": "Amazcart",
+         "type": "E-commerce Platform",
+         "description": "Built responsive e-commerce frontend interfaces, including product browsing, shopping cart, checkout, and account management.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #fa709a, #fee140)",
+         "image": "/projects/amazcart.png",
+         "featured": true,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "lawcham",
+         "name": "Lawcham",
+         "type": "Law Firm Software",
+         "description": "Built responsive frontend interfaces for legal workflow management by converting Figma designs into reusable production-ready components.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+         "image": "/projects/lawcham.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "alvcard",
+         "name": "alvcard",
+         "type": "Business Card Software",
+         "description": "Developed responsive frontend interfaces for digital business card creation, customization, and sharing workflows.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+         "image": "/projects/alvcard.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "edulia",
+         "name": "Edulia",
+         "type": "Theme for InfixEdu",
+         "description": "Converted provided designs into a responsive frontend theme with reusable UI components for the InfixEdu platform.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #89f7fe, #66a6ff)",
+         "image": "/projects/edulia.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "bebooking",
+         "name": "BeBooking",
+         "type": "Appointment Booking Software",
+         "description": "Built responsive frontend interfaces for appointment scheduling, calendar management, and booking workflows.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #fddb92, #d1fdff)",
+         "image": "/projects/bebooking.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "idesk",
+         "name": "iDesk",
+         "type": "Support Ticket Software",
+         "description": "Developed responsive frontend interfaces for ticket management, support dashboards, and customer service workflows.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap"
+         ],
+         "gradient": "linear-gradient(135deg, #c471f5, #fa71cd)",
+         "image": "/projects/idesk.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "aorasoft",
+         "name": "Aorasoft",
+         "type": "Company Website",
+         "description": "Built the company website frontend by converting provided Figma designs into responsive, production-ready interfaces.",
+         "techStack": [
+            "Laravel Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Tailwind CSS"
+         ],
+         "gradient": "linear-gradient(135deg, #48c6ef, #6f86d6)",
+         "image": "/projects/aorasoft.png",
+         "featured": false,
+         "category": "Commercial",
+         "showcase": true
+      },
+      {
+         "id": "aitravelplanner",
+         "name": "AI Travel Planner",
+         "techStack": [
+            "Next.js 16",
+            "Tailwind CSS",
+            "MongoDB",
+            "Gemini API",
+            "Pixels API"
+         ],
+         "description": "AI-powered travel planning web application that generates personalized itineraries based on user preferences, leveraging Gemini API for natural language processing and itinerary generation.",
+         "link": "https://lws8.vercel.app/",
+         "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+         "image": "/projects/aitravelplanner.png",
+         "category": "Personal",
+         "showcase": true
+      },
+      {
+         "id": "aniya",
+         "name": "Aniya",
+         "techStack": [
+            "Next.js 16",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase"
+         ],
+         "description": "Private baby milestone tracker with growth charts, feeding/sleep logs, photo timeline, family sharing with role-based access, and PWA support. Deployed on Vercel.",
+         "link": "https://aniya-app.vercel.app",
+         "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)",
+         "image": "/projects/aniya.png",
+         "category": "Personal",
+         "showcase": true
+      },
+      {
+         "id": "ecommerce",
+         "name": "E-commerce Website",
+         "techStack": [
+            "Next.js 16",
+            "MongoDB",
+            "NextAuth.js",
+            "ImageKit",
+            "Nodemailer"
+         ],
+         "description": "A full-stack e-commerce application built with Next.js 16 as the capstone project of the Learn with Sumit Next.js course, featuring authentication, product management, image uploads, email integration, and a responsive shopping experience.",
+         "link": "https://lwsfinal-beta.vercel.app/",
+         "gradient": "linear-gradient(135deg, #00c6ff, #0072ff)",
+         "image": "/projects/ecommerce.png",
+         "category": "Personal",
+         "showcase": true
+      },
+      {
+         "id": "messmanagement",
+         "name": "Mess Management Website",
+         "techStack": [
+            "Next.js 16",
+            "Supabase",
+            "Vite"
+         ],
+         "description": "Mess management website built with Next.js 16 and Supabase, featuring real-time data synchronization and a responsive user interface.",
+         "link": "https://lwsfinal-beta.vercel.app/",
+         "gradient": "linear-gradient(135deg, #f857a6, #ff5858)",
+         "image": "/projects/messmanagement.png",
+         "category": "Personal",
+         "showcase": true
+      }
+   ]
 }

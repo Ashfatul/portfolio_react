@@ -6,9 +6,7 @@ export default function Projects({ data }) {
   const [visibleCount, setVisibleCount] = useState(6);
 
   const allProjects = useMemo(() => {
-    const commercial = (data?.showcase_projects || []).map(p => ({ ...p, category: 'Commercial' }));
-    const personal = (data?.personalProjects || []).map(p => ({ ...p, category: 'Personal' }));
-    return [...commercial, ...personal];
+    return (data?.projects || []).filter(p => p.showcase);
   }, [data]);
 
   const visibleProjects = allProjects.slice(0, visibleCount);

@@ -115,11 +115,11 @@ export default function Experience({ data }) {
                   </div>
 
                   {/* Projects Section */}
-                  {experience.projects?.length > 0 && (
+                  {data?.projects?.filter(p => p.category === 'Commercial').length > 0 && (
                     <div className="experience__main-projects">
                       <h4 className="experience__projects-label">Projects Worked On</h4>
                       <div className="experience__projects-chips">
-                        {experience.projects.map((p, i) => (
+                        {data.projects.filter(p => p.category === 'Commercial').slice(0, 6).map((p, i) => (
                           <motion.span
                             key={i}
                             className="experience__project-chip"

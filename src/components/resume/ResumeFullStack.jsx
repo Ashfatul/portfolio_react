@@ -135,11 +135,11 @@ const ResumeFullStack = () => {
                                 </div>
                             )}
 
-                            {item.projects?.length > 0 && (
+                            {resumeData.projects?.filter(p => p.category === 'Commercial')?.length > 0 && (
                                 <div className="resume_projects_section">
                                     <h4>Key Projects</h4>
                                     <ul className="projects_list">
-                                        {item.projects.map((project, idx) => (
+                                        {resumeData.projects.filter(p => p.category === 'Commercial').slice(0, 6).map((project, idx) => (
                                             <li className="project_item" key={idx}>
                                                 <p className="project_header">
                                                     <strong>{project.name}</strong>
@@ -171,11 +171,11 @@ const ResumeFullStack = () => {
                     ))}
                 </section>
 
-                {resumeData.personalProjects?.length > 0 && (
+                {resumeData.projects?.filter(p => p.category === 'Personal')?.length > 0 && (
                     <section>
                         <h2 className="resume_inner_title">Personal Projects</h2>
                         <ul className="projects_list">
-                            {resumeData.personalProjects.map((project, index) => (
+                            {resumeData.projects.filter(p => p.category === 'Personal').map((project, index) => (
                                 <li className="project_item" key={index}>
                                     <p className="project_header">
                                         <strong>
