@@ -86,7 +86,8 @@
          "issuer": "Learn with Sumit",
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
-         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router."
+         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router.",
+         "technologies": ["React", "Next.js", "State Management", "API Integration", "App Router", "Hooks"]
       }
    ],
    "skills": {

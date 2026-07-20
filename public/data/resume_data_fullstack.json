@@ -16,7 +16,7 @@
          "Hindi"
       ],
       "heroAbout": "Frontend-focused Full Stack Developer specialized in building highly interactive interfaces, database integrations, and serverless workflows.",
-      "about": "Frontend-focused Full Stack Developer with 3+ years of experience building modern web applications and SaaS platforms using HTML, CSS, SCSS, JavaScript, React, Next.js, and TypeScript. Experienced in developing full-stack applications with Node.js, Express, MongoDB, and Supabase, including AI-powered solutions."
+      "about": "Frontend-focused Full Stack Developer with 3 years of experience building modern web applications and SaaS platforms using HTML, CSS, SCSS, JavaScript, React, Next.js, and TypeScript. Experienced in developing full-stack applications with Node.js, Express, MongoDB, and Supabase, including AI-powered solutions."
    },
    "stats": {
       "yearsExperience": "3+",
@@ -30,7 +30,7 @@
       },
       {
          "title": "System Architecture",
-         "description": "Integrated 30+ APIs with secure workflows."
+         "description": "Integrated APIs with secure workflows."
       },
       {
          "title": "Commercial Delivery",
@@ -83,7 +83,8 @@
          "issuer": "Learn with Sumit",
          "date": "April 2026",
          "link": "https://learnwithsumit.com/certificates/verify/LWSCTXN-140N30B1",
-         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router."
+         "info": "Advanced React and Next.js program (93.56%) covering architecture, hooks, routing, state management, API integration, and Next.js App Router.",
+         "technologies": ["React", "Next.js", "State Management", "API Integration", "App Router", "Hooks"]
       }
    ],
    "skills": {

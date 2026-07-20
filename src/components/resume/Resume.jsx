@@ -233,26 +233,41 @@ const Resume = () => {
                 {resumeData.certificates?.length > 0 && (
                     <section>
                         <h2 className="resume_inner_title">Certificates & Achievements</h2>
-                        <div className="certificates_grid">
+                        <div className="education_grid">
                             {resumeData.certificates.map((cert, index) => (
-                                <article className="resume_certificate_item" key={index}>
-                                    <div className="resume_certificate_title">
-                                        {cert.link ? (
-                                            <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                                {cert.title}
-                                            </a>
-                                        ) : (
-                                            <p>{cert.title}</p>
+                                <article className="resume_education_item" key={index}>
+                                    <div className="resume_education_main">
+                                        <div className="resume_education_experience_position">
+                                            <p>
+                                                <strong>
+                                                    {cert.link ? (
+                                                        <a href={cert.link} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                                                            {cert.title}
+                                                        </a>
+                                                    ) : (
+                                                        cert.title
+                                                    )}
+                                                </strong>
+                                            </p>
+                                        </div>
+                                        <h3 className="education_institution">{cert.issuer}</h3>
+                                        <p className="resume_education_meta">
+                                            <time>{cert.date}</time>
+                                        </p>
+                                        {cert.info && (
+                                            <p className="resume_education_desc" style={{fontSize: '12px', color: '#666', marginTop: '4px'}}>{cert.info}</p>
                                         )}
                                     </div>
-                                    {cert.info && (
-                                        <div className="resume_certificate_info">
-                                            <p>{cert.info}</p>
+                                    {cert.technologies?.length > 0 && (
+                                        <div className="resume_education_coursework">
+                                            <strong>Learned Technology</strong>
+                                            <ul className="coursework_tags">
+                                                {cert.technologies.map((tech, i) => (
+                                                    <li key={i}>{tech}{i < cert.technologies.length - 1 ? ',' : ''}</li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     )}
-                                    <div className="resume_certificate_issuer">
-                                        <p>{cert.issuer} — <time>({cert.date})</time></p>
-                                    </div>
                                 </article>
                             ))}
                         </div>
