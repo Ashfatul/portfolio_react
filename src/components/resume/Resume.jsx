@@ -204,19 +204,26 @@ const Resume = () => {
                     <h2 className="resume_inner_title">Education</h2>
                     <div className="education_grid">
                         {resumeData.education.map((item, index) => (
-                            <article className="resume_education_experience_item" key={index}>
-                                <div className="resume_education_experience_position">
-                                    <p><strong>{item.degree}</strong></p>
-                                </div>
-                                <h3 className="education_institution">{item.institution}</h3>
-                                <p className="resume_education_meta">
-                                    <time>{item.duration}</time>
-                                    {item.info && <span> · {item.info}</span>}
-                                </p>
-                                {item.coursework?.length > 0 && (
-                                    <p className="resume_education_coursework">
-                                        <strong>Relevant Coursework:</strong> {item.coursework.join(", ")}
+                            <article className="resume_education_item" key={index}>
+                                <div className="resume_education_main">
+                                    <div className="resume_education_experience_position">
+                                        <p><strong>{item.degree}</strong></p>
+                                    </div>
+                                    <h3 className="education_institution">{item.institution}</h3>
+                                    <p className="resume_education_meta">
+                                        <time>{item.duration}</time>
+                                        {item.info && <span> · {item.info}</span>}
                                     </p>
+                                </div>
+                                {item.coursework?.length > 0 && (
+                                    <div className="resume_education_coursework">
+                                        <strong>Relevant Coursework</strong>
+                                        <ul className="coursework_tags">
+                                            {item.coursework.map((course, i) => (
+                                                <li key={i}>{course}{i < item.coursework.length - 1 ? ',' : ''}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 )}
                             </article>
                         ))}

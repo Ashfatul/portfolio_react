@@ -329,7 +329,7 @@ $text-muted: rgb(78, 83, 93);
 
 .education_grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
 }
 
@@ -349,14 +349,49 @@ h3.education_institution {
     }
 }
 
-.resume_education_coursework {
-    font-size: 12px;
-    color: $text-secondary;
-    margin-top: 3px;
-    margin-bottom: 12px !important;
-
-    strong {
-        font-size: 10px !important;
+.resume_education_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 10px;
+    
+    .resume_education_main {
+        flex: 1;
+    }
+    
+    .resume_education_coursework {
+        flex: 1;
+        border: 1px solid #eee;
+        padding: 6px;
+        border-radius: 6px;
+        margin-top: 0;
+        margin-bottom: 0 !important;
+        
+        strong {
+            display: block;
+            margin-bottom: 0px;
+            font-size: 11px !important;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: $black;
+        }
+        
+        .coursework_tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                padding: 0px;
+                font-size: 11px;
+                border-radius: 4px;
+                color: $text-secondary;
+            }
+        }
     }
 }
 
