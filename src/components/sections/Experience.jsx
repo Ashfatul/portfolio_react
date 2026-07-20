@@ -117,7 +117,7 @@ export default function Experience({ data }) {
                   {/* Projects Section */}
                   {experience.projects?.length > 0 && (
                     <div className="experience__main-projects">
-                      <h4 className="experience__projects-label">Shipped Products</h4>
+                      <h4 className="experience__projects-label">Projects Worked On</h4>
                       <div className="experience__projects-chips">
                         {experience.projects.map((p, i) => (
                           <motion.span
